@@ -360,6 +360,7 @@ themeBtns.forEach(function (b) {
    To change the password, replace it with the SHA-256
    of the new password. This is casual sharing control,
    not real security: the hash lives in public source. */
+const GATE_ENABLED = false; // 密码门开关：false = 隐藏（当前），改为 true 重新启用
 const GATE_HASH = "8b901ca3b1b86b98edfeff8688f0b2b8098b256becde78342275d4e3dc3bbda2";
 const gateOverlay = document.getElementById("gateOverlay");
 const gateForm = document.getElementById("gateForm");
@@ -374,7 +375,7 @@ async function sha256hex(str) {
 }
 
 if (gateOverlay) {
-  if (sessionStorage.getItem("vcard-gate") === "1") {
+  if (!GATE_ENABLED || sessionStorage.getItem("vcard-gate") === "1") {
     gateOverlay.classList.add("unlocked");
   } else if (gateInput) {
     gateInput.focus();
