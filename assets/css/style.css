@@ -1880,3 +1880,187 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+/*-----------------------------------*\
+  #THEMES, LANGUAGE & GATE (added 2026-10-31)
+  Theme palettes override the :root variables above.
+  Gold is the default (no override). Ocean and Paper only
+  replace the accent/background/text variables.
+\*-----------------------------------*/
+
+:root[data-theme="ocean"] {
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(205, 90%, 65%) 0%,
+    hsla(205, 90%, 60%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(205, 90%, 65%, 0.251) 0%,
+    hsla(205, 90%, 60%, 0) 59.86%
+  ), hsl(240, 2%, 13%);
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(205, 90%, 68%),
+    hsl(190, 90%, 60%)
+  );
+  --orange-yellow-crayola: hsl(205, 90%, 68%);
+  --vegas-gold: hsl(205, 45%, 55%);
+}
+
+:root[data-theme="paper"] {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(45, 30%, 97%) 3%,
+    hsl(45, 25%, 93%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(45, 30%, 90%, 0.6) 0%,
+    hsla(45, 25%, 92%, 0) 100%
+  ), hsl(45, 30%, 96%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(12, 65%, 55%) 0%,
+    hsla(12, 65%, 55%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(12, 65%, 55%, 0.18) 0%,
+    hsla(12, 65%, 55%, 0) 59.86%
+  ), hsl(45, 30%, 96%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(45, 15%, 80%) 0%,
+    hsla(45, 15%, 80%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(12, 65%, 50%),
+    hsl(28, 80%, 50%)
+  );
+  --jet: hsl(45, 20%, 92%);
+  --onyx: hsl(45, 25%, 94%);
+  --eerie-black-1: hsl(45, 30%, 96%);
+  --eerie-black-2: hsl(45, 25%, 93%);
+  --smoky-black: hsl(45, 30%, 94%);
+  --white-1: hsl(240, 5%, 15%);
+  --white-2: hsl(240, 4%, 25%);
+  --orange-yellow-crayola: hsl(12, 65%, 52%);
+  --vegas-gold: hsl(28, 70%, 48%);
+  --light-gray: hsl(0, 0%, 35%);
+  --light-gray-70: hsla(0, 0%, 35%, 0.7);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.08);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.08);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.08);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.06);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.08);
+}
+
+/* sidebar controls: language toggle + theme dots */
+.sidebar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.theme-switch { display: flex; gap: 8px; }
+
+.theme-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--light-gray-70);
+  padding: 0;
+}
+
+.theme-dot.active { border-color: var(--white-2); transform: scale(1.15); }
+.theme-gold { background: hsl(45, 100%, 72%); }
+.theme-ocean { background: hsl(205, 90%, 65%); }
+.theme-paper { background: hsl(45, 30%, 94%); }
+
+.lang-btn {
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+  padding: 6px 14px;
+  color: var(--orange-yellow-crayola);
+  font-size: 13px;
+}
+
+/* access gate overlay (light front-end password) */
+.gate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--smoky-black);
+  padding: 20px;
+}
+
+.gate-overlay.unlocked { display: none; }
+
+.gate-card {
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: var(--shadow-2);
+}
+
+.gate-icon {
+  font-size: 36px;
+  color: var(--orange-yellow-crayola);
+  margin: 0 auto 14px;
+}
+
+.gate-text {
+  color: var(--white-2);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.gate-form { display: flex; flex-direction: column; gap: 12px; }
+
+.gate-input {
+  width: 100%;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: var(--white-1);
+  font-size: 14px;
+  text-align: center;
+}
+
+.gate-input:focus { border-color: var(--orange-yellow-crayola); outline: none; }
+
+.gate-btn {
+  background: var(--orange-yellow-crayola);
+  color: hsl(0, 0%, 10%);
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.gate-error {
+  color: var(--bittersweet-shimmer);
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+@keyframes gate-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-7px); }
+  75% { transform: translateX(7px); }
+}
+
+.gate-overlay.shake .gate-card { animation: gate-shake 0.25s ease 2; }
