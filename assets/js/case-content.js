@@ -9,7 +9,8 @@ window.PORTFOLIO_CASES = [
         "围绕圆角连续性、按钮与列表高度、菜单按压及拖拽反馈，推动设计定义与系统落地。",
         "公共团队负责体系方向与设计定义，开发团队负责代码控件实现；持续协调设计与工程交付。"
       ],
-      "result": "两代 UI Kit 已由 OPPO 账号在 Figma Community 公开发布。公开资源证明团队交付，本人职责为负责公共设计团队并推动发布。"
+      "result": "两代 UI Kit 已由 OPPO 账号在 Figma Community 公开发布。公开资源证明团队交付，本人职责为负责公共设计团队并推动发布。",
+      "imageCaption": "ColorOS UI Kit · 原稿公开资源截图"
     },
     "en": {
       "title": "ColorOS design systems & public delivery",
@@ -20,7 +21,8 @@ window.PORTFOLIO_CASES = [
         "Defined details including corner continuity, button and list heights, press feedback and drag feedback.",
         "Led system direction and design definitions; development teams implemented the code components."
       ],
-      "result": "Both UI Kits were published by OPPO on Figma Community. The resources document the team delivery; my contribution was leading the shared design team and supporting publication."
+      "result": "Both UI Kits were published by OPPO on Figma Community. The resources document the team delivery; my contribution was leading the shared design team and supporting publication.",
+      "imageCaption": "ColorOS UI Kits · public resource capture"
     },
     "date": "2023.01—2026.03",
     "links": [
@@ -32,7 +34,8 @@ window.PORTFOLIO_CASES = [
         "ColorOS 16 UI Kit",
         "https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit"
       ]
-    ]
+    ],
+    "image": "./assets/images/coloros-ui-kits.png"
   },
   {
     "zh": {
@@ -44,7 +47,8 @@ window.PORTFOLIO_CASES = [
         "识别系统一级门户场景，与研发、测试形成重点变更共识。",
         "推动设计稿阶段用户测试，将新方案与上一代及友商方案横向比较，为评审提供依据。"
       ],
-      "result": "形成从方向、公共定义到场景验证的协作机制。本人负责方向、组织与共识，具体模块由各业务团队共同完成。"
+      "result": "形成从方向、公共定义到场景验证的协作机制。本人负责方向、组织与共识，具体模块由各业务团队共同完成。",
+      "imageCaption": "ColorOS · 原稿设计分析"
     },
     "en": {
       "title": "ColorOS: from insight to validation",
@@ -55,10 +59,12 @@ window.PORTFOLIO_CASES = [
         "Identified high-impact system entry points and aligned key changes with engineering and QA.",
         "Promoted design-stage user testing, comparing proposals with previous-generation and competitor designs."
       ],
-      "result": "Connected direction, shared definitions and scenario validation. My role was direction and cross-team alignment; individual modules were delivered with their respective teams."
+      "result": "Connected direction, shared definitions and scenario validation. My role was direction and cross-team alignment; individual modules were delivered with their respective teams.",
+      "imageCaption": "ColorOS · design analysis from the portfolio"
     },
     "date": "ColorOS 14—16",
-    "links": []
+    "links": [],
+    "image": "./assets/images/coloros-experience.png"
   },
   {
     "zh": {
@@ -70,7 +76,8 @@ window.PORTFOLIO_CASES = [
         "带领团队打造音兔视频、WeSing 国际版与全民 K 歌 TV 版，回应不同平台的场景。",
         "构建设计中台及组件化能力，支持多业务、多平台交付。"
       ],
-      "result": "形成从核心产品到多平台产品矩阵的设计实践。全民 K 歌与 WeSing 国际版为不同产品经历，不将二者混写。"
+      "result": "形成从核心产品到多平台产品矩阵的设计实践。全民 K 歌与 WeSing 国际版为不同产品经历，不将二者混写。",
+      "imageCaption": "全民 K 歌 · 项目纪念照片"
     },
     "en": {
       "title": "全民K歌: creation meets social connection",
@@ -81,10 +88,12 @@ window.PORTFOLIO_CASES = [
         "Led design work for Yintu video, international WeSing and 全民K歌 TV experiences.",
         "Built shared design and component capabilities to support multiple products and platforms."
       ],
-      "result": "Extended core-product design into a multi-platform product family. 全民K歌 and international WeSing are distinct product experiences."
+      "result": "Extended core-product design into a multi-platform product family. 全民K歌 and international WeSing are distinct product experiences.",
+      "imageCaption": "全民K歌 · project memorabilia"
     },
     "date": "2014—2020",
-    "links": []
+    "links": [],
+    "image": "./assets/images/tencent-products.png"
   },
   {
     "zh": {
@@ -96,7 +105,8 @@ window.PORTFOLIO_CASES = [
         "探索手机、耳机与 AI 模型协同下的洞察、问答共创及知识积累。",
         "以原型将抽象体验方向变成可讨论的交互。"
       ],
-      "result": "当前为职责与早期探索介绍，尚不作为已上线产品成果。"
+      "result": "当前为职责与早期探索介绍，尚不作为已上线产品成果。",
+      "imageCaption": "跨端探索 · 方法示意"
     },
     "en": {
       "title": "Ecosystem continuity around user tasks",
@@ -107,10 +117,12 @@ window.PORTFOLIO_CASES = [
         "Explore phone, earphone and AI-assisted workflows for insight, co-creation and knowledge capture.",
         "Use prototypes to make experience directions tangible for discussion."
       ],
-      "result": "This describes current responsibilities and early exploration, rather than a launched product outcome."
+      "result": "This describes current responsibilities and early exploration, rather than a launched product outcome.",
+      "imageCaption": "Cross-device exploration · conceptual diagram"
     },
     "date": "2026.04—至今 / Present",
-    "links": []
+    "links": [],
+    "image": "./assets/images/ecosystem-method.png"
   },
   {
     "zh": {
@@ -122,7 +134,8 @@ window.PORTFOLIO_CASES = [
         "另一条路径接入研发提供的 Android Compose 控件库，结合业务知识搭建高保真 Demo；不等同于 Figma 自动转代码。",
         "个人构建语音日记与记忆产品并部署至阿里云，采用本地语音模型记录、分层组织个人数据库，探索按需生成叙事与洞察。"
       ],
-      "result": "已形成设计稿与运行原型两条实践路径。个人产品与工作流属于实践探索，未作为商业上线成果；算法能力由研发提供，体验整合与原型验证由本人推进。"
+      "result": "已形成设计稿与运行原型两条实践路径。个人产品与工作流属于实践探索，未作为商业上线成果；算法能力由研发提供，体验整合与原型验证由本人推进。",
+      "imageCaption": "AI 工作流 · 方法示意"
     },
     "en": {
       "title": "AI workflows & runnable prototypes",
@@ -133,10 +146,12 @@ window.PORTFOLIO_CASES = [
         "In a separate path, use developer-provided Android Compose components to build runnable demos; this is not automatic Figma-to-code conversion.",
         "Built and deployed a personal voice diary and memory product on Alibaba Cloud, using local speech models and layered personal records while exploring narrative and insight generation."
       ],
-      "result": "Established separate design and runnable-prototype paths. Personal products and workflows are exploratory practice rather than commercial launches; engineering supplies algorithm capabilities, while I work on experience integration and prototype validation."
+      "result": "Established separate design and runnable-prototype paths. Personal products and workflows are exploratory practice rather than commercial launches; engineering supplies algorithm capabilities, while I work on experience integration and prototype validation.",
+      "imageCaption": "AI workflow · process diagram"
     },
     "date": "2025—2026",
-    "links": []
+    "links": [],
+    "image": "./assets/images/ai-workflow.png"
   },
   {
     "zh": {
@@ -148,7 +163,8 @@ window.PORTFOLIO_CASES = [
         "重新组建软件用户研究团队，建立围绕 NPS 的体验度量标准。",
         "推动研究与度量机制长期运行，让体验讨论有持续依据。"
       ],
-      "result": "完成组织建设与体验度量机制建立。跨互联网服务与平台任职期间，先后培养 3 位设计师成长为部门主管并完成晋升。"
+      "result": "完成组织建设与体验度量机制建立。跨互联网服务与平台任职期间，先后培养 3 位设计师成长为部门主管并完成晋升。",
+      "imageCaption": "互联网服务 · 产品界面"
     },
     "en": {
       "title": "Internet services: teams, research & measurement",
@@ -159,10 +175,12 @@ window.PORTFOLIO_CASES = [
         "Rebuilt the software user research team and established NPS-based experience measurement standards.",
         "Supported ongoing research and measurement to ground experience discussions in evidence."
       ],
-      "result": "Established research and experience measurement capabilities. Across internet services and platform roles, coached three designers who became department heads and earned promotions."
+      "result": "Established research and experience measurement capabilities. Across internet services and platform roles, coached three designers who became department heads and earned promotions.",
+      "imageCaption": "Internet services · product interfaces"
     },
     "date": "2020.04—2022.12",
-    "links": []
+    "links": [],
+    "image": "./assets/images/internet-services.png"
   },
   {
     "zh": {
@@ -174,7 +192,8 @@ window.PORTFOLIO_CASES = [
         "对外分享《终端互联网的极致体验设计》（MSUP）；《万物互联时代的软件设计创新》收录于 DIA 2023 活动目录。",
         "担任 OPPO 内部讲师，开展《体验设计与创新系列课程》；曾任腾讯学院高级讲师、设计通道委员。"
       ],
-      "result": "以公开资源、行业交流与团队培养体现专业贡献。DIA 分享可追溯至活动目录，未据此推定个人观看量、获奖或行业排名。"
+      "result": "以公开资源、行业交流与团队培养体现专业贡献。DIA 分享可追溯至活动目录，未据此推定个人观看量、获奖或行业排名。",
+      "imageCaption": "OPPO 开发者大会 · 原稿现场照片"
     },
     "en": {
       "title": "Industry contribution & professional development",
@@ -185,7 +204,8 @@ window.PORTFOLIO_CASES = [
         "Shared “Experience Design for Terminal Internet” through MSUP; “Software Design Innovation in the Connected World” is listed in the DIA 2023 event directory.",
         "Taught experience design and innovation courses at OPPO; previously served as a senior lecturer at Tencent Academy and a design career committee member."
       ],
-      "result": "Professional contribution is reflected in public resources, industry exchanges and mentoring. The DIA talk is traceable to an event listing; no individual audience or ranking claims are inferred."
+      "result": "Professional contribution is reflected in public resources, industry exchanges and mentoring. The DIA talk is traceable to an event listing; no individual audience or ranking claims are inferred.",
+      "imageCaption": "OPPO Developers Conference · event photograph"
     },
     "date": "公开分享 / Public contributions",
     "links": [
@@ -197,6 +217,7 @@ window.PORTFOLIO_CASES = [
         "DIA 2023 · 活动目录 / Event listing",
         "https://meia.me/course/170613?p=8432"
       ]
-    ]
+    ],
+    "image": "./assets/images/industry-odc.png"
   }
 ];
