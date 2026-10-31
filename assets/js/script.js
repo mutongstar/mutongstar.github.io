@@ -171,6 +171,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 const I18N = {
   en: {
+    aiTitle: "AI & prototyping practice",
+    aiText: "Since 2025: research, synthesis, writing and design discussion with AI. In 2026: agents, local models and runnable prototypes. I structure product knowledge for Figma-assisted design, and separately build high-fidelity demos with developer-provided Android Compose components. My personal voice diary and memory product is deployed on Alibaba Cloud; narrative and insight capabilities remain an exploration.",
+    professionalTitle: "Professional development & industry contribution",
+    professionalText: "OPPO experience design and innovation lecturer; previously a senior lecturer at Tencent Academy and a design career committee member. Across OPPO internet services and platform roles, coached three designers who became department heads and earned promotions. Public contributions include two ColorOS UI Kits and talks listed by MSUP and DIA 2023.",
+    readCase: "Read case →",
     metaTitle: "Michael Mu — Head of Design",
     name: "Michael Mu",
     role: "Head of Design",
@@ -183,8 +188,8 @@ const I18N = {
     navResume: "Resume",
     navPortfolio: "Portfolio",
     aboutTitle: "About me",
-    aboutP1: "19 years of user experience and product design, spanning Tencent, WeSing, and OPPO ColorOS. I combine 0-to-1 product building, system experience strategy, design systems, and team building — currently leading ColorOS interconnect experience at OPPO.",
-    aboutP2: "I served as the UX design representative for ColorOS 14–16, managed 40+ designers, rebuilt the user research team, and established NPS-based experience measurement. Since 2025 I have been exploring new interaction experiences with AI and runnable prototypes.",
+    aboutP1: "19 years of user experience and product design, spanning Tencent, 全民K歌, and OPPO ColorOS. I combine 0-to-1 product building, system experience strategy, design systems, and team building — currently leading ColorOS interconnect experience at OPPO.",
+    aboutP2: "I served as the UX design representative for ColorOS 14–16, managed 40+ designers, rebuilt the user research team, and established NPS-based experience measurement. Since 2025 I have used AI for research and design discussion; in 2026 I deepened my hands-on work with agents and runnable prototypes.",
     servicesTitle: "What i'm doing",
     svc1Title: "System experience strategy",
     svc1Text: "OS-level experience strategy and cross-business coordination, from insight to shipped system behavior.",
@@ -203,8 +208,8 @@ const I18N = {
     job2Text: "UX design representative for ColorOS 14, 15, and 16; coordinated cross-business experience collaboration and delivery. Led user insight work for ColorOS 14 and proposed its aesthetic direction, landed through the shared design system. Led the platform team for system motion, brand, and the shared design system; published the ColorOS 15 & 16 UI Kits on Figma Community.",
     job3Title: "Internet Services Experience Design Lead — OPPO",
     job3Text: "Led experience design for the internet services BU — app store, browser, game center, and game assistant — balancing user experience with commercial goals; managed 40+ designers. Rebuilt the software user research team and established NPS-based experience measurement.",
-    job4Title: "Design Lead, WeSing & Innovation Product Matrix — Tencent",
-    job4Text: "Joined WeSing (全民K歌) from 0 to 1, leading audio-video creation, social, and livestream interaction experiences. Built the design platform and component capabilities behind multiple products and platforms.",
+    job4Title: "Design Lead, 全民K歌 & Innovation Product Matrix — Tencent",
+    job4Text: "Joined 全民K歌 from 0 to 1, leading audio-video creation, social, and livestream interaction experiences. Built the design platform and component capabilities behind multiple products and platforms.",
     job5Title: "Senior Interaction Designer, Core PC Products — Tencent",
     job5Text: "Interaction design for QQ, QQ Pay, and PC Manager; owned QQ system-level design specifications and contributed to Tencent's experience design principles.",
     eduTitle: "Education",
@@ -239,6 +244,11 @@ const I18N = {
   orgPersonal: "Personal",
   },
   zh: {
+    aiTitle: "AI 与原型实践",
+    aiText: "2025 年起将 AI 用于研究、总结、写作与方案讨论；2026 年进一步深入 Agent、本地模型与可运行原型。结构化业务知识，对齐 Figma UI 库生成设计稿并人工微调；另一条路径接入研发 Android Compose 控件库搭建高保真 Demo。个人语音日记与记忆产品已部署阿里云，按需叙事与洞察仍在探索。",
+    professionalTitle: "专业建设与行业影响力",
+    professionalText: "担任 OPPO 内部讲师，开展《体验设计与创新系列课程》；曾任腾讯学院高级讲师、设计通道委员。在 OPPO 互联网服务与平台任职期间，先后培养 3 位设计师成长为部门主管并完成晋升。对外贡献包括两代 ColorOS UI Kit，以及 MSUP 与 DIA 2023 活动目录收录的分享。",
+    readCase: "阅读案例 →",
     metaTitle: "牟伟成 — 设计负责人",
     name: "牟伟成",
     role: "设计负责人",
@@ -252,7 +262,7 @@ const I18N = {
     navPortfolio: "作品集",
     aboutTitle: "关于我",
     aboutP1: "19 年用户体验与产品设计经验，经历覆盖腾讯、全民 K 歌与 OPPO ColorOS。兼具产品从 0 到 1、系统体验策略、设计体系与团队建设经验，现负责 OPPO ColorOS 互联体验。",
-    aboutP2: "担任 ColorOS 14—16 版本 UX 设计代表，曾管理 40+ 名设计师、重组用户研究团队并建立 NPS 体验度量标准。自 2025 年起，持续以 AI 与可运行原型探索新的交互体验。",
+    aboutP2: "担任 ColorOS 14—16 版本 UX 设计代表，曾管理 40+ 名设计师、重组用户研究团队并建立 NPS 体验度量标准。2025 年起使用 AI 研究与讨论方案，2026 年进一步深入 Agent 与可运行原型。",
     servicesTitle: "我在做的事",
     svc1Title: "系统体验策略",
     svc1Text: "OS 层级的体验策略与跨业务协同，从用户洞察到系统行为落地。",
@@ -332,6 +342,7 @@ function applyLang(lang) {
       ? I18N[lang][FILTER_LABELS[currentFilter]]
       : I18N[lang].selectPlaceholder;
   }
+  document.dispatchEvent(new CustomEvent("portfolio-language", {detail: lang}));
   if (langBtn) { langBtn.textContent = (lang === "en") ? "中文" : "EN"; }
   try { localStorage.setItem("vcard-lang", lang); } catch (e) { /* private mode */ }
 }
