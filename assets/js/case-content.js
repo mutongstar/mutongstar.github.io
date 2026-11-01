@@ -151,8 +151,7 @@ window.PORTFOLIO_CASES = [
     },
     "date": "2025—2026",
     "links": [],
-    "image": "./assets/images/ai-workflow.png",
-    "embed": "https://embed.figma.com/design/3JB9GsGzfzw11UE4VQ1Ml4/New?node-id=65-115&code-node-id=65-115&embed-host=share"
+    "image": "./assets/images/ai-workflow.png"
   },
   {
     "zh": {
