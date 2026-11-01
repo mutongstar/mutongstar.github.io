@@ -390,13 +390,6 @@ article[data-page="portfolio"]::after { content: "WORK"; }
   box-shadow: 0 32px 64px rgba(0, 0, 0, 0.6);
 }
 
-.case-top {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 14px 0 32px;
-}
-
 .case-hero {
   width: 100%;
   height: 320px;
@@ -405,7 +398,9 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 }
 
 .case-close {
-  flex: 0 0 auto;
+  position: absolute;
+  top: 14px;
+  right: 14px;
   z-index: 2;
   width: 36px;
   height: 36px;
@@ -444,11 +439,6 @@ article[data-page="portfolio"]::after { content: "WORK"; }
   font-weight: 600;
   letter-spacing: 0.06em;
   white-space: nowrap;
-  margin: 0;
-  flex: 1 1 auto;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: #f5f2ea;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -532,7 +522,6 @@ article[data-page="portfolio"]::after { content: "WORK"; }
   .case-meta { grid-template-columns: 1fr 1fr; }
   .case-hero { height: 200px; }
   .case-body { padding: 22px 20px 28px; }
-  .case-top { padding-left: 20px; }
 }
 
 /* ---------- sidebar details ---------- */
@@ -695,6 +684,7 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 .project-summary { margin: 12px 0 0; color: #bcbcc5; font-size: 13px; line-height: 1.8; }
 .project-item .case-read { display: inline-block; margin-top: 14px; color: #f5c451; font-size: 12px; }
 .project-item a:focus-visible, .case-body a:focus-visible, .case-close:focus-visible { outline: 2px solid #f5c451; outline-offset: 5px; }
+.case-body { padding-top: 64px; }
 .case-meta { grid-template-columns: 2fr 1fr; }
 .case-body li { margin-bottom: 12px; list-style: disc; }
 .case-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
@@ -745,3 +735,6 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 .avatar-box img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 34%; }
 @media (max-width: 1249px) { .avatar-box { width: 120px; } }
 @media (max-width: 579px) { .avatar-box { width: 80px; } }
+
+.case-embed { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #0f172a; }
+.case-visual .case-project-image[hidden] { display: none; }
