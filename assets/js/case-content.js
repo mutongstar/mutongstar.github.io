@@ -7,13 +7,14 @@
      restyle a card, no markup change.
    - Modal fields: role, process (关键判断与做法), result (交付与阶段结果),
      links — same record, same order as Figma "详情弹窗 / <case>" frames.
-   - slides: 1920x1080 images, in display order. Figma 01-page slides map
-     here under part 2 (export, drop into assets/images/cases/<case>/, list).
+   - slides: 1920x1080 images, in display order. Placeholder exports from
+     Figma 01 page (2026-11-05, captions are the Figma frame names); replace
+     with final slides under part 2.
    Copy rule: Figma wins on wording; this file is the site's copy of record. */
 window.PORTFOLIO_CASES = [
   {
     "zh": {
-      "title": "ColorOS 设计体系与公开交付",
+      "title": "设计系统与能力交付",
       "role": "公共设计团队负责人",
       "overview": "让设计意图成为跨业务可复用的交付语言。带领平台团队、负责公共规范、设计系统及系统动效设计，推动 ColorOS 15、16 两代 UI Kit 对外发布。",
       "process": [
@@ -25,7 +26,7 @@ window.PORTFOLIO_CASES = [
       "imageCaption": "ColorOS UI Kit · 原稿公开资源截图"
     },
     "en": {
-      "title": "ColorOS design systems & public delivery",
+      "title": "Design systems & capability delivery",
       "role": "Platform design team lead",
       "overview": "Made design intent reusable across products. Led the platform team responsible for the shared design system, system motion, and supported the public release of the ColorOS 15 and 16 UI Kits.",
       "process": [
@@ -51,12 +52,24 @@ window.PORTFOLIO_CASES = [
     "theme": "dark",
     "size": "feature",
     "slides": [
-      "./assets/images/coloros-ui-kits.png"
+      "./assets/images/coloros-ui-kits.png",
+      {
+        "src": "./assets/images/cases/design-systems/slide-01.png",
+        "caption": "11 · Design Systems / 工程化 · 三层结构图形化方案"
+      },
+      {
+        "src": "./assets/images/cases/design-systems/slide-02.png",
+        "caption": "12 · Design Systems / 质量细节"
+      },
+      {
+        "src": "./assets/images/cases/design-systems/slide-03.png",
+        "caption": "13 · Design Systems / 公开交付"
+      }
     ]
   },
   {
     "zh": {
-      "title": "ColorOS 系统体验：从洞察到验证",
+      "title": "系统体验定义：从洞察到验证",
       "role": "版本 UX 设计代表",
       "overview": "系统体验需要大范围跨业务共识的设计方向，更需要建立在具体细节中。自 ColorOS 14 深入参与用户洞察，主导提出美学方向，并通过公共控件推动落地。",
       "process": [
@@ -68,7 +81,7 @@ window.PORTFOLIO_CASES = [
       "imageCaption": "ColorOS · 原稿设计分析"
     },
     "en": {
-      "title": "ColorOS: from insight to validation",
+      "title": "System experience definition: from insight to validation",
       "role": "Release UX design representative",
       "overview": "System experience needs a shared direction and careful execution. For ColorOS 14, I participated deeply in user insight work and led the proposal of an aesthetic direction, carried through the shared design system and controls.",
       "process": [
@@ -85,7 +98,19 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/coloros-experience.png"
+      "./assets/images/coloros-experience.png",
+      {
+        "src": "./assets/images/cases/system-experience/slide-01.png",
+        "caption": "06 · ColorOS / 案例概览"
+      },
+      {
+        "src": "./assets/images/cases/system-experience/slide-02.png",
+        "caption": "07 · ColorOS / 用户洞察"
+      },
+      {
+        "src": "./assets/images/cases/system-experience/slide-03.png",
+        "caption": "08 · ColorOS / 主张与落地"
+      }
     ]
   },
   {
@@ -119,7 +144,19 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/ai-workflow.png"
+      "./assets/images/ai-workflow.png",
+      {
+        "src": "./assets/images/cases/ai-workflow/slide-01.png",
+        "caption": "新版 03 AI工作流"
+      },
+      {
+        "src": "./assets/images/cases/ai-workflow/slide-02.png",
+        "caption": "新版 04 AI个人产品"
+      },
+      {
+        "src": "./assets/images/cases/ai-workflow/slide-03.png",
+        "caption": "新版 05 AI原型验证"
+      }
     ]
   },
   {
@@ -153,7 +190,11 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/ecosystem-method.png"
+      "./assets/images/ecosystem-method.png",
+      {
+        "src": "./assets/images/cases/ecosystem/slide-01.png",
+        "caption": "16 · Ecosystem / 跨端探索"
+      }
     ]
   },
   {
@@ -187,7 +228,11 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/internet-services.png"
+      "./assets/images/internet-services.png",
+      {
+        "src": "./assets/images/cases/internet-services/slide-01.png",
+        "caption": "14 · Business / 互联网服务"
+      }
     ]
   },
   {
@@ -221,7 +266,11 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/tencent-products.png"
+      "./assets/images/tencent-products.png",
+      {
+        "src": "./assets/images/cases/wesing/slide-01.png",
+        "caption": "15 · Tencent / 产品创新"
+      }
     ]
   },
   {
@@ -264,7 +313,15 @@ window.PORTFOLIO_CASES = [
     "theme": "light",
     "size": "standard",
     "slides": [
-      "./assets/images/industry-odc.png"
+      "./assets/images/industry-odc.png",
+      {
+        "src": "./assets/images/cases/industry/slide-01.png",
+        "caption": "17 · Leadership / 专业建设"
+      },
+      {
+        "src": "./assets/images/cases/industry/slide-02.png",
+        "caption": "18 · Contact / 继续交流"
+      }
     ]
   }
 ];
