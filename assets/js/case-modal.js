@@ -49,8 +49,7 @@
       const c = item[language];
       const head =
         '<div class="ed-indexrow">' +
-        '<p class="ed-card-index"><span class="ed-card-bar"></span>0' + (i + 1) + '</p>' +
-        '<p class="ed-card-time">' + esc(item.date) + '</p></div>';
+        '<p class="ed-card-time"><span class="ed-card-bar"></span>' + esc(item.date) + '</p></div>';
       const arrow = '<span class="ed-card-arrow">' + arrowSvg + '</span>';
       const mediaBand = item.size === 'feature'
         ? '<div class="ed-blurband ed-blurband--caption"><span>' + esc(c.imageCaption) + '</span></div>'
@@ -102,7 +101,7 @@
     opener = anchor; currentIndex = index; slideIndex = 0;
     const item = cases[index], c = item[language], zh = language === 'zh';
     slides = normalizeSlides(item, c);
-    $('.case-tag').textContent = '0' + (index + 1) + ' / ' + (zh ? '精选实践' : 'SELECTED PRACTICE');
+    $('.case-tag').textContent = zh ? '精选实践' : 'SELECTED PRACTICE';
     $('.case-title').textContent = c.title;
     $('.case-carousel-dots').replaceChildren(...slides.map((_, i) => {
       const b = document.createElement('button');

@@ -752,9 +752,11 @@ article[data-page="portfolio"]::after { content: "WORK"; }
    backdrop-blur 6px, gradient rgba(10,10,15,0) -> 0.42 -> 0.9, gold title.
    Small cards: title + arrow sit ON the image inside the blur band (title
    30px max — the reference title is 15px on a 260px image, scaled to the
-   524px image); time stays in the index row. Feature card: editorial text
-   col keeps its 48px title; the image carries a slim blur caption band
-   (the photo's caption in gold 15px) so the big card stays distinct.
+   524px image); time stays in the top row. Images are full-bleed like the
+   feature card's (no inset, no radius). No 01-07 numbers anywhere (cards
+   or modal tag). Feature card: editorial text col keeps its 48px title;
+   the image carries a slim blur caption band (the photo's caption in gold
+   15px) so the big card stays distinct.
    Arrow is brand gold #f5c451 (user override; Figma still shows blue).
    Tokens: ink #10182b, accent #2365f5, darkMuted #adb9cf, paper #f5f6f8,
    line #dde2eb, muted #657185. Latin/numbers Manrope, Chinese Noto Sans SC.
@@ -767,17 +769,18 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 .size-feature { grid-column: 1 / -1; }
 .size-feature > a { flex-direction: row; align-items: stretch; }
 .size-standard > a { flex-direction: column; }
-.ed-indexrow { display: flex; align-items: center; justify-content: space-between; }
-.ed-card-index { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; margin: 0; }
+.ed-indexrow { display: flex; align-items: center; }
 .ed-card-bar { width: 6px; height: 18px; background: #2365f5; border-radius: 3px; display: inline-block; }
-.ed-card-time { font-size: 13px; margin: 0; }
+.ed-card-time { display: flex; align-items: center; gap: 10px; font-size: 13px; margin: 0; }
 .size-feature .ed-card-text { display: flex; flex-direction: column; gap: 30px; padding: 40px; flex: 0 0 43%; min-width: 0; }
 .size-feature .ed-card-media { flex: 1 1 auto; }
 .ed-entryrow { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
 .ed-card-line { width: 64px; height: 3px; background: #2365f5; flex: 0 0 auto; }
-.size-standard .ed-card-pad { display: flex; flex-direction: column; gap: 24px; padding: 32px; min-width: 0; flex: 1 1 auto; }
+.size-standard .ed-card-pad { display: flex; flex-direction: column; gap: 24px; min-width: 0; flex: 1 1 auto; }
+.size-standard .ed-indexrow { padding: 32px 32px 0; }
+.size-standard .ed-card-desc { padding: 0 32px 32px; }
 .ed-card-media { position: relative; overflow: hidden; background: #0c1220; flex: 0 0 auto; margin: 0; }
-.size-standard .ed-card-media { width: 100%; aspect-ratio: 524 / 280; border-radius: 8px; }
+.size-standard .ed-card-media { width: 100%; aspect-ratio: 524 / 280; }
 .ed-card-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
 .editorial-card > a:hover .ed-card-media img { transform: scale(1.04); }
 /* blur band on the image (ref 92:394): title + arrow, or a slim caption */
@@ -790,16 +793,18 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 .size-standard .ed-card-arrow { width: 40px; height: 40px; }
 .theme-dark > a { background: #10182b; }
 .theme-dark .ed-card-title { color: #ffffff; }
-.theme-dark .ed-card-desc, .theme-dark .ed-card-time, .theme-dark .ed-card-index { color: #adb9cf; }
+.theme-dark .ed-card-desc, .theme-dark .ed-card-time { color: #adb9cf; }
 .theme-light > a { background: #f5f6f8; border: 1px solid #dde2eb; }
 .theme-light .ed-card-title { color: #10182b; }
 .theme-light .ed-card-desc, .theme-light .ed-card-time { color: #657185; }
-.theme-light .ed-card-index { color: #10182b; }
 @media (max-width: 720px) {
   .project-list { grid-template-columns: 1fr; }
   .size-feature > a { flex-direction: column; }
   .size-feature .ed-card-media { width: 100%; aspect-ratio: 680 / 420; }
-  .size-feature .ed-card-text, .size-standard .ed-card-pad { padding: 24px; gap: 20px; }
+  .size-feature .ed-card-text { padding: 24px; gap: 20px; }
+  .size-standard .ed-card-pad { gap: 20px; }
+  .size-standard .ed-indexrow { padding: 24px 24px 0; }
+  .size-standard .ed-card-desc { padding: 0 24px 24px; }
 }
 
 /* Case carousel: fixed 16:9 frame (Figma 1920×1080 slides). Images contain,
