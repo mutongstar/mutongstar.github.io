@@ -1,9 +1,21 @@
+/* Case copy, single source of truth for the portfolio tab and the case modal.
+   Figma <-> site mapping (2026-11-05, confirmed by 牧老师):
+   - Figma website page "作品集 · 七张编辑式项目卡片" card N = PORTFOLIO_CASES[N-1],
+     in this array order. Reordering the array reorders the cards.
+   - Card fields: zh/en title + overview, date, image; theme (dark|light) and
+     size (feature|standard) are per-card settings — change the field to
+     restyle a card, no markup change.
+   - Modal fields: role, process (关键判断与做法), result (交付与阶段结果),
+     links — same record, same order as Figma "详情弹窗 / <case>" frames.
+   - slides: 1920x1080 images, in display order. Figma 01-page slides map
+     here under part 2 (export, drop into assets/images/cases/<case>/, list).
+   Copy rule: Figma wins on wording; this file is the site's copy of record. */
 window.PORTFOLIO_CASES = [
   {
     "zh": {
       "title": "ColorOS 设计体系与公开交付",
       "role": "公共设计团队负责人",
-      "overview": "让设计意图成为跨业务可复用的交付语言。带领平台团队负责公共规范设计系统、系统动效与品牌设计，推动 ColorOS 15、16 两代 UI Kit 对外发布。",
+      "overview": "让设计意图成为跨业务可复用的交付语言。带领平台团队、负责公共规范、设计系统及系统动效设计，推动 ColorOS 15、16 两代 UI Kit 对外发布。",
       "process": [
         "将色彩、字体、间距、圆角等基础定义，与场景组件和交付规则分层组织。",
         "围绕圆角连续性、按钮与列表高度、菜单按压及拖拽反馈，推动设计定义与系统落地。",
@@ -15,7 +27,7 @@ window.PORTFOLIO_CASES = [
     "en": {
       "title": "ColorOS design systems & public delivery",
       "role": "Platform design team lead",
-      "overview": "Made design intent reusable across products. Led the platform team responsible for the shared design system, system motion and brand, and supported the public release of the ColorOS 15 and 16 UI Kits.",
+      "overview": "Made design intent reusable across products. Led the platform team responsible for the shared design system, system motion, and supported the public release of the ColorOS 15 and 16 UI Kits.",
       "process": [
         "Organized foundations, scenario components and delivery rules as distinct layers.",
         "Defined details including corner continuity, button and list heights, press feedback and drag feedback.",
@@ -35,13 +47,18 @@ window.PORTFOLIO_CASES = [
         "https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit"
       ]
     ],
-    "image": "./assets/images/coloros-ui-kits.png"
+    "image": "./assets/images/coloros-ui-kits.png",
+    "theme": "dark",
+    "size": "feature",
+    "slides": [
+      "./assets/images/coloros-ui-kits.png"
+    ]
   },
   {
     "zh": {
       "title": "ColorOS 系统体验：从洞察到验证",
       "role": "版本 UX 设计代表",
-      "overview": "系统体验需要跨业务共享的方向，也需要在具体细节中成立。在 ColorOS 14 深入参与用户洞察，主导提出美学方向，通过公共设计系统与控件推动落地。",
+      "overview": "系统体验需要大范围跨业务共识的设计方向，更需要建立在具体细节中。自 ColorOS 14 深入参与用户洞察，主导提出美学方向，并通过公共控件推动落地。",
       "process": [
         "担任 ColorOS 14、15、16 版本 UX 设计代表，统筹跨业务协作与设计交付。",
         "识别系统一级门户场景，与研发、测试形成重点变更共识。",
@@ -64,65 +81,12 @@ window.PORTFOLIO_CASES = [
     },
     "date": "ColorOS 14—16",
     "links": [],
-    "image": "./assets/images/coloros-experience.png"
-  },
-  {
-    "zh": {
-      "title": "全民 K 歌：从创作到社交",
-      "role": "全民 K 歌及创新产品矩阵设计负责人",
-      "overview": "从 0 到 1 参与打造全民 K 歌，主导音视频创作、关系链社交与直播互动等核心体验，支持产品向内容与社交平台演进。",
-      "process": [
-        "围绕创作、分享与互动组织核心体验，连接内容表达与社交关系。",
-        "带领团队打造音兔视频、WeSing 国际版与全民 K 歌 TV 版，回应不同平台的场景。",
-        "构建设计中台及组件化能力，支持多业务、多平台交付。"
-      ],
-      "result": "形成从核心产品到多平台产品矩阵的设计实践。全民 K 歌与 WeSing 国际版为不同产品经历，不将二者混写。",
-      "imageCaption": "全民 K 歌 · 项目纪念照片"
-    },
-    "en": {
-      "title": "全民K歌: creation meets social connection",
-      "role": "Design lead, 全民K歌 & innovation products",
-      "overview": "Participated in building 全民K歌 from zero to one, leading core experiences in audio/video creation, relationship-based social interaction and livestreaming as the product evolved into a content and social platform.",
-      "process": [
-        "Connected content creation, sharing and social interaction across core experiences.",
-        "Led design work for Yintu video, international WeSing and 全民K歌 TV experiences.",
-        "Built shared design and component capabilities to support multiple products and platforms."
-      ],
-      "result": "Extended core-product design into a multi-platform product family. 全民K歌 and international WeSing are distinct product experiences.",
-      "imageCaption": "全民K歌 · project memorabilia"
-    },
-    "date": "2014—2020",
-    "links": [],
-    "image": "./assets/images/tencent-products.png"
-  },
-  {
-    "zh": {
-      "title": "生态互联：围绕任务延续体验",
-      "role": "生态互联体验负责人",
-      "overview": "负责 OPPO 生态互联方向的用户体验工作，参与下一年度战略规划与跨端协同体验探索。关注任务如何在设备之间自然延续。",
-      "process": [
-        "从任务而非单一设备出发，研究跨设备协同的体验机会。",
-        "探索手机、耳机与 AI 模型协同下的洞察、问答共创及知识积累。",
-        "以原型将抽象体验方向变成可讨论的交互。"
-      ],
-      "result": "当前为职责与早期探索介绍，尚不作为已上线产品成果。",
-      "imageCaption": "跨端探索 · 方法示意"
-    },
-    "en": {
-      "title": "Ecosystem continuity around user tasks",
-      "role": "Ecosystem experience lead",
-      "overview": "Lead user experience for OPPO ecosystem interconnection, contributing to strategy planning and explorations of cross-device collaboration, with a focus on continuity of user tasks.",
-      "process": [
-        "Explore collaboration opportunities through user tasks rather than individual devices.",
-        "Explore phone, earphone and AI-assisted workflows for insight, co-creation and knowledge capture.",
-        "Use prototypes to make experience directions tangible for discussion."
-      ],
-      "result": "This describes current responsibilities and early exploration, rather than a launched product outcome.",
-      "imageCaption": "Cross-device exploration · conceptual diagram"
-    },
-    "date": "2026.04—至今 / Present",
-    "links": [],
-    "image": "./assets/images/ecosystem-method.png"
+    "image": "./assets/images/coloros-experience.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/coloros-experience.png"
+    ]
   },
   {
     "zh": {
@@ -151,11 +115,50 @@ window.PORTFOLIO_CASES = [
     },
     "date": "2025—2026",
     "links": [],
-    "image": "./assets/images/ai-workflow.png"
+    "image": "./assets/images/ai-workflow.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/ai-workflow.png"
+    ]
   },
   {
     "zh": {
-      "title": "互联网服务：团队、研究与体验度量",
+      "title": "生态互联：围绕任务延续体验",
+      "role": "生态互联体验负责人",
+      "overview": "负责 OPPO 生态互联方向的用户体验工作，参与下一年度战略规划与跨端协同体验探索。关注任务如何在设备之间自然延续。",
+      "process": [
+        "从任务而非单一设备出发，研究跨设备协同的体验机会。",
+        "探索手机、耳机与 AI 模型协同下的洞察、问答共创及知识积累。",
+        "以原型将抽象体验方向变成可讨论的交互。"
+      ],
+      "result": "当前为职责与早期探索介绍，尚不作为已上线产品成果。",
+      "imageCaption": "跨端探索 · 方法示意"
+    },
+    "en": {
+      "title": "Ecosystem continuity around user tasks",
+      "role": "Ecosystem experience lead",
+      "overview": "Lead user experience for OPPO ecosystem interconnection, contributing to strategy planning and explorations of cross-device collaboration, with a focus on continuity of user tasks.",
+      "process": [
+        "Explore collaboration opportunities through user tasks rather than individual devices.",
+        "Explore phone, earphone and AI-assisted workflows for insight, co-creation and knowledge capture.",
+        "Use prototypes to make experience directions tangible for discussion."
+      ],
+      "result": "This describes current responsibilities and early exploration, rather than a launched product outcome.",
+      "imageCaption": "Cross-device exploration · conceptual diagram"
+    },
+    "date": "2026.04—至今 / Present",
+    "links": [],
+    "image": "./assets/images/ecosystem-method.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/ecosystem-method.png"
+    ]
+  },
+  {
+    "zh": {
+      "title": "互联网服务：团队构建与体验度量",
       "role": "互联网服务业务体验设计负责人",
       "overview": "负责软件商店、浏览器、游戏中心与游戏助手等互联网服务 BU 产品的体验设计，让用户体验与商业目标进入同一套讨论。",
       "process": [
@@ -167,7 +170,7 @@ window.PORTFOLIO_CASES = [
       "imageCaption": "互联网服务 · 产品界面"
     },
     "en": {
-      "title": "Internet services: teams, research & measurement",
+      "title": "Internet services: team building & experience measurement",
       "role": "Internet services experience design lead",
       "overview": "Led experience design across the internet services BU, including the app store, browser, game center and game assistant, bringing user experience and commercial goals into the same discussion.",
       "process": [
@@ -180,7 +183,46 @@ window.PORTFOLIO_CASES = [
     },
     "date": "2020.04—2022.12",
     "links": [],
-    "image": "./assets/images/internet-services.png"
+    "image": "./assets/images/internet-services.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/internet-services.png"
+    ]
+  },
+  {
+    "zh": {
+      "title": "全民 K 歌：从创作到社交",
+      "role": "全民 K 歌及创新产品矩阵设计负责人",
+      "overview": "从 0 到 1 参与打造全民 K 歌，主导音视频创作、关系链社交与直播互动等核心体验，支持产品向内容与社交平台演进。",
+      "process": [
+        "围绕创作、分享与互动组织核心体验，连接内容表达与社交关系。",
+        "带领团队打造音兔视频、WeSing 国际版与全民 K 歌 TV 版，回应不同平台的场景。",
+        "构建设计中台及组件化能力，支持多业务、多平台交付。"
+      ],
+      "result": "形成从核心产品到多平台产品矩阵的设计实践。全民 K 歌与 WeSing 国际版为不同产品经历，不将二者混写。",
+      "imageCaption": "全民 K 歌 · 项目纪念照片"
+    },
+    "en": {
+      "title": "全民K歌: creation meets social connection",
+      "role": "Design lead, 全民K歌 & innovation products",
+      "overview": "Participated in building 全民K歌 from zero to one, leading core experiences in audio/video creation, relationship-based social interaction and livestreaming as the product evolved into a content and social platform.",
+      "process": [
+        "Connected content creation, sharing and social interaction across core experiences.",
+        "Led design work for Yintu video, international WeSing and 全民K歌 TV experiences.",
+        "Built shared design and component capabilities to support multiple products and platforms."
+      ],
+      "result": "Extended core-product design into a multi-platform product family. 全民K歌 and international WeSing are distinct product experiences.",
+      "imageCaption": "全民K歌 · project memorabilia"
+    },
+    "date": "2014—2020",
+    "links": [],
+    "image": "./assets/images/tencent-products.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/tencent-products.png"
+    ]
   },
   {
     "zh": {
@@ -218,6 +260,11 @@ window.PORTFOLIO_CASES = [
         "https://meia.me/course/170613?p=8432"
       ]
     ],
-    "image": "./assets/images/industry-odc.png"
+    "image": "./assets/images/industry-odc.png",
+    "theme": "light",
+    "size": "standard",
+    "slides": [
+      "./assets/images/industry-odc.png"
+    ]
   }
 ];

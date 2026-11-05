@@ -357,7 +357,7 @@ article[data-page="portfolio"]::after { content: "WORK"; }
   opacity: 1;
 }
 
-/* ---------- case-study modal (mock data) ---------- */
+/* ---------- case-study modal (case data) ---------- */
 .case-modal {
   position: fixed;
   inset: 0;
@@ -744,3 +744,64 @@ article[data-page="portfolio"]::after { content: "WORK"; }
 .case-header .case-tag { flex: 0 1 auto; min-width: 0; width: fit-content; margin: 0; white-space: normal; overflow-wrap: anywhere; }
 .case-header .case-close { position: static; flex: 0 0 36px; margin: 0; }
 @media (max-width: 580px) { .case-body { padding-top: 22px; } }
+
+/* ---------- portfolio editorial cards + case carousel (2026-11-05, part 1) ----------
+   Figma: website page "作品集 · 七张编辑式项目卡片" + 详情弹窗（顶部 1920×1080 轮播）.
+   Tokens: ink #10182b, accent #2365f5, darkMuted #adb9cf, paper #f5f6f8,
+   line #dde2eb, muted #657185. Latin/numbers Manrope, Chinese Noto Sans SC.
+   Card theme/size are data fields in case-content.js (theme-dark/light,
+   size-feature/standard): restyle by changing the field, not this CSS. */
+.project-list, .case-panel { font-family: 'Manrope', 'Noto Sans SC', 'Poppins', sans-serif; }
+.project-list { grid-template-columns: 1fr 1fr; gap: 24px; }
+.project-list .project-item { display: block; }
+.project-list .project-item.active { animation: none; }
+.editorial-card > a, .editorial-card > a:visited { display: flex; height: 100%; border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; }
+.size-feature { grid-column: 1 / -1; }
+.size-feature > a { flex-direction: row; align-items: stretch; }
+.size-standard > a { flex-direction: column; }
+.ed-card-media { overflow: hidden; background: #0c1220; flex: 0 0 auto; margin: 0; }
+.size-feature .ed-card-media { width: 55%; aspect-ratio: 680 / 420; }
+.size-standard .ed-card-media { width: 100%; aspect-ratio: 524 / 280; }
+.ed-card-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
+.editorial-card > a:hover .ed-card-media img { transform: scale(1.04); }
+.ed-card-text { display: flex; flex-direction: column; padding: 40px; min-width: 0; flex: 1 1 auto; }
+.size-standard .ed-card-text { padding: 32px; }
+.ed-card-index { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; margin: 0 0 10px; }
+.ed-card-bar { width: 6px; height: 18px; background: #2365f5; border-radius: 3px; display: inline-block; }
+.ed-card-time { font-size: 13px; margin: 0 0 16px; }
+.size-feature .ed-card-title { font-size: clamp(26px, 3.4vw, 40px); line-height: 1.3; margin: 0 0 14px; }
+.size-standard .ed-card-title { font-size: clamp(22px, 2.8vw, 30px); line-height: 1.35; margin: 0 0 12px; }
+.ed-card-desc { font-size: 16px; line-height: 1.75; margin: 0 0 24px; }
+.ed-card-arrow { margin-top: auto; width: 48px; height: 48px; border-radius: 50%; background: #2365f5; color: #fff; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+.size-standard .ed-card-arrow { width: 40px; height: 40px; }
+.theme-dark > a { background: #10182b; }
+.theme-dark .ed-card-title { color: #ffffff; }
+.theme-dark .ed-card-desc, .theme-dark .ed-card-time, .theme-dark .ed-card-index { color: #adb9cf; }
+.theme-light > a { background: #f5f6f8; border: 1px solid #dde2eb; }
+.theme-light .ed-card-title { color: #10182b; }
+.theme-light .ed-card-desc, .theme-light .ed-card-time { color: #657185; }
+.theme-light .ed-card-index { color: #10182b; }
+@media (max-width: 720px) {
+  .project-list { grid-template-columns: 1fr; }
+  .size-feature > a { flex-direction: column; }
+  .size-feature .ed-card-media { width: 100%; }
+  .ed-card-text, .size-standard .ed-card-text { padding: 24px; }
+}
+
+/* Case carousel: fixed 16:9 frame (Figma 1920×1080 slides). Images contain,
+   never cropped or distorted; real 16:9 slides fill the frame exactly. */
+.case-carousel { position: relative; background: #0c1220; }
+.case-carousel-viewport { aspect-ratio: 16 / 9; overflow: hidden; cursor: zoom-in; }
+.case-carousel-image { width: 100%; height: 100%; object-fit: contain; display: block; background: #0c1220; }
+.case-carousel-prev, .case-carousel-next { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); background: rgba(0, 0, 0, .45); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; z-index: 2; padding: 0; }
+.case-carousel-prev { left: 14px; }
+.case-carousel-next { right: 14px; }
+.case-carousel-bar { position: absolute; left: 0; right: 0; bottom: 12px; display: flex; align-items: center; justify-content: center; gap: 12px; z-index: 2; }
+.case-carousel-counter { font-size: 12px; color: rgba(255, 255, 255, .85); background: rgba(0, 0, 0, .45); padding: 3px 10px; border-radius: 9999px; }
+.case-carousel-dots { display: flex; gap: 6px; }
+.case-carousel-dot { width: 8px; height: 8px; border-radius: 50%; border: none; padding: 0; background: rgba(255, 255, 255, .45); cursor: pointer; }
+.case-carousel-dot.active { background: #f5c451; }
+.case-carousel.single .case-carousel-prev, .case-carousel.single .case-carousel-next,
+.case-carousel.single .case-carousel-bar { display: none; }
+.case-carousel-caption { margin: 10px 32px 0; color: #bcbcc5; font-size: 12px; line-height: 1.6; }
+.case-body .case-tag { display: inline-block; margin: 0 0 14px; }

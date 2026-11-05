@@ -63,7 +63,8 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+/* filter UI removed 2026-11-05 (editorial cards, no categories): guard the old select. */
+if (select) { select.addEventListener("click", function () { elementToggleFunc(this); }); }
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
