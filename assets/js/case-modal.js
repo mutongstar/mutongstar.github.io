@@ -90,6 +90,7 @@
     const item = cases[index], c = item[language], zh = language === 'zh';
     slides = normalizeSlides(item, c);
     $('.case-tag').textContent = '0' + (index + 1) + ' / ' + (zh ? '精选实践' : 'SELECTED PRACTICE');
+    $('.case-title').textContent = c.title;
     $('.case-carousel-dots').replaceChildren(...slides.map((_, i) => {
       const b = document.createElement('button');
       b.type = 'button'; b.className = 'case-carousel-dot';
@@ -97,7 +98,6 @@
       return b;
     }));
     renderSlide();
-    $('.case-title').textContent = c.title;
     $('.case-meta').replaceChildren();
     [[zh ? '本人职责' : 'MY ROLE', c.role], [zh ? '阶段' : 'PERIOD', item.date]].forEach(([label, value]) => {
       const div = document.createElement('div'), dt = document.createElement('dt'), dd = document.createElement('dd');
