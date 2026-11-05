@@ -378,7 +378,7 @@ themeBtns.forEach(function (b) {
    To change the password, replace it with the SHA-256
    of the new password. This is casual sharing control,
    not real security: the hash lives in public source. */
-const GATE_ENABLED = true; // 密码门开关：true = 启用，改为 false 隐藏
+const GATE_ENABLED = false; // 密码门开关：true = 启用，改为 false 隐藏（2026-11-05 牧老师让先隐掉；改回 true 即恢复）
 const GATE_HASH = "ddea443bc98e2e9abb5ab3df597a0248fe875a25f88f062b54428fa2f67ab3fa";
 const gateOverlay = document.getElementById("gateOverlay");
 const gateForm = document.getElementById("gateForm");
