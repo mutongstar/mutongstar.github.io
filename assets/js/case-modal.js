@@ -38,10 +38,11 @@
       { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
-  /* Figma 107:1140, faithful structure (verified 2026-11-05 20:33):
+  /* Figma 107:1140 + blur treatment from old tab card 92:394:
      feature: text col (index/time row, title, desc, entry row [64x3 line +
-     arrow]) + image right. standard: padded column (index/time row,
-     title+arrow row, image inset r8, desc). */
+     arrow]) + image right with a slim blur caption band. standard: padded
+     column (index/time row, image with blur band carrying title + arrow,
+     desc). Time stays in the index row. */
   function renderCards() {
     if (!list) return;
     list.innerHTML = cases.map((item, i) => {
@@ -51,16 +52,17 @@
         '<p class="ed-card-index"><span class="ed-card-bar"></span>0' + (i + 1) + '</p>' +
         '<p class="ed-card-time">' + esc(item.date) + '</p></div>';
       const arrow = '<span class="ed-card-arrow">' + arrowSvg + '</span>';
+      const mediaBand = item.size === 'feature'
+        ? '<div class="ed-blurband ed-blurband--caption"><span>' + esc(c.imageCaption) + '</span></div>'
+        : '<div class="ed-blurband"><h3 class="ed-card-title">' + esc(c.title) + '</h3>' + arrow + '</div>';
       const media = '<figure class="ed-card-media"><img src="' + esc(item.image) + '" alt="' +
-        esc(c.imageCaption) + '" loading="lazy" decoding="async"></figure>';
+        esc(c.imageCaption) + '" loading="lazy" decoding="async">' + mediaBand + '</figure>';
       const body = item.size === 'feature'
         ? '<div class="ed-card-text">' + head +
           '<h3 class="ed-card-title">' + esc(c.title) + '</h3>' +
           '<p class="ed-card-desc">' + esc(c.overview) + '</p>' +
           '<div class="ed-entryrow"><span class="ed-card-line"></span>' + arrow + '</div></div>' + media
-        : '<div class="ed-card-pad">' + head +
-          '<div class="ed-titlerow"><h3 class="ed-card-title">' + esc(c.title) + '</h3>' + arrow + '</div>' +
-          media +
+        : '<div class="ed-card-pad">' + head + media +
           '<p class="ed-card-desc">' + esc(c.overview) + '</p></div>';
       return '<li class="project-item active editorial-card theme-' + item.theme +
         ' size-' + item.size + '" data-case="' + i + '">' +
