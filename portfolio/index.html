@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michael Mu · 牟伟成 — Portfolio</title>
+<meta name="description" content="19 years of UX design — Tencent, WeSing, OPPO ColorOS. System experience, design systems, and AI prototypes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/data.js"></script>
+<script src="./js/app.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="./index.html">牟伟成 <b>MU</b></a>
+    <nav class="nav-links">
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#ai" data-i18n="navAI">AI &amp; Prototypes</a>
+      <a href="#influence" data-i18n="navInfluence">Influence</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" type="button">中文</button>
+    <a class="btn btn-primary btn-sm nav-cta" href="https://mutongstar.github.io/resume.html" data-i18n="navResume">Résumé</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero: statement + the work, shrunk into a phone (OPPO ColorOS 17 pattern) -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" data-i18n="heroEyebrow">Michael Mu · Design Lead, OPPO ColorOS</p>
+        <h1 data-i18n="heroH1">From defining app experiences, to <span class="gold">OS experiences</span>, to cross-device AI.</h1>
+        <p class="hero-sub" data-i18n="heroSub">19 years of user experience and product design, spanning Tencent, WeSing, and OPPO ColorOS — turning design insight from complex businesses into experience strategy and design systems.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#work" data-i18n="heroCtaWork">See the work</a>
+          <a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="heroCtaResume">View résumé</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>19</b><span data-i18n="heroMeta1t">years of experience</span></div>
+          <div><b>40+</b><span data-i18n="heroMeta2t">designers led</span></div>
+          <div><b>2</b><span data-i18n="heroMeta3t">generations of UI Kit</span></div>
+        </div>
+      </div>
+      <figure class="hero-phone">
+        <div class="phone">
+          <div class="phone-screen"><img src="./images/cases/design-systems/slide-01.png" alt="ColorOS Design System — engineering layers"></div>
+          <div class="phone-notch"></div>
+        </div>
+        <figcaption data-i18n="heroPhoneCaption">ColorOS Design System — engineering layers</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Work: entry covers vary, detail pages stay consistent -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
+        <h2 class="sec-title" data-i18n="workTitle">Cases</h2>
+        <p class="sec-intro" data-i18n="workIntro">Seven cases, from OS experience to AI prototypes — each one opens into a full case page.</p>
+      </div>
+      <div class="work-list" id="workList"></div>
+    </div>
+  </section>
+
+  <!-- About: kept on the main page (the résumé carries the detail) -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+        <h2 class="sec-title" data-i18n="aboutTitle">Design lead, systems thinker.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo"><img src="./images/michael-mu-avatar.png" alt="Michael Mu · 牟伟成"></div>
+        <div class="about-text">
+          <p class="lede" data-i18n="aboutLede">19 years of UX design across Tencent's core products, a breakout mobile social app, and OPPO's operating system.</p>
+          <p data-i18n="aboutP2">Currently leading ColorOS interconnect experience; previously led the platform design team and internet services experience design and user research.</p>
+          <ul class="doing" id="doingList"></ul>
+          <p style="margin-top:28px"><a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="aboutResumeLink">See full résumé</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI & prototyping: image in the middle, title one side, details the other -->
+  <section class="ai" id="ai">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="aiEyebrow">AI &amp; Prototyping</p>
+        <h2 class="sec-title" data-i18n="aiTitle">AI, made runnable.</h2>
+        <p class="sec-intro" data-i18n="aiIntro">Since 2025: understanding AI architecture first, then prototyping the experience — intent, memory, knowledge, and components.</p>
+      </div>
+      <div id="aiRows"></div>
+      <p class="ai-note" data-i18n="aiNote">Framework draft — copy to be confirmed before publishing.</p>
+    </div>
+  </section>
+
+  <!-- Influence: clean bordered list -->
+  <section id="influence">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="influenceEyebrow">Influence</p>
+        <h2 class="sec-title" data-i18n="influenceTitle">Shared with the community.</h2>
+        <p class="sec-intro" data-i18n="influenceIntro">UI Kits, talks, and events — the work, published.</p>
+      </div>
+      <div class="influence-list" id="influenceList"></div>
+    </div>
+  </section>
+
+  <!-- Ending big cards ("And so much more.") -->
+  <section id="more">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="moreEyebrow">And so much more.</p>
+        <h2 class="sec-title" data-i18n="moreTitle">And so much more.</h2>
+        <p class="sec-intro" data-i18n="moreSub">还有更多。</p>
+      </div>
+      <div class="more-grid">
+        <div class="big-card big-dark">
+          <div><h3 data-i18n="moreWorkT">More work</h3><p data-i18n="moreWorkD">Seven cases on this page — and more in the pipeline.</p></div>
+          <a class="btn btn-gold" href="#work" data-i18n="moreWorkC">See the work</a>
+        </div>
+        <div class="big-card big-gold">
+          <div><h3 data-i18n="moreTalkT">Let's talk</h3><p data-i18n="moreTalkD">Design systems, OS experience, AI products — open to the right conversations.</p></div>
+          <a class="btn btn-primary" href="mailto:mutong@vip.qq.com" data-i18n="moreTalkC">Get in touch</a>
+        </div>
+        <div class="big-card">
+          <div><h3 data-i18n="moreResumeT">Résumé</h3><p data-i18n="moreResumeD">The full story: 19 years, two companies, one turning line.</p></div>
+          <a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="moreResumeC">View résumé</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© 2026 牟伟成 Michael Mu · Shenzhen</span>
+    <span><a href="mailto:mutong@vip.qq.com">mutong@vip.qq.com</a> · <a href="https://github.com/mutongstar">GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
