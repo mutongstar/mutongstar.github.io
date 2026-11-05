@@ -38,22 +38,33 @@
       { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
+  /* Figma 107:1140, faithful structure (verified 2026-11-05 20:33):
+     feature: text col (index/time row, title, desc, entry row [64x3 line +
+     arrow]) + image right. standard: padded column (index/time row,
+     title+arrow row, image inset r8, desc). */
   function renderCards() {
     if (!list) return;
     list.innerHTML = cases.map((item, i) => {
       const c = item[language];
+      const head =
+        '<div class="ed-indexrow">' +
+        '<p class="ed-card-index"><span class="ed-card-bar"></span>0' + (i + 1) + '</p>' +
+        '<p class="ed-card-time">' + esc(item.date) + '</p></div>';
+      const arrow = '<span class="ed-card-arrow">' + arrowSvg + '</span>';
+      const media = '<figure class="ed-card-media"><img src="' + esc(item.image) + '" alt="' +
+        esc(c.imageCaption) + '" loading="lazy" decoding="async"></figure>';
+      const body = item.size === 'feature'
+        ? '<div class="ed-card-text">' + head +
+          '<h3 class="ed-card-title">' + esc(c.title) + '</h3>' +
+          '<p class="ed-card-desc">' + esc(c.overview) + '</p>' +
+          '<div class="ed-entryrow"><span class="ed-card-line"></span>' + arrow + '</div></div>' + media
+        : '<div class="ed-card-pad">' + head +
+          '<div class="ed-titlerow"><h3 class="ed-card-title">' + esc(c.title) + '</h3>' + arrow + '</div>' +
+          media +
+          '<p class="ed-card-desc">' + esc(c.overview) + '</p></div>';
       return '<li class="project-item active editorial-card theme-' + item.theme +
         ' size-' + item.size + '" data-case="' + i + '">' +
-        '<a href="#case-' + (i + 1) + '">' +
-        '<figure class="ed-card-media"><img src="' + esc(item.image) + '" alt="' +
-        esc(c.imageCaption) + '" loading="lazy" decoding="async"></figure>' +
-        '<div class="ed-card-text">' +
-        '<p class="ed-card-index"><span class="ed-card-bar"></span>0' + (i + 1) + '</p>' +
-        '<p class="ed-card-time">' + esc(item.date) + '</p>' +
-        '<h3 class="ed-card-title">' + esc(c.title) + '</h3>' +
-        '<p class="ed-card-desc">' + esc(c.overview) + '</p>' +
-        '<span class="ed-card-arrow">' + arrowSvg + '</span>' +
-        '</div></a></li>';
+        '<a href="#case-' + (i + 1) + '">' + body + '</a></li>';
     }).join('');
   }
 
