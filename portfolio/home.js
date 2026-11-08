@@ -1,6 +1,7 @@
 const aboutPanel=document.querySelector('[data-panel="about"]');
 const story=document.querySelector('.intro-story');
 const artStage=document.querySelector('.story-art');
+const snapEnd=document.querySelector('.intro-snap-end');
 const cover=document.querySelector('.story-cover');
 const outcome=document.querySelector('.story-outcome');
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -24,6 +25,9 @@ function renderStory(){
   const layout=mobile?mobileStoryLayout(vw,vh):desktopStoryLayout(vw,vh);
   const english=document.documentElement.lang==='en';
   const range=Math.max(1,story.offsetHeight-vh);
+  snapEnd.style.top=range*layout.progressEnd+'px';
+  const snapRelease=Math.min(story.offsetHeight-12,aboutPanel.scrollHeight-aboutPanel.clientHeight-12);
+  aboutPanel.classList.toggle('about-snapping',aboutPanel.scrollTop<snapRelease);
   const raw=clamp((aboutPanel.scrollTop-story.offsetTop)/range);
   const progress=reduceMotion.matches?(raw>.48?1:0):clamp(raw/layout.progressEnd);
   const eased=progress*progress*(3-2*progress);

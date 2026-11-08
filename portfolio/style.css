@@ -254,14 +254,18 @@ html{scroll-padding-top:76px}
 }
 
 /* Let page content pass behind the glass header while keeping its opening below the controls. */
-.nav{background:rgba(15,25,21,.7);box-shadow:0 10px 30px rgba(9,20,16,.2),inset 0 1px rgba(255,255,255,.18);backdrop-filter:blur(30px) saturate(160%);-webkit-backdrop-filter:blur(30px) saturate(160%)}
+.nav{background:linear-gradient(112deg,rgba(13,31,23,.77),rgba(2,11,8,.69) 56%,rgba(3,17,11,.75));box-shadow:0 12px 34px rgba(2,12,8,.27),inset 0 1px rgba(255,255,255,.22);backdrop-filter:blur(40px) saturate(175%);-webkit-backdrop-filter:blur(40px) saturate(175%)}
 .nav::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(112deg,rgba(229,255,240,.16) 0%,rgba(229,255,240,.035) 13%,transparent 13.2%),linear-gradient(112deg,transparent 14%,rgba(243,255,246,.26) 14.15%,transparent 14.45%),linear-gradient(112deg,transparent 79%,rgba(243,255,246,.13) 79.15%,transparent 79.4%)}
 .app-page .tab-track{top:0;height:100dvh}
 .app-page .tab-panel{padding-top:64px}
 .story-art .story-portrait{position:absolute;right:2.5%;bottom:0;width:52%;max-width:600px;height:82%;max-height:none;object-position:bottom right;pointer-events:none;z-index:2}
 .story-art .art-message{z-index:1;top:9%;font-weight:650;color:#fffef5;text-shadow:0 2px 18px rgba(48,79,65,.12)}
 .story-art .art-message span{color:#f36749}
-.story-journey{font-size:clamp(14px,1.25vw,18px);max-width:none;white-space:nowrap}
+.story-cover .story-journey{font-size:clamp(15px,1.6vw,22px);font-weight:550;line-height:1.5;letter-spacing:-.02em;max-width:none;white-space:nowrap;margin:24px 0 34px}
+#about.about-snapping{scroll-snap-type:y mandatory}
+.intro-snap{position:absolute;left:0;width:1px;height:1px;scroll-snap-align:start;scroll-snap-stop:always;pointer-events:none}
+.intro-snap-start{top:-64px}
+.intro-snap-exit{top:calc(100% - 64px)}
 .app-page #ai .practice{min-height:0;padding-bottom:55px}
 .ai-case-summary{padding-bottom:80px}
 .ai-summary-card{display:grid;grid-template-columns:1fr 1.05fr;background:#dce5dc;min-height:380px;overflow:hidden}

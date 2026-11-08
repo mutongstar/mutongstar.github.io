@@ -1,5 +1,5 @@
 /* Mobile composition is maintained separately from the desktop artwork. */
-.nav{height:98px;background:rgba(15,25,21,.67)}
+.nav{height:98px;background:linear-gradient(112deg,rgba(11,28,21,.78),rgba(2,11,8,.72) 60%,rgba(3,17,11,.76))}
 .nav-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:37px 38px;align-content:center;gap:4px 8px;padding-inline:16px}
 .nav-inner .brand{grid-column:1;grid-row:1;justify-self:start;align-self:center}
 .nav-inner .lang-toggle{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin:0}
@@ -12,7 +12,9 @@
 .intro-story{height:calc((100dvh - 98px)*1.52)}
 .story-art .story-portrait{right:-7%;bottom:0;width:74%;height:68%;max-width:none}
 .story-art .art-message{top:34%;font-weight:650}
-.story-journey{font-size:15px;white-space:normal}
+.story-cover .story-journey{font-size:clamp(21px,5.6vw,25px);line-height:1.45;white-space:normal;margin:28px 0 34px}
+.intro-snap-start{top:-98px}
+.intro-snap-exit{top:calc(100% - 98px)}
 .app-page:lang(en) .story-art .art-message{top:39%}
 .story-outcome{padding-top:20px}
 .outcome-capabilities{top:min(65%,440px)}
