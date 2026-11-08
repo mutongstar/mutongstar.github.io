@@ -23,7 +23,7 @@
 .app-page #about footer{padding-top:20px}
 .app-page #ai .practice{min-height:0;padding-bottom:30px}
 .ai-case-summary{padding-bottom:48px}
-.ai-summary-card{display:flex;flex-direction:column-reverse;min-height:0}
+.ai-summary-card{display:flex;flex-direction:column;min-height:0}
 .ai-summary-copy{padding:26px 22px 32px}
 .ai-summary-copy h3{font-size:27px;margin:12px 0}
 .ai-summary-copy p{font-size:13px}
