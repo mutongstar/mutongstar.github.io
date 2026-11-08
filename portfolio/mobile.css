@@ -34,3 +34,12 @@
 .app-page #ai .practice{padding-top:42px}
 
 .nav{background:rgba(0,0,0,.7)}.story-cover .story-journey{font-size:clamp(24px,6.6vw,30px);line-height:1.35}
+
+.influence-grid{grid-template-columns:1fr;gap:26px}
+.app-page #influence .influence-content{padding-top:22px;padding-bottom:48px}
+.app-page .tab-panel>footer{padding-top:22px}
+.app-page #influence footer .footer-bottom{margin-top:26px}
+.case-analysis{padding-top:32px;padding-bottom:36px;gap:10px}
+.case-analysis li{padding:11px 0}
+.detail-navigation{grid-template-columns:1fr;gap:26px;padding-top:28px;padding-bottom:32px}
+.detail-navigation .detail-all{min-height:38px}

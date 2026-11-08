@@ -283,3 +283,32 @@ html{scroll-padding-top:76px}
 .app-page #ai .practice{padding-top:44px}
 
 .nav{background:rgba(0,0,0,.69);box-shadow:0 8px 24px rgba(0,0,0,.16);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px)}.nav::after{content:none}.story-cover .story-journey{font-size:clamp(29px,3.1vw,46px);line-height:1.32;white-space:normal;max-width:740px;font-weight:550}.story-cover{will-change:transform,opacity}
+
+/* Compact endings and an open, column-based influence page. */
+.app-page .tab-panel>footer{padding-top:30px;padding-bottom:22px}
+.app-page .tab-panel>footer .footer-bottom{margin-top:0}
+.app-page #about .home-exit{padding-bottom:44px}
+.app-page #influence footer .footer-bottom{margin-top:30px}
+.app-page #influence .influence-content{padding-top:34px;padding-bottom:78px}
+.app-page #influence .section-head{border-top:0;padding-top:0;padding-bottom:36px}
+.app-page #influence .section-head h2{margin:0}
+.influence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.influence-grid article{border-top:1px solid var(--ink);padding-top:19px}
+.influence-index{font-size:11px;color:var(--accent)}
+.influence-grid h3{font-size:clamp(23px,2.3vw,34px);font-weight:500;margin:20px 0 14px}
+.influence-grid p{font-size:15px;line-height:1.8;color:var(--muted);margin:0}
+
+/* Detail pages keep one consistent exit point below the content. */
+.case-intro{padding-top:62px}
+.case-analysis{gap:4%;padding-top:42px;padding-bottom:44px}
+.case-analysis h2{margin:8px 0}
+.case-analysis li{padding:12px 0;gap:12px}
+.case-analysis li p{font-size:15px;line-height:1.65}
+.detail-navigation{display:grid;grid-template-columns:minmax(160px,1fr) minmax(0,2fr);gap:24px;background:#dfe5df;padding-top:38px;padding-bottom:38px}
+.detail-navigation .detail-all{display:flex;align-items:flex-end;border-top:1px solid var(--ink);padding-top:20px;font-size:15px}
+.detail-navigation .detail-next{padding:20px 0 0;background:transparent;border-top:1px solid var(--ink);gap:12px}
+.detail-navigation .detail-next strong{font-size:clamp(24px,3vw,38px)}
+
+.nav .brand{display:inline-flex;align-items:center;gap:10px}
+.brand-symbol{position:relative;display:inline-block;width:28px;height:42px;flex:none;overflow:hidden}
+.brand-symbol img{position:absolute;left:-31px;top:-12px;width:70px;max-width:none;height:70px}
