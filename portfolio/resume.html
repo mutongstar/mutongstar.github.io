@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Michael CV</title>
+<style>
+:root{
+  color-scheme:light;
+  --arcoblue:#165DFF;
+  --blue-1:#E8F3FF;
+  --blue-2:#BEDAFF;
+  --ink:#1D2129;
+  --text-2:#4E5969;
+  --text-3:#86909C;
+  --border:#E5E6EB;
+  --fill:#F7F8FA;
+  --fill-2:#F2F3F5;
+  --paper:#FFFFFF;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+html{background:#F2F3F5}
+body{
+  margin:0;
+  background:#F2F3F5;
+  color:var(--ink);
+  font-family:Inter,"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit}
+.toolbar{
+  max-width:900px;
+  margin:20px auto 14px;
+  padding:0 10px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  color:var(--text-3);
+  font-size:12px;
+}
+.toolbar span{line-height:1.65}
+.toolbar button{
+  height:34px;
+  padding:0 14px;
+  border:1px solid var(--arcoblue);
+  border-radius:var(--radius);
+  background:var(--arcoblue);
+  color:#fff;
+  cursor:pointer;
+}
+.toolbar button:hover{background:#0E42D2}
+.toolbar button:focus-visible{outline:3px solid var(--blue-2);outline-offset:2px}
+.page{
+  position:relative;
+  width:210mm;
+  min-height:297mm;
+  margin:0 auto 22px;
+  padding:15mm 17mm 12mm;
+  background:var(--paper);
+  box-shadow:0 4px 16px rgba(29,33,41,.08);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.page:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:5px;
+  background:var(--arcoblue);
+}
+.eyebrow{
+  color:var(--arcoblue);
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+}
+header{
+  display:grid;
+  grid-template-columns:1fr 78px;
+  gap:22px;
+  align-items:start;
+  padding:4px 0 15px 16px;
+  border-left:4px solid var(--arcoblue);
+  border-bottom:1px solid var(--border);
+}
+h1{
+  margin:9px 0 6px;
+  font-size:32px;
+  line-height:1.1;
+  letter-spacing:2px;
+  font-weight:600;
+}
+.role{font-size:16px;font-weight:500;color:var(--text-2)}
+.contact{margin-top:8px;font-size:9.5px;line-height:1.7;color:var(--text-3)}
+.photo{
+  width:78px;
+  height:98px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:var(--fill);
+  color:var(--text-3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size:9px;
+  line-height:1.6;
+  overflow:visible;
+  border-color:transparent;
+  background:transparent;
+}
+.photo img{display:block;width:150%;max-width:none;height:auto;margin:-1px 0 0 -25%;object-fit:contain}
+.intro{
+  margin:14px 0 12px;
+  font-size:11px;
+  line-height:1.78;
+  color:var(--text-2);
+}
+.profile-grid{display:grid;grid-template-columns:1.42fr .88fr;gap:18px;margin:15px 0 13px;align-items:stretch}
+.profile-lead{margin:0;padding:2px 0;color:var(--text-2);font-size:11px;line-height:1.8}
+.metrics{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--border)}
+.metric{display:grid;grid-template-columns:62px 1fr;align-items:center;padding:7px 2px;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent}
+.metric:first-child{background:transparent;border-color:var(--border)}
+.metric b{display:block;color:var(--arcoblue);font-size:13px;font-weight:600;line-height:1.2}
+.metric span{display:block;color:var(--text-3);font-size:8.3px;line-height:1.35}
+.capabilities{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 15px}
+.capabilities span{
+  padding:4px 10px;
+  border:1px solid var(--blue-2);
+  border-radius:999px;
+  background:#fff;
+  color:var(--arcoblue);
+  font-size:8.8px;
+  font-weight:500;
+}
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 11px;
+  color:var(--ink);
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:.8px;
+}
+.section-title:before{
+  content:"";
+  width:4px;
+  height:14px;
+  border-radius:1px;
+  background:var(--arcoblue);
+}
+.section-title:after{content:"";height:1px;background:var(--border);flex:1}
+.section-title small{color:var(--text-3);font-size:8px;font-weight:400;letter-spacing:.7px}
+.company{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  margin:0 0 9px;
+}
+.company h3{margin:0;font-size:15px;font-weight:600}
+.company h3 span{margin-left:8px;color:var(--text-3);font-size:9.5px;font-weight:400}
+time{color:var(--text-3);font-size:8.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.job{
+  margin:0 0 8px;
+  padding:8px 10px;
+  border-left:3px solid var(--arcoblue);
+  border-radius:0 var(--radius) var(--radius) 0;
+  background:var(--fill);
+}
+.jobhead{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:10px;
+  margin-bottom:3px;
+}
+.job h4{margin:0;font-size:10.6px;font-weight:600}
+.job ul{margin:0;padding-left:15px;color:var(--text-2);font-size:10px;line-height:1.62}
+.job li{margin:2px 0;padding-left:1px}
+.job strong{color:var(--ink);font-weight:600}
+.footer{
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+  margin-top:auto;
+  padding-top:8px;
+  border-top:1px solid var(--border);
+  color:var(--text-3);
+  font-size:8px;
+}
+.page-label{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:4px 0 18px;
+  padding:0 0 11px;
+  border-bottom:1px solid var(--border);
+}
+.page-label strong{font-size:13px;font-weight:600}
+.project{
+  margin:0 0 9px;
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:#fff;
+}
+.project h3{margin:0 0 5px;color:var(--arcoblue);font-size:11px;font-weight:600}
+.project p{margin:0;color:var(--text-2);font-size:10px;line-height:1.68}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.project-grid .project{display:grid;grid-template-columns:30px 1fr;gap:9px;align-items:start;margin:0;min-height:0;padding:11px 12px}
+.leadership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.leadership-grid .project{margin:0;min-height:172px;padding:12px}
+.icon-card-copy h3{margin:0 0 4px}
+.icon-card-copy p{margin:0}
+.icon-badge{width:30px;height:30px;border-radius:8px;background:var(--blue-1);color:var(--arcoblue);display:flex;align-items:center;justify-content:center}
+.arco-icon{width:17px;height:17px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.leadership-grid .icon-badge{margin-bottom:9px}
+.leadership-grid .project h3{margin-bottom:7px}
+.impact-list{margin:0;padding-left:14px;color:var(--text-2);font-size:10px;line-height:1.62}
+.impact-list li{margin:0 0 5px;padding-left:1px}
+.impact-list li:last-child{margin-bottom:0}
+.impact-list strong{color:var(--ink);font-weight:600}
+.continued{display:inline-flex;align-items:center;gap:6px;margin:0 0 10px;color:var(--text-3);font-size:9px}
+.continued:before{content:"";width:18px;height:1px;background:var(--blue-2)}
+.project-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.status{color:var(--arcoblue);font-size:8.5px}
+.detail{color:var(--text-3);font-size:8.5px;line-height:1.5}
+.practice{
+  margin:8px 0 12px;
+  padding:8px 10px;
+  border-radius:var(--radius);
+  background:var(--blue-1);
+}
+.practice h3{margin:0 0 4px;font-size:10px}
+.practice p{margin:0;color:var(--text-2);font-size:9px;line-height:1.55}
+.education{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:14px;
+}
+.education section{
+  padding:10px 12px;
+  border-top:2px solid var(--arcoblue);
+  background:var(--fill);
+}
+.education h3{margin:0 0 4px;font-size:10px;font-weight:600}
+.education p{margin:0;color:var(--text-3);font-size:10px;line-height:1.55}
+.note{
+  max-width:794px;
+  margin:0 auto 30px;
+  padding:0 12px;
+  color:var(--text-3);
+  font-size:11px;
+  line-height:1.7;
+}
+a{color:var(--arcoblue);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:830px){
+  .page{width:calc(100% - 20px);min-height:auto;padding:26px 20px}
+  .toolbar{margin-top:12px}
+  header{grid-template-columns:1fr 70px;gap:12px}
+  .photo{width:70px;height:90px}
+  h1{font-size:28px}
+  .intro{font-size:12px}
+  .job ul,.project p{font-size:11px}
+  .education{grid-template-columns:1fr}
+  .project-grid,.leadership-grid{grid-template-columns:1fr}
+  .footer{margin-top:20px}
+}
+@page{size:A4;margin:0}
+@media print{
+  html,body{background:#fff}
+  .toolbar,.gate-overlay{display:none}
+  .page{
+    width:210mm;
+    height:297mm;
+    min-height:0;
+    margin:0;
+    box-shadow:none;
+    break-after:page;
+    overflow:hidden;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+  .page:last-of-type{break-after:auto}
+  .job,.project{break-inside:avoid}
+}
+
+.gate-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(242,243,245,.72);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2)}
+.gate-overlay.unlocked{display:none}
+.gate-card{width:min(360px,100%);padding:28px;background:var(--paper);border:1px solid var(--border);border-radius:12px;box-shadow:0 12px 32px rgba(29,33,41,.14)}
+.gate-eyebrow{color:var(--arcoblue);font-size:10px;font-weight:600;letter-spacing:1.8px}
+.gate-title{margin:8px 0 18px;font-size:18px;font-weight:600;color:var(--ink)}
+.gate-card input{width:100%;height:38px;padding:0 12px;border:1px solid var(--border);border-radius:var(--radius);font:inherit;font-size:14px;color:var(--ink);background:#fff;outline:none}
+.gate-card input:focus{border-color:var(--arcoblue);box-shadow:0 0 0 3px var(--blue-2)}
+.gate-error{margin:8px 0 0;color:#F53F3F;font-size:12px}
+.gate-card button{width:100%;height:38px;margin-top:14px;border:1px solid var(--arcoblue);border-radius:var(--radius);background:var(--arcoblue);color:#fff;font-size:14px;cursor:pointer}
+.gate-card button:hover{background:#0E42D2}
+.toolbar{gap:8px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="gate-overlay" id="cvGate"><div class="gate-card" role="dialog" aria-modal="true" aria-labelledby="cvGateTitle"><div class="gate-eyebrow">MICHAEL CV</div><div class="gate-title" id="cvGateTitle">请输入访问密码</div><form id="cvGateForm"><input id="cvGateInput" type="text" placeholder="请输入密码" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false"><p class="gate-error" id="cvGateError" hidden>密码不正确，请重试</p><button type="submit">进入</button></form></div></div>
+<div class="toolbar"><button id="langToggle" type="button" aria-label="Switch language">EN</button><button id="printBtn" type="button" onclick="window.print()">打印 / 保存 PDF</button></div>
+<main><div id="lang-zh"><article class="page" aria-label="简历第一页：系统体验与职业经历">
+<header><div><div class="eyebrow">UX Leadership · Product Innovation · Design Systems</div><h1>牟伟成</h1><div class="role">资深体验设计负责人</div><div class="contact">深圳 &nbsp; / &nbsp; 186 8039 1092 &nbsp; / &nbsp; mutong@vip.qq.com<!-- portfolio link hidden until site ready --></div></div><div class="photo"><img src="assets/profile/mu-weicheng-portrait.png" alt="牟伟成个人形象照"></div></header>
+<div class="profile-grid"><p class="profile-lead"><strong>19 年用户体验设计经验</strong>，职业经历横跨腾讯核心产品、现象级移动社交应用与 OPPO 操作系统。擅长从复杂业务中形成设计洞察，并将其转化为体验策略与设计体系；兼具 Design Lead、跨团队推动及人才梯队建设经验。从定义应用体验，到定义 OS 体验，再到跨端AI，判断 Agent OS 的价值在跨应用、跨设备的任务边界，体验工作的重心是让 Agent 操作可信、可见、可控、可逆。</p><div class="metrics"><div class="metric"><b>10+ pp</b><span>ColorOS 版本设计满意度提升</span></div><div class="metric"><b>40+</b><span>正式设计师管理带宽</span></div><div class="metric"><b>5,000 万</b><span>全民 K 歌 2018 年峰值 DAU</span></div></div></div>
+<div class="capabilities"><span>OS 设计规划与创新</span><span>Design System</span><span>信息架构与易用性</span><span>AI 原型实践</span><span>体验研究与度量</span></div>
+<h2 class="section-title">工作经历 <small>PROFESSIONAL EXPERIENCE</small></h2>
+<div class="company"><h3>OPPO<span>软件用户体验设计部</span></h3><time>2020.04 — 至今</time></div><section class="job"><div class="jobhead"><h4>生态互联体验主管</h4><time>2026.04 — 至今</time></div><ul><li><strong>目标与判断：</strong>面向学习、办公、创作等目标用户，判断仅以手机为中心的架构难以承载生产力任务与未来主动智能体验。</li><li><strong>关键策略与成果：</strong>提出无感连接、主动智能、平台化管理，推动 PC 客户端与一方设备成为跨端任务的重要载体。</li><li><strong>基础体验治理：</strong>围绕“找不到、连不上”等问题建立产研责任与流转机制，已纳入项目化版本计划。</li></ul></section><section class="job"><div class="jobhead"><h4>部门交互专家／平台设计团队主管</h4><time>2023.01 — 2026.03</time></div><ul><li><strong>版本策略与结果：</strong>担任 ColorOS 14—16 版本 UX 设计代表，统筹跨业务交付；建立系统一级门户重点变更机制，推动用户测试与横向评估。基于发布后统一市场调研，协同团队推动设计满意度提升超过 10 个百分点。</li><li><strong>体验方向与设计体系：</strong><br>基于用户洞察主导提出美学方向，带领平台团队定义公共控件与交互反馈，推动全系统一致落地及 <a href="https://www.figma.com/community/file/1430008996536373272/coloros-15-ui-kit">ColorOS 15</a>、<a href="https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit">16</a> UI Kit 公开交付。</li><li><strong>全球化系统体验：</strong>负责 OxygenOS 15、16 体验策略与门户场景定制，组织韩国专家、视觉与本地化团队完成交付，服务东南亚和印度用户。</li></ul></section><section class="job"><div class="jobhead"><h4>互联网服务 BU｜体验设计主管</h4><time>2020.04 — 2022.12</time></div><ul><li><strong>业务与组织：</strong><br>负责独立互联网服务 BU 全域体验设计，覆盖软件商店、浏览器、游戏中心及游戏助手；统筹商业化需求，管理 40+ 名正式设计师。</li><li><strong>研究与度量：</strong>重组软件用户研究团队，建立围绕 NPS 的体验度量标准并推动长期运行：本品 NPS 按月反馈、竞品 NPS 对标行业地位与用户关注点；覆盖从互联网整体体验聚焦至用户量 Top 4 产品，机制延续至今。</li></ul></section><div class="company" style="margin-top:16px"><h3>腾讯<span>交互设计与设计管理</span></h3><time>2007.08 — 2020.04</time></div><section class="job"><div class="jobhead"><h4>全民 K 歌设计总监</h4><time>2014 — 2020.04</time></div><ul><li><strong>现象级产品 0→1：</strong>主导演唱创作、合唱、短视频、直播及歌房等核心体验，建立“音视频创作 × 关系链社交 × 实时互动”的产品框架；业务于 2018 年达到 <strong>5,000 万 DAU</strong> 峰值，并获公司重大业务突破及 2018 年“名品堂”。</li><li><strong>产品矩阵与平台能力：</strong><br>带领团队拓展 WeSing 国际版、TV 版、音兔视频、QQ 音乐专辑等业务，构建设计中台、组件化规范与多产品协同能力。</li><li><strong>业务与经营协同：</strong>参与业务商业计划制定，从经营视角整合资源、拆解阶段策略并推动设计团队落地。</li></ul></section><section class="job"><div class="jobhead"><h4>QQ 设计组长／高级交互设计师</h4><time>2007.08 — 2014</time></div><ul><li><strong>核心产品创新：</strong><br>负责 PC QQ 2010 改版、QQ 支付及 QQ 医生 1.0—3.0 等项目；QQ 约 2012 年达 5,000 万同时在线并获公司重大业务突破。</li><li><strong>系统规范建设：</strong>负责 QQ 业务系统级交互规范，参与定义腾讯体验设计原则，将多产品实践沉淀为可复用的体验标准。</li><li><strong>复杂产品与国际协作：</strong>主导腾讯充值、QQ／微信虚拟支付及腾讯分析等 Web／移动产品的全链路体验规划；兼任原型工具 UIDesigner 产品 PO，并赴泰国 Sanook 交流指导改版。</li></ul></section>
+<footer class="footer"><span>01 / 02</span></footer></article><article class="page" aria-label="简历第二页：AI 实践与专业建设"><div class="page-label"><strong>牟伟成 <span style="font-weight:400;color:var(--text-3)">/ 资深体验设计负责人</span></strong><span class="eyebrow">Practice &amp; Leadership</span></div>
+<h2 class="section-title">AI 与原型实践 <small>APPLIED AI &amp; PROTOTYPING</small></h2><p class="intro" style="margin:0 0 12px">2025 年起将 AI 用于研究、总结与方案讨论；2026 年进一步深入 Agent、可运行原型与设计工作流。</p><div class="project-grid"><section class="project"><span class="icon-badge" title="Arco IconBook"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21V5.5Z"/></svg></span><div class="icon-card-copy"><h3>知识驱动的设计工作流</h3><p>分层组织产品定义、Design Token、场景组件及交互逻辑，对齐 Figma UI 库；接入 Android Compose 控件，结合业务知识搭建可运行的高保真 Demo。</p></div></section><section class="project"><span class="icon-badge" title="Arco IconLink"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="7" height="12" rx="1.5"/><rect x="14" y="7" width="7" height="12" rx="1.5"/><path d="M10 10h4M10 14h4"/></svg></span><div class="icon-card-copy"><h3>跨设备AI产品创新</h3><p>围绕耳机、手机与模型协同，探索会议洞察、知识沉淀及主动服务体验，持续验证 AI 能力如何进入真实任务链路。</p></div></section><section class="project"><span class="icon-badge" title="Arco IconCode"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><div class="icon-card-copy"><h3>技术体验创新设计</h3><p>独立整合研发算法与高保真前台交互为运行原型，以真实技术输出验证完整体验、暴露约束并推动团队判断。</p></div></section><section class="project"><span class="icon-badge" title="Arco IconVoice"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6"/></svg></span><div class="icon-card-copy"><h3>语音日记与个人记忆</h3><p>构建并部署个人 AI 产品，结合本地语音模型与分层数据库，探索从自然记录、结构化整理到叙事生成及周期洞察的完整体验。</p></div></section></div><h2 class="section-title">组织建设与专业影响力 <small>LEADERSHIP &amp; CONTRIBUTION</small></h2>
+<div class="leadership-grid"><section class="project"><span class="icon-badge" title="Arco IconUserGroup"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M14 15.5a4.5 4.5 0 0 1 6.5 4"/></svg></span><h3>人才与专业体系</h3><ul class="impact-list"><li>OPPO期间，培养 3 位设计师成长为<strong>部门主管</strong>，并已完成正式任命晋升；通过目标拆解与设计评审，带教专业人才梯队。</li><li>担任 OPPO 设计通道委员及内部讲师；曾任腾讯设计通道委员、腾讯学院高级讲师，并主要负责交互岗位能力模型的内容撰写与定义完善。</li></ul></section><section class="project"><span class="icon-badge" title="Arco IconPublic"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span><h3>行业交流</h3><p>2025 年任 OPPO 开发者大会设计分论坛总负责人及内容策划；2024 年作为<a href="https://news.zol.com.cn/910/9103837.html">体验设计分论坛</a>演讲者。外部行业交流包括：<a href="https://www.di-award.org/zh/press/detail/946.html.html">2023 中国设计智造创新学术研讨会</a>受邀发表《终端软件创新》主题演讲、<a href="https://new.msup.com.cn/teacher/8694">HiPM 产品创新力峰会</a>分享《终端互联网设计》，以及参与 <a href="https://uxpa.org.cn/2025/02/20/2024uf%E5%A4%A7%E4%BC%9A%C2%B7%E6%9C%AA%E6%9D%A5%E7%94%9F%E6%B4%BB%E5%B3%B0%E4%BC%9A%E5%9B%9E%E9%A1%BE%EF%BD%9Cai%E9%87%8D%E5%A1%91%E4%BA%BA%E7%B1%BB%E7%94%9F%E6%B4%BB%E7%9A%84%E6%9C%AA%E6%9D%A5/">2024 User Friendly 国际用户体验大会</a>交流。</p></section><section class="project"><span class="icon-badge" title="Arco IconTrophy"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0V4ZM9 18h6M12 13v5M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4M8 21h8"/></svg></span><h3>专业成果</h3><ul class="impact-list"><li>参与编写腾讯用户体验设计专业书籍《在你身边，为你设计》，沉淀大型互联网产品的体验实践。</li><li>腾讯 2010—2019 年间，以署名发明人／设计人身份获得 <strong>20+ 项授权专利</strong>。</li></ul></section></div>
+<div class="education"><section><h3>教育经历</h3><p>西安交通大学 · 工业设计<br>工学学士 · 2003—2007（人机界面方向）</p></section><section><h3>作品与演示</h3><p><!-- portfolio link hidden until site ready --><a href="https://www.figma.com/community/file/1430008996536373272/coloros-15-ui-kit">ColorOS 15 UI Kit</a>、<a href="https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit">ColorOS 16 UI Kit</a>（Figma Community 公开交付）</p></section></div>
+<footer class="footer"><span>02 / 02</span></footer></article></div><div id="lang-en" hidden><article class="page" aria-label="Resume, page 1: system experience and career history">
+<header><div><div class="eyebrow">UX Leadership · Product Innovation · Design Systems</div><h1>Michael Mu</h1><div class="role">Senior Experience Design Leader</div><div class="contact">Shenzhen &nbsp; / &nbsp; 186 8039 1092 &nbsp; / &nbsp; mutong@vip.qq.com<!-- portfolio link hidden until site ready --></div></div><div class="photo"><img src="assets/profile/mu-weicheng-portrait.png" alt="Portrait of Michael Mu"></div></header>
+<div class="profile-grid"><p class="profile-lead"><strong>19 years of UX design</strong> across Tencent's core products, a breakout mobile social app, and OPPO's operating system. I turn design insight from complex businesses into experience strategy and design systems — as a design lead, cross-team driver, and mentor of design talent. From app experience to OS experience to cross-device AI: an agent OS creates value at the boundaries of cross-app, cross-device tasks, and experience work must make agent actions trustworthy, visible, controllable, and reversible.</p><div class="metrics"><div class="metric"><b>10+ pp</b><span>Improvement in ColorOS design satisfaction</span></div><div class="metric"><b>40+</b><span>Full-time designers managed</span></div><div class="metric"><b>50M</b><span>WeSing peak DAU, 2018</span></div></div></div>
+<div class="capabilities"><span>OS Experience Planning &amp; Innovation</span><span>Design System</span><span>Information Architecture &amp; Usability</span><span>AI Prototyping Practice</span><span>Experience Research &amp; Measurement</span></div>
+<h2 class="section-title">Professional Experience</h2>
+<div class="company"><h3>OPPO<span>Software User Experience Design</span></h3><time>Apr 2020 — Present</time></div><section class="job"><div class="jobhead"><h4>Ecosystem Interconnect Experience Lead</h4><time>Apr 2026 — Present</time></div><ul><li><strong>Goals &amp; Judgment:</strong> For target users in learning, work, and creation, I judged that a phone-centric architecture alone cannot carry productivity tasks and future proactive intelligent experiences.</li><li><strong>Key Strategies &amp; Outcomes:</strong> Proposed seamless connection, proactive intelligence, and platform-based management, making PC clients and first-party devices key carriers of cross-device tasks.</li><li><strong>Foundational Experience Governance:</strong> Built engineering and QA ownership and triage processes around issues like “cannot find / cannot connect”, now part of release planning.</li></ul></section><section class="job"><div class="jobhead"><h4>Department Interaction Expert &amp; Platform Design Team Lead</h4><time>Jan 2023 — Mar 2026</time></div><ul><li><strong>Release Strategy &amp; Outcomes:</strong> Served as UX design representative for ColorOS 14–16, coordinating cross-business delivery; set up a review mechanism for system-level key changes, driving user testing and horizontal evaluation. Based on unified post-release market research, worked with the team to lift design satisfaction by over 10 percentage points.</li><li><strong>Experience Direction &amp; Design System:</strong><br>Led the aesthetic direction from user insight, guiding the platform team to define common controls and interaction feedback, driving consistent system-wide implementation and the public release of the <a href="https://www.figma.com/community/file/1430008996536373272/coloros-15-ui-kit">ColorOS 15</a> and <a href="https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit">16</a> UI Kits.</li><li><strong>Global System Experience:</strong> Owned experience strategy and portal-scenario customization for OxygenOS 15 and 16, coordinating Korean specialists and visual and localization teams to deliver for Southeast Asian and Indian users.</li></ul></section><section class="job"><div class="jobhead"><h4>Internet Services BU, Experience Design Lead</h4><time>Apr 2020 — Dec 2022</time></div><ul><li><strong>Business &amp; Organization:</strong><br>Owned end-to-end experience design for the standalone internet services BU — app store, browser, game center, and game assistant — balancing commercialization needs while managing 40+ full-time designers.</li><li><strong>Research &amp; Measurement:</strong> Rebuilt the software user research team and established NPS-based experience measurement standards as an ongoing practice: own-brand NPS reported monthly and competitor NPS benchmarked against industry position and user concerns, with coverage focusing from the full internet experience to the top 4 products by user volume — a mechanism that continues today.</li></ul></section><div class="company" style="margin-top:16px"><h3>Tencent<span>Interaction Design &amp; Design Management</span></h3><time>Aug 2007 — Apr 2020</time></div><section class="job"><div class="jobhead"><h4>WeSing Design Director</h4><time>2014 — Apr 2020</time></div><ul><li><strong>Breakout Product, 0→1:</strong> Led core experiences in singing creation, chorus, short video, livestream, and song rooms, establishing the “audio-video creation × relationship social × real-time interaction” product framework; the business reached a <strong>50 million DAU</strong> peak in 2018 and earned the company's major business breakthrough award and the 2018 “Mingpin Hall” (名品堂) honor.</li><li><strong>Product Matrix &amp; Platform Capabilities:</strong><br>Led the team in expanding WeSing International, the TV version, Yintu Video, and QQ Music digital albums, building the design platform, component standards, and multi-product collaboration capabilities.</li><li><strong>Business &amp; Operations Alignment:</strong> Joined business planning, aligning resources from a business perspective, breaking down phased strategies, and driving the design team to deliver.</li></ul></section><section class="job"><div class="jobhead"><h4>QQ Design Team Lead / Senior Interaction Designer</h4><time>Aug 2007 — 2014</time></div><ul><li><strong>Core Product Innovation:</strong><br>Led the PC QQ 2010 redesign, QQ Pay, and QQ Doctor 1.0–3.0; QQ reached about 50 million concurrent users online around 2012 and earned the company's major business breakthrough award.</li><li><strong>System Standards:</strong> Owned system-level interaction specifications for QQ, contributed to Tencent's experience design principles, and distilled multi-product practice into reusable experience standards.</li><li><strong>Complex Products &amp; International Collaboration:</strong> Led end-to-end experience planning for Tencent Recharge, QQ/WeChat virtual payments, and Tencent Analytics web and mobile products; served as product owner for the UIDesigner prototyping tool and advised Sanook in Thailand on its redesign.</li></ul></section>
+<footer class="footer"><span>01 / 02</span></footer></article><article class="page" aria-label="Resume, page 2: AI practice and professional growth"><div class="page-label"><strong>Michael Mu <span style="font-weight:400;color:var(--text-3)">/ Senior Experience Design Leader</span></strong><span class="eyebrow">Practice &amp; Leadership</span></div>
+<h2 class="section-title">Applied AI &amp; Prototyping</h2><p class="intro" style="margin:0 0 12px">Since 2025, I have used AI for research, synthesis, and design discussions; in 2026 I went deeper into agents, runnable prototypes, and design workflows.</p><div class="project-grid"><section class="project"><span class="icon-badge" title="Arco IconBook"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21V5.5Z"/></svg></span><div class="icon-card-copy"><h3>Knowledge-Driven Design Workflow</h3><p>Organize product definitions, design tokens, scenario components, and interaction logic in layers, aligned with the Figma UI library; integrate Android Compose controls and business knowledge to build runnable high-fidelity demos.</p></div></section><section class="project"><span class="icon-badge" title="Arco IconLink"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="7" height="12" rx="1.5"/><rect x="14" y="7" width="7" height="12" rx="1.5"/><path d="M10 10h4M10 14h4"/></svg></span><div class="icon-card-copy"><h3>Cross-Device AI Product Innovation</h3><p>Explore meeting insights, knowledge capture, and proactive service experiences across earphones, phone, and models, continuously validating how AI capabilities enter real task flows.</p></div></section><section class="project"><span class="icon-badge" title="Arco IconCode"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><div class="icon-card-copy"><h3>Technology Experience Innovation Design</h3><p>Independently integrate R&D algorithms with high-fidelity front-end interaction into runnable prototypes, validating the full experience against real technical output, exposing constraints, and driving team decisions.</p></div></section><section class="project"><span class="icon-badge" title="Arco IconVoice"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M9 21h6"/></svg></span><div class="icon-card-copy"><h3>Voice Journal &amp; Personal Memory</h3><p>Built and deployed a personal AI product combining on-device speech models with a layered database, exploring the full experience from natural recording and structured organization to narrative generation and periodic insight.</p></div></section></div><h2 class="section-title">Leadership &amp; Contribution</h2>
+<div class="leadership-grid"><section class="project"><span class="icon-badge" title="Arco IconUserGroup"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M14 15.5a4.5 4.5 0 0 1 6.5 4"/></svg></span><h3>Talent &amp; Professional System</h3><ul class="impact-list"><li>At OPPO, mentored 3 designers into <strong>department-head roles</strong> with formal appointments; coached the professional talent pipeline through goal breakdown and design reviews.</li><li>Serving on OPPO's design career committee and as an internal trainer; previously served on Tencent's design career committee and as a senior lecturer at Tencent Academy, leading the definition of the interaction design competency model.</li></ul></section><section class="project"><span class="icon-badge" title="Arco IconPublic"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span><h3>Industry Engagement</h3><p>In 2025, I led the design track at the OPPO Developer Conference as track lead and content planner; in 2024, I spoke at the <a href="https://news.zol.com.cn/910/9103837.html">experience design track</a>. Other engagements include: <a href="https://www.di-award.org/zh/press/detail/946.html.html">the 2023 China Design &amp; Intelligent Manufacturing Innovation Symposium</a>where I gave the keynote “Terminal Software Innovation”, <a href="https://new.msup.com.cn/teacher/8694">the HiPM Product Innovation Summit</a>where I shared “Terminal Internet Design”, and took part in  <a href="https://uxpa.org.cn/2025/02/20/2024uf%E5%A4%A7%E4%BC%9A%C2%B7%E6%9C%AA%E6%9D%A5%E7%94%9F%E6%B4%BB%E5%B3%B0%E4%BC%9A%E5%9B%9E%E9%A1%BE%EF%BD%9Cai%E9%87%8D%E5%A1%91%E4%BA%BA%E7%B1%BB%E7%94%9F%E6%B4%BB%E7%9A%84%E6%9C%AA%E6%9D%A5/">the 2024 User Friendly International UX Conference</a>.</p></section><section class="project"><span class="icon-badge" title="Arco IconTrophy"><svg class="arco-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0V4ZM9 18h6M12 13v5M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4M8 21h8"/></svg></span><h3>Professional Achievements</h3><ul class="impact-list"><li>Co-authored Tencent's UX design book 《在你身边，为你设计》, distilling experience from large-scale internet products.</li><li>At Tencent from 2010 to 2019, named inventor/designer on <strong>20+ granted patents</strong>.</li></ul></section></div>
+<div class="education"><section><h3>Education</h3><p>Xi'an Jiaotong University · Industrial Design<br>B.Eng · 2003–2007 (HCI focus)</p></section><section><h3>Work &amp; Demos</h3><p><!-- portfolio link hidden until site ready --><a href="https://www.figma.com/community/file/1430008996536373272/coloros-15-ui-kit">ColorOS 15 UI Kit</a> and <a href="https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit">ColorOS 16 UI Kit</a>(published on Figma Community)</p></section></div>
+<footer class="footer"><span>02 / 02</span></footer></article></div></main>
+
+<script>(function(){var HASH="e361d18fea2788021335a87c54e93528c6545431874095d4eb0e451be53ce7a7";var overlay=document.getElementById("cvGate");var form=document.getElementById("cvGateForm");var input=document.getElementById("cvGateInput");var error=document.getElementById("cvGateError");if(sessionStorage.getItem("cv-gate")==="1"){overlay.classList.add("unlocked");return;}input.focus();var realValue="";var composing=false;var maskTimer=null;var maskToken=0;function render(showLast){var n=realValue.length;if(n===0){input.value="";return;}input.value=showLast?"\u2022".repeat(n-1)+realValue.slice(-1):"\u2022".repeat(n);}function scheduleMask(){var token=++maskToken;clearTimeout(maskTimer);maskTimer=setTimeout(function(){if(token===maskToken){render(false);}},900);}input.addEventListener("compositionstart",function(){composing=true;});input.addEventListener("compositionend",function(){composing=false;var suffix=input.value.slice(realValue.length);if(suffix){realValue+=suffix;}render(true);scheduleMask();});input.addEventListener("input",function(e){if(composing){return;}var v=input.value;var t=e.inputType||"";if(t.indexOf("delete")===0){realValue=realValue.slice(0,Math.max(0,v.length));render(false);return;}if(t.indexOf("insert")===0){if(v.length>realValue.length){realValue+=v.slice(realValue.length);}else{realValue=v.replace(/\u2022/g,"");}render(true);scheduleMask();return;}realValue=v.replace(/\u2022/g,"");render(false);});form.addEventListener("submit",async function(e){e.preventDefault();try{var h=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(realValue));var hex=Array.from(new Uint8Array(h)).map(function(b){return b.toString(16).padStart(2,"0");}).join("");if(hex===HASH){sessionStorage.setItem("cv-gate","1");overlay.classList.add("unlocked");}else{error.hidden=false;realValue="";input.value="";input.focus();}}catch(err){error.hidden=false;error.textContent="当前浏览器不支持密码验证，请使用 https 打开。";}});})();</script><script>(function(){var KEY="cv-lang";var zh=document.getElementById("lang-zh");var en=document.getElementById("lang-en");var btn=document.getElementById("langToggle");var gt=document.getElementById("cvGateTitle");var gi=document.getElementById("cvGateInput");var gb=document.querySelector("#cvGateForm button");var pb=document.getElementById("printBtn");var STR={zh:{gate:"请输入访问密码",ph:"请输入密码",enter:"进入",print:"打印 / 保存 PDF",toggle:"EN"},en:{gate:"Enter the access password",ph:"Enter password",enter:"Enter",print:"Print / Save PDF",toggle:"中文"}};var cur="zh";try{var v=localStorage.getItem(KEY);if(v==="en"||v==="zh")cur=v;}catch(e){}function apply(lang){cur=lang;var t=STR[lang];zh.hidden=lang!=="zh";en.hidden=lang!=="en";document.documentElement.lang=lang==="zh"?"zh-CN":"en";if(gt)gt.textContent=t.gate;if(gi)gi.placeholder=t.ph;if(gb)gb.textContent=t.enter;if(pb)pb.textContent=t.print;if(btn)btn.textContent=t.toggle;try{localStorage.setItem(KEY,lang);}catch(e){}}apply(cur);if(btn)btn.addEventListener("click",function(){apply(cur==="zh"?"en":"zh");});})();</script></body></html>

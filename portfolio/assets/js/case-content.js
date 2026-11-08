@@ -1,8 +1,17 @@
-/* Portfolio v2 data — adapted from case-content.js (2026-11-05).
-   slug: detail-page key (?case=<slug>). cover: index cover variant
-   (feature | split | card | dark). layout: detail-page image layout
-   (flow | phones = 3-phone intro | multi = multi-image grid). */
-window.PORTFOLIO_V2 = [
+/* Case copy, single source of truth for the portfolio tab and the case modal.
+   Figma <-> site mapping (2026-11-05, confirmed by 牧老师):
+   - Figma website page "作品集 · 六张编辑式项目卡片" card N = PORTFOLIO_CASES[N-1],
+     in this array order. Reordering the array reorders the cards.
+   - Card fields: zh/en title + overview, date, image; theme (dark|light) and
+     size (feature|standard) are per-card settings — change the field to
+     restyle a card, no markup change.
+   - Modal fields: role, process (关键判断与做法), result (交付与阶段结果),
+     links — same record, same order as Figma "详情弹窗 / <case>" frames.
+   - slides: 1920x1080 images, in display order. Placeholder exports from
+     Figma 01 page (2026-11-05, captions are the Figma frame names); replace
+     with final slides under part 2.
+   Copy rule: Figma wins on wording; this file is the site's copy of record. */
+window.PORTFOLIO_CASES = [
   {
     "zh": {
       "title": "设计系统与能力交付",
@@ -39,30 +48,24 @@ window.PORTFOLIO_V2 = [
         "https://www.figma.com/community/file/1572820051263618685/coloros-16-ui-kit"
       ]
     ],
-    "image": "./images/coloros-ui-kits.png",
+    "image": "./assets/images/coloros-ui-kits.png",
     "theme": "dark",
     "size": "feature",
     "slides": [
+      "./assets/images/coloros-ui-kits.png",
       {
-        "src": "./images/coloros-ui-kits.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/design-systems/slide-01.png",
+        "src": "./assets/images/cases/design-systems/slide-01.png",
         "caption": "11 · Design Systems / 工程化 · 三层结构图形化方案"
       },
       {
-        "src": "./images/cases/design-systems/slide-02.png",
+        "src": "./assets/images/cases/design-systems/slide-02.png",
         "caption": "12 · Design Systems / 质量细节"
       },
       {
-        "src": "./images/cases/design-systems/slide-03.png",
+        "src": "./assets/images/cases/design-systems/slide-03.png",
         "caption": "13 · Design Systems / 公开交付"
       }
-    ],
-    "slug": "design-systems",
-    "cover": "feature",
-    "layout": "flow"
+    ]
   },
   {
     "zh": {
@@ -91,30 +94,24 @@ window.PORTFOLIO_V2 = [
     },
     "date": "ColorOS 14—16",
     "links": [],
-    "image": "./images/coloros-experience.png",
+    "image": "./assets/images/coloros-experience.png",
     "theme": "light",
     "size": "standard",
     "slides": [
+      "./assets/images/coloros-experience.png",
       {
-        "src": "./images/coloros-experience.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/system-experience/slide-01.png",
+        "src": "./assets/images/cases/system-experience/slide-01.png",
         "caption": "06 · ColorOS / 案例概览"
       },
       {
-        "src": "./images/cases/system-experience/slide-02.png",
+        "src": "./assets/images/cases/system-experience/slide-02.png",
         "caption": "07 · ColorOS / 用户洞察"
       },
       {
-        "src": "./images/cases/system-experience/slide-03.png",
+        "src": "./assets/images/cases/system-experience/slide-03.png",
         "caption": "08 · ColorOS / 主张与落地"
       }
-    ],
-    "slug": "system-experience",
-    "cover": "split",
-    "layout": "flow"
+    ]
   },
   {
     "zh": {
@@ -143,30 +140,24 @@ window.PORTFOLIO_V2 = [
     },
     "date": "2025—2026",
     "links": [],
-    "image": "./images/ai-workflow.png",
+    "image": "./assets/images/ai-workflow.png",
     "theme": "light",
     "size": "standard",
     "slides": [
+      "./assets/images/ai-workflow.png",
       {
-        "src": "./images/ai-workflow.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/ai-workflow/slide-01.png",
+        "src": "./assets/images/cases/ai-workflow/slide-01.png",
         "caption": "新版 03 AI工作流"
       },
       {
-        "src": "./images/cases/ai-workflow/slide-02.png",
+        "src": "./assets/images/cases/ai-workflow/slide-02.png",
         "caption": "新版 04 AI个人产品"
       },
       {
-        "src": "./images/cases/ai-workflow/slide-03.png",
+        "src": "./assets/images/cases/ai-workflow/slide-03.png",
         "caption": "新版 05 AI原型验证"
       }
-    ],
-    "slug": "ai-workflow",
-    "cover": "split",
-    "layout": "phones"
+    ]
   },
   {
     "zh": {
@@ -195,22 +186,16 @@ window.PORTFOLIO_V2 = [
     },
     "date": "2026.04—至今 / Present",
     "links": [],
-    "image": "./images/ecosystem-method.png",
+    "image": "./assets/images/ecosystem-method.png",
     "theme": "light",
     "size": "standard",
     "slides": [
+      "./assets/images/ecosystem-method.png",
       {
-        "src": "./images/ecosystem-method.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/ecosystem/slide-01.png",
+        "src": "./assets/images/cases/ecosystem/slide-01.png",
         "caption": "16 · Ecosystem / 跨端探索"
       }
-    ],
-    "slug": "ecosystem",
-    "cover": "card",
-    "layout": "flow"
+    ]
   },
   {
     "zh": {
@@ -239,22 +224,16 @@ window.PORTFOLIO_V2 = [
     },
     "date": "2020.04—2022.12",
     "links": [],
-    "image": "./images/internet-services.png",
+    "image": "./assets/images/internet-services.png",
     "theme": "light",
     "size": "standard",
     "slides": [
+      "./assets/images/internet-services.png",
       {
-        "src": "./images/internet-services.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/internet-services/slide-01.png",
+        "src": "./assets/images/cases/internet-services/slide-01.png",
         "caption": "14 · Business / 互联网服务"
       }
-    ],
-    "slug": "internet-services",
-    "cover": "card",
-    "layout": "multi"
+    ]
   },
   {
     "zh": {
@@ -283,78 +262,15 @@ window.PORTFOLIO_V2 = [
     },
     "date": "2014—2020",
     "links": [],
-    "image": "./images/tencent-products.png",
+    "image": "./assets/images/tencent-products.png",
     "theme": "light",
     "size": "standard",
     "slides": [
+      "./assets/images/tencent-products.png",
       {
-        "src": "./images/tencent-products.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/wesing/slide-01.png",
+        "src": "./assets/images/cases/wesing/slide-01.png",
         "caption": "15 · Tencent / 产品创新"
       }
-    ],
-    "slug": "wesing",
-    "cover": "card",
-    "layout": "flow"
-  },
-  {
-    "zh": {
-      "title": "行业影响力与专业建设",
-      "role": "设计实践分享与人才培养",
-      "overview": "将系统设计与产品创新实践带到专业社区，也通过课程与人才培养让经验被团队持续复用。",
-      "process": [
-        "负责公共设计团队期间推动 ColorOS 15、16 UI Kit 在 Figma Community 公开发布，连接设计工具与开发者生态。",
-        "对外分享《终端互联网的极致体验设计》（MSUP）；《万物互联时代的软件设计创新》收录于 DIA 2023 活动目录。",
-        "担任 OPPO 内部讲师，开展《体验设计与创新系列课程》；曾任腾讯学院高级讲师、设计通道委员。"
-      ],
-      "result": "以公开资源、行业交流与团队培养体现专业贡献。DIA 分享可追溯至活动目录，未据此推定个人观看量、获奖或行业排名。",
-      "imageCaption": "OPPO 开发者大会 · 原稿现场照片"
-    },
-    "en": {
-      "title": "Industry contribution & professional development",
-      "role": "Sharing practice & developing designers",
-      "overview": "Share system design and product innovation practice with the professional community, and make that experience reusable through teaching and mentoring.",
-      "process": [
-        "Supported public publication of the ColorOS 15 and 16 UI Kits while leading the shared design team.",
-        "Shared “Experience Design for Terminal Internet” through MSUP; “Software Design Innovation in the Connected World” is listed in the DIA 2023 event directory.",
-        "Taught experience design and innovation courses at OPPO; previously served as a senior lecturer at Tencent Academy and a design career committee member."
-      ],
-      "result": "Professional contribution is reflected in public resources, industry exchanges and mentoring. The DIA talk is traceable to an event listing; no individual audience or ranking claims are inferred.",
-      "imageCaption": "OPPO Developers Conference · event photograph"
-    },
-    "date": "公开分享 / Public contributions",
-    "links": [
-      [
-        "MSUP · 牟伟成",
-        "https://www.msup.com.cn/teacher/8694"
-      ],
-      [
-        "DIA 2023 · 活动目录 / Event listing",
-        "https://meia.me/course/170613?p=8432"
-      ]
-    ],
-    "image": "./images/industry-odc.png",
-    "theme": "light",
-    "size": "standard",
-    "slides": [
-      {
-        "src": "./images/industry-odc.png",
-        "caption": ""
-      },
-      {
-        "src": "./images/cases/industry/slide-01.png",
-        "caption": "17 · Leadership / 专业建设"
-      },
-      {
-        "src": "./images/cases/industry/slide-02.png",
-        "caption": "18 · Contact / 继续交流"
-      }
-    ],
-    "slug": "industry",
-    "cover": "dark",
-    "layout": "flow"
+    ]
   }
 ];

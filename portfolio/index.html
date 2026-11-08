@@ -1,149 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Michael Mu · 牟伟成 — Portfolio</title>
-<meta name="description" content="19 years of UX design — Tencent, WeSing, OPPO ColorOS. System experience, design systems, and AI prototypes.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
-<script src="./js/data.js"></script>
-<script src="./js/app.js" defer></script>
-</head>
-<body>
-
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="./index.html">牟伟成 <b>MU</b></a>
-    <nav class="nav-links">
-      <a href="#work" data-i18n="navWork">Work</a>
-      <a href="#about" data-i18n="navAbout">About</a>
-      <a href="#ai" data-i18n="navAI">AI &amp; Prototypes</a>
-      <a href="#influence" data-i18n="navInfluence">Influence</a>
-    </nav>
-    <button class="lang-toggle" id="langToggle" type="button">中文</button>
-    <a class="btn btn-primary btn-sm nav-cta" href="https://mutongstar.github.io/resume.html" data-i18n="navResume">Résumé</a>
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Michael Mu — 让复杂，回归自然。</title><meta name="description" content="牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"><link rel="stylesheet" href="style.css"></head>
+<body class="app-page"><header class="nav"><div class="nav-inner"><a class="brand" href="#about" aria-label="牟伟成首页">牟伟成 <b>MU</b></a><nav class="nav-links" aria-label="主导航"><a href="#about" data-tab="about" data-i18n="navAbout">简介</a><div class="work-nav"><a href="#work" data-tab="work" aria-haspopup="true"><span data-i18n="navWork">作品案例</span><span class="nav-chevron" aria-hidden="true">⌄</span></a><div class="work-menu" id="workMenu" aria-label="作品案例"></div></div><a href="#ai" data-tab="ai" data-i18n="navAI">AI 与原型</a><a href="#influence" data-tab="influence" data-i18n="navInfluence">专业影响力</a></nav><button class="lang-toggle" type="button" id="langToggle" aria-label="Switch to English">EN</button></div></header>
+<main class="tab-track" id="tabTrack">
+<div class="tab-panel" id="about" data-panel="about">
+<section class="intro-story" id="home" aria-label="简介">
+  <div class="intro-sticky">
+    <div class="story-art"><div class="art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orb orb-three"></div><span class="art-message">让复杂，<br>回归<span>自然。</span></span></div><div class="device-top"></div><div class="device-caption">SYSTEMS / PRODUCTS / POSSIBILITIES</div></div>
+    <div class="story-cover">
+      <div class="story-cover-inner">
+        <div class="story-cover-copy">
+          <p class="eyebrow story-identity">牟伟成 · OPPO ColorOS 设计负责人</p>
+          <h1>设计负责人，<br>系统思考者。</h1>
+          <p class="story-journey">从定义应用体验，到定义 OS 体验，再到跨端 AI。</p>
+          <div class="story-actions"><a class="pill" href="#work">查看案例 ↗</a><a class="pill" href="resume.html" data-resume>查看简历 ↗</a></div>
+          <div class="story-metrics"><div><b>19</b><span>年经验</span></div><div><b>40+</b><span>设计师团队</span></div><div><b>2</b><span>代 UI Kit</span></div></div>
+        </div>
+        <img class="story-portrait" src="assets/images/michael-mu-avatar.png" alt="Michael Mu · 牟伟成">
+      </div>
+      <span class="story-scroll-cue">SCROLL TO EXPLORE ↓</span>
+    </div>
+    <div class="story-outcome">
+      <div class="outcome-copy"><h2>从系统体验，<br>到产品创新。</h2></div>
+      <div class="outcome-capabilities">
+        <div><span>01</span><div><h3>系统体验策略</h3><p>OS 层面的体验策略与跨业务协同，从洞察到落地的系统行为。</p></div></div>
+        <div><span>02</span><div><h3>设计语言与系统</h3><p>共享设计系统、控件与动效；ColorOS 15、16 两代 UI Kit 已在 Figma Community 发布。</p></div></div>
+        <div><span>03</span><div><h3>AI 与原型实践</h3><p>理解 AI 架构（意图、记忆、知识库），把判断做成可运行的原型。</p></div></div>
+      </div>
+    </div>
   </div>
-</header>
-
-<main>
-  <!-- Hero: statement + the work, shrunk into a phone (OPPO ColorOS 17 pattern) -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow" data-i18n="heroEyebrow">Michael Mu · Design Lead, OPPO ColorOS</p>
-        <h1 data-i18n="heroH1">From defining app experiences, to <span class="gold">OS experiences</span>, to cross-device AI.</h1>
-        <p class="hero-sub" data-i18n="heroSub">19 years of user experience and product design, spanning Tencent, WeSing, and OPPO ColorOS — turning design insight from complex businesses into experience strategy and design systems.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#work" data-i18n="heroCtaWork">See the work</a>
-          <a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="heroCtaResume">View résumé</a>
-        </div>
-        <div class="hero-meta">
-          <div><b>19</b><span data-i18n="heroMeta1t">years of experience</span></div>
-          <div><b>40+</b><span data-i18n="heroMeta2t">designers led</span></div>
-          <div><b>2</b><span data-i18n="heroMeta3t">generations of UI Kit</span></div>
-        </div>
-      </div>
-      <figure class="hero-phone">
-        <div class="phone">
-          <div class="phone-screen"><img src="./images/cases/design-systems/slide-01.png" alt="ColorOS Design System — engineering layers"></div>
-          <div class="phone-notch"></div>
-        </div>
-        <figcaption data-i18n="heroPhoneCaption">ColorOS Design System — engineering layers</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- Work: entry covers vary, detail pages stay consistent -->
-  <section class="work" id="work">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
-        <h2 class="sec-title" data-i18n="workTitle">Cases</h2>
-        <p class="sec-intro" data-i18n="workIntro">Seven cases, from OS experience to AI prototypes — each one opens into a full case page.</p>
-      </div>
-      <div class="work-list" id="workList"></div>
-    </div>
-  </section>
-
-  <!-- About: kept on the main page (the résumé carries the detail) -->
-  <section id="about">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
-        <h2 class="sec-title" data-i18n="aboutTitle">Design lead, systems thinker.</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-photo"><img src="./images/michael-mu-avatar.png" alt="Michael Mu · 牟伟成"></div>
-        <div class="about-text">
-          <p class="lede" data-i18n="aboutLede">19 years of UX design across Tencent's core products, a breakout mobile social app, and OPPO's operating system.</p>
-          <p data-i18n="aboutP2">Currently leading ColorOS interconnect experience; previously led the platform design team and internet services experience design and user research.</p>
-          <ul class="doing" id="doingList"></ul>
-          <p style="margin-top:28px"><a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="aboutResumeLink">See full résumé</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI & prototyping: image in the middle, title one side, details the other -->
-  <section class="ai" id="ai">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="aiEyebrow">AI &amp; Prototyping</p>
-        <h2 class="sec-title" data-i18n="aiTitle">AI, made runnable.</h2>
-        <p class="sec-intro" data-i18n="aiIntro">Since 2025: understanding AI architecture first, then prototyping the experience — intent, memory, knowledge, and components.</p>
-      </div>
-      <div id="aiRows"></div>
-      <p class="ai-note" data-i18n="aiNote">Framework draft — copy to be confirmed before publishing.</p>
-    </div>
-  </section>
-
-  <!-- Influence: clean bordered list -->
-  <section id="influence">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="influenceEyebrow">Influence</p>
-        <h2 class="sec-title" data-i18n="influenceTitle">Shared with the community.</h2>
-        <p class="sec-intro" data-i18n="influenceIntro">UI Kits, talks, and events — the work, published.</p>
-      </div>
-      <div class="influence-list" id="influenceList"></div>
-    </div>
-  </section>
-
-  <!-- Ending big cards ("And so much more.") -->
-  <section id="more">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="moreEyebrow">And so much more.</p>
-        <h2 class="sec-title" data-i18n="moreTitle">And so much more.</h2>
-        <p class="sec-intro" data-i18n="moreSub">还有更多。</p>
-      </div>
-      <div class="more-grid">
-        <div class="big-card big-dark">
-          <div><h3 data-i18n="moreWorkT">More work</h3><p data-i18n="moreWorkD">Seven cases on this page — and more in the pipeline.</p></div>
-          <a class="btn btn-gold" href="#work" data-i18n="moreWorkC">See the work</a>
-        </div>
-        <div class="big-card big-gold">
-          <div><h3 data-i18n="moreTalkT">Let's talk</h3><p data-i18n="moreTalkD">Design systems, OS experience, AI products — open to the right conversations.</p></div>
-          <a class="btn btn-primary" href="mailto:mutong@vip.qq.com" data-i18n="moreTalkC">Get in touch</a>
-        </div>
-        <div class="big-card">
-          <div><h3 data-i18n="moreResumeT">Résumé</h3><p data-i18n="moreResumeD">The full story: 19 years, two companies, one turning line.</p></div>
-          <a class="btn btn-ghost" href="https://mutongstar.github.io/resume.html" data-i18n="moreResumeC">View résumé</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap foot-inner">
-    <span>© 2026 牟伟成 Michael Mu · Shenzhen</span>
-    <span><a href="mailto:mutong@vip.qq.com">mutong@vip.qq.com</a> · <a href="https://github.com/mutongstar">GitHub</a></span>
-  </div>
-</footer>
-
-</body>
-</html>
+</section>
+<section class="home-exit wrap"><p class="eyebrow">SELECTED WORK / 作品案例</p><h2>继续探索，<br>设计如何落在真实之中。</h2><a class="pill" href="#work">浏览作品案例 ↗</a></section><footer class="wrap"><div class="footer-bottom"><span>© 2026 MICHAEL MU</span><span>深圳，中国</span><a href="#about">回到顶部 ↑</a></div></footer></div>
+<div class="tab-panel" id="work" data-panel="work"><section class="tab-section"><div class="section-head wrap"><h2>设计，落在真实之中。</h2><span>精选案例 / 2020—2026</span></div><div id="projects"></div></section><footer class="wrap"><div class="footer-bottom"><span>© 2026 MICHAEL MU</span><span>深圳，中国</span><a href="#work">回到顶部 ↑</a></div></footer></div>
+<div class="tab-panel" id="ai" data-panel="ai"><section class="practice wrap"><div class="section-head"><h2>让想法，跑起来。</h2></div><div class="tab-editorial"><span class="eyebrow">AI & PROTOTYPING</span><div class="tab-editorial-copy"><p>2025 年起将 AI 用于研究、总结、写作与方案讨论；2026 年进一步深入 Agent、本地模型与可运行原型。</p><p>结构化业务知识，对齐 Figma UI 库生成设计稿并人工微调；另一条路径接入研发 Android Compose 控件库搭建高保真 Demo。个人语音日记与记忆产品已部署阿里云，按需叙事与洞察仍在探索。</p><a class="text-link" href="case.html?id=3">探索 AI 实践 ↗</a></div></div></section><footer class="wrap"><div class="footer-bottom"><span>© 2026 MICHAEL MU</span><span>深圳，中国</span><a href="#ai">回到顶部 ↑</a></div></footer></div>
+<div class="tab-panel" id="influence" data-panel="influence"><section class="practice wrap"><div class="section-head"><h2>好的设计，彼此成就。</h2></div><div class="tab-editorial"><span class="eyebrow">TEACHING & CONTRIBUTION</span><div class="tab-editorial-copy"><p>担任 OPPO 内部讲师，开展《体验设计与创新系列课程》；曾任腾讯学院高级讲师、设计通道委员。</p><p>在 OPPO 互联网服务与平台任职期间，先后培养 3 位设计师成长为部门主管并完成晋升。对外贡献包括两代 ColorOS UI Kit，以及 MSUP 与 DIA 2023 活动目录收录的分享。</p></div></div></section><div class="closing"><img src="assets/images/industry-odc.png" alt="OPPO 开发者大会现场" loading="lazy"><div><p class="eyebrow">AND SO MUCH MORE.</p><h2>设计之外，<br>还有更大的连接。</h2><span class="pill">专业影响力与行业分享</span></div></div><footer class="wrap"><div><h2>一起，创造下一种可能。</h2><a href="mailto:mutong@vip.qq.com">mutong@vip.qq.com ↗</a></div><div class="footer-bottom"><span>© 2026 MICHAEL MU</span><span>深圳，中国</span><a href="#influence">回到顶部 ↑</a></div></footer></div>
+</main><script src="assets/js/case-content.js"></script><script src="i18n.js"></script><script src="nav.js"></script><script src="work.js"></script><script src="home.js"></script><script src="app.js"></script></body></html>
