@@ -232,7 +232,7 @@ html{scroll-padding-top:76px}
 /* Dark glass navigation stays legible over both the paper and the green opening. */
 .nav{background:rgba(20,28,25,.72);border-bottom:1px solid rgba(255,255,255,.18);box-shadow:0 8px 28px rgba(12,25,20,.16);backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%)}
 .nav .brand{color:#f7f8f2}
-.app-page .nav-links>a,.app-page .work-nav>a,.case-page .nav-links>a,.case-page .work-nav>a{color:#d8ded9}
+.app-page .nav-links>a,.app-page .work-nav>a,.case-page .nav-links>a,.case-page .work-nav>a{color:#eef0ed}
 .app-page .nav-links [aria-current="page"],.app-page .nav-links a:hover,.app-page .work-nav>a:hover,.case-page .nav-links a:hover,.case-page .work-nav>a:hover{color:#fff}
 .lang-toggle{color:#f7f8f2;border-color:rgba(255,255,255,.38);background:rgba(255,255,255,.08)}
 .lang-toggle:hover{border-color:#fff;background:rgba(255,255,255,.17)}
@@ -282,7 +282,7 @@ html{scroll-padding-top:76px}
 .app-page #ai .ai-case-feature .project.ai{display:block}
 .app-page #ai .practice{padding-top:44px}
 
-.nav{background:rgba(0,0,0,.69);box-shadow:0 8px 24px rgba(0,0,0,.16);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px)}.nav::after{content:none}.story-cover .story-journey{font-size:clamp(29px,3.1vw,46px);line-height:1.32;white-space:normal;max-width:740px;font-weight:550}.story-cover{will-change:transform,opacity}
+.nav{background:rgba(8,17,14,.58);box-shadow:0 8px 24px rgba(0,0,0,.14);backdrop-filter:blur(8px) saturate(115%);-webkit-backdrop-filter:blur(8px) saturate(115%);border-bottom:1px solid rgba(255,255,255,.14)}.nav::after{content:none}.story-cover .story-journey{font-size:clamp(29px,3.1vw,46px);line-height:1.32;white-space:normal;max-width:740px;font-weight:550}.story-cover{will-change:transform,opacity}
 
 /* Compact endings and an open, column-based influence page. */
 .app-page .tab-panel>footer{padding-top:30px;padding-bottom:22px}
