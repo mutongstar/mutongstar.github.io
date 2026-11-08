@@ -1,8 +1,8 @@
 (()=>{
 const phrases={
-'navAbout':['简介','About'],'navWork':['作品案例','Work'],'navAI':['AI 与原型','AI & Prototypes'],'navInfluence':['专业影响力','Influence'],
+'navAbout':['简介','About'],'navWork':['作品案例','Work'],'navAI':['AI 实践','AI design'],'navInfluence':['专业影响力','Influence'],
 '.story-identity':['全局思考与设计领导者','Systems thinker & design leader'],
-'.story-journey':['从深入打造应用产品，到定义 OS 体验，再到跨端 AI。','From shaping app products in depth to defining OS experiences and cross-device AI.'],
+'.story-journey':['从深入打造 PC &amp; 移动端应用，<br>到定义 OS 体验，再到跨端 AI 探索。','From shaping PC and mobile apps,<br>to defining OS experiences and exploring cross-device AI.'],
 '.story-actions .pill:first-child':['查看案例 ↗','See the work ↗'],
 '.story-metrics>div:nth-child(1) span':['年经验','years of experience'],
 '.story-metrics>div:nth-child(2) span':['设计师团队','designers led'],

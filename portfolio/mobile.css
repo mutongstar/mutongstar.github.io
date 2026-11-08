@@ -29,3 +29,5 @@
 .ai-summary-copy p{font-size:13px}
 .ai-summary-copy .entry{margin-top:18px}
 .ai-summary-image{height:240px;padding:18px}
+
+.nav{background:rgba(0,0,0,.7)}.story-cover .story-journey{font-size:clamp(24px,6.6vw,30px);line-height:1.35}

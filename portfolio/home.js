@@ -39,7 +39,8 @@ function renderStory(){
   artStage.style.borderWidth=mix(0,layout.borderWidth,eased)+'px';
   artStage.style.setProperty('--message-size',mix(mobile?(english?28:38):(english?48:60),mobile?(english?15:20):(english?26:36),eased)+'px');
   artStage.querySelector('.story-portrait').style.opacity=String(1-clamp((progress-.12)/.58));
-  cover.style.opacity=String(1-clamp(progress/.42));
+  cover.style.opacity=String(1-clamp((progress-.12)/.85));
+  cover.style.transform='translateY('+mix(0,-vh*.7,clamp(progress/.82))+'px)';
   cover.style.pointerEvents=progress>.48?'none':'auto';
   outcome.style.opacity=String(clamp((progress-.42)/.4));
   outcome.style.transform='translateY('+mix(28,0,clamp((progress-.42)/.4))+'px)';

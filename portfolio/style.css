@@ -276,3 +276,5 @@ html{scroll-padding-top:76px}
 .ai-summary-copy .entry{font-size:13px;border-bottom:1px solid currentColor;padding-bottom:7px;margin-top:30px}
 .ai-summary-image{background:#c9d7cf;display:grid;place-items:center;min-width:0;padding:26px}
 .ai-summary-image img{max-height:440px;width:100%;height:100%;object-fit:contain}
+
+.nav{background:rgba(0,0,0,.69);box-shadow:0 8px 24px rgba(0,0,0,.16);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px)}.nav::after{content:none}.story-cover .story-journey{font-size:clamp(29px,3.1vw,46px);line-height:1.32;white-space:normal;max-width:740px;font-weight:550}.story-cover{will-change:transform,opacity}
