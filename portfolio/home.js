@@ -6,28 +6,33 @@ const outcome=document.querySelector('.story-outcome');
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const clamp=value=>Math.max(0,Math.min(1,value));
 const mix=(start,end,progress)=>start+(end-start)*progress;
+function desktopStoryLayout(vw,vh){
+  const contentWidth=vw>=1600?1400:vw>=1100?990:Math.min(vw-40,1080);
+  const phoneWidth=Math.min(278,contentWidth*.3);
+  const phoneHeight=Math.min(500,vh*.73);
+  return {artHeight:vh-64,phoneWidth,phoneHeight,targetX:(vw-contentWidth)/2+contentWidth-phoneWidth-26,targetY:(vh-phoneHeight)/2,progressEnd:.72,borderRadius:38,borderWidth:8};
+}
+function mobileStoryLayout(vw,vh){
+  const phoneWidth=Math.min(118,vw*.31);
+  const phoneHeight=Math.min(218,vh*.28);
+  return {artHeight:vh-98,phoneWidth,phoneHeight,targetX:vw-phoneWidth-18,targetY:18,progressEnd:.92,borderRadius:24,borderWidth:5};
+}
 let storyFrame=0;
 function renderStory(){
   storyFrame=0;
   const vw=aboutPanel.clientWidth,vh=aboutPanel.clientHeight,mobile=vw<760;
-  const artHeight=vh-(mobile?98:64);
+  const layout=mobile?mobileStoryLayout(vw,vh):desktopStoryLayout(vw,vh);
   const english=document.documentElement.lang==='en';
   const range=Math.max(1,story.offsetHeight-vh);
   const raw=clamp((aboutPanel.scrollTop-story.offsetTop)/range);
-  const progress=reduceMotion.matches?(raw>.48?1:0):clamp(raw/(mobile?.92:.72));
+  const progress=reduceMotion.matches?(raw>.48?1:0):clamp(raw/layout.progressEnd);
   const eased=progress*progress*(3-2*progress);
-  const contentWidth=vw>=1600?1400:vw>=1100?990:Math.min(vw-40,1080);
-  const left=(vw-contentWidth)/2;
-  const phoneWidth=mobile?Math.min(135,vw*.35):Math.min(330,contentWidth*.34);
-  const phoneHeight=mobile?Math.min(245,vh*.35):Math.min(590,vh*.81);
-  const targetX=mobile?vw-phoneWidth-18:left+contentWidth-phoneWidth-26;
-  const targetY=mobile?18:(vh-phoneHeight)/2;
-  artStage.style.width=mix(vw,phoneWidth,eased)+'px';
-  artStage.style.height=mix(artHeight,phoneHeight,eased)+'px';
-  artStage.style.left=mix(0,targetX,eased)+'px';
-  artStage.style.top=mix(0,targetY,eased)+'px';
-  artStage.style.borderRadius=mix(0,mobile?24:38,eased)+'px';
-  artStage.style.borderWidth=mix(0,mobile?5:8,eased)+'px';
+  artStage.style.width=mix(vw,layout.phoneWidth,eased)+'px';
+  artStage.style.height=mix(layout.artHeight,layout.phoneHeight,eased)+'px';
+  artStage.style.left=mix(0,layout.targetX,eased)+'px';
+  artStage.style.top=mix(0,layout.targetY,eased)+'px';
+  artStage.style.borderRadius=mix(0,layout.borderRadius,eased)+'px';
+  artStage.style.borderWidth=mix(0,layout.borderWidth,eased)+'px';
   artStage.style.setProperty('--message-size',mix(mobile?(english?28:38):(english?48:60),mobile?(english?15:20):(english?26:36),eased)+'px');
   artStage.querySelector('.story-portrait').style.opacity=String(1-clamp((progress-.12)/.58));
   cover.style.opacity=String(1-clamp(progress/.42));

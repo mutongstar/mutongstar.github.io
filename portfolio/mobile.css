@@ -1,0 +1,29 @@
+/* Mobile composition is maintained separately from the desktop artwork. */
+.nav{height:98px;background:rgba(15,25,21,.67)}
+.nav-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:37px 38px;align-content:center;gap:4px 8px;padding-inline:16px}
+.nav-inner .brand{grid-column:1;grid-row:1;justify-self:start;align-self:center}
+.nav-inner .lang-toggle{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin:0}
+.nav-inner .nav-links{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;width:100%;align-items:stretch}
+.nav-links>a,.work-nav{min-width:0;justify-content:center;text-align:center}
+.app-page .nav .nav-links>a,.case-page .nav .nav-links>a,.nav .work-nav>a{display:flex;height:38px;min-width:0;align-items:center;justify-content:center;text-align:center;font-size:clamp(9px,2.5vw,11px);line-height:1.15;white-space:normal}
+.work-nav>a{width:100%;gap:2px}
+.app-page .nav-chevron,.case-page .nav-chevron{font-size:10px}
+.app-page .tab-panel{padding-top:98px}
+.intro-story{height:calc((100dvh - 98px)*1.52)}
+.story-art .story-portrait{right:-7%;bottom:0;width:74%;height:68%;max-width:none}
+.story-art .art-message{top:34%;font-weight:650}
+.story-journey{font-size:15px;white-space:normal}
+.app-page:lang(en) .story-art .art-message{top:39%}
+.story-outcome{padding-top:20px}
+.outcome-capabilities{top:min(65%,440px)}
+.home-exit{padding-top:32px;padding-bottom:45px}
+.home-exit h2{margin:18px 0 24px}
+.app-page #about footer{padding-top:20px}
+.app-page #ai .practice{min-height:0;padding-bottom:30px}
+.ai-case-summary{padding-bottom:48px}
+.ai-summary-card{display:flex;flex-direction:column-reverse;min-height:0}
+.ai-summary-copy{padding:26px 22px 32px}
+.ai-summary-copy h3{font-size:27px;margin:12px 0}
+.ai-summary-copy p{font-size:13px}
+.ai-summary-copy .entry{margin-top:18px}
+.ai-summary-image{height:240px;padding:18px}
