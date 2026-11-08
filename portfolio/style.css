@@ -158,7 +158,7 @@ html{scroll-padding-top:76px}
 }
 @media(prefers-reduced-motion:reduce){.app-page .tab-track{transition:none}}
 
-/* About: portrait-led opening, then the same Clarity artwork contracts into a phone. */
+/* About: the opening artwork and portrait contract together into a phone. */
 .intro-story{height:calc((100dvh - 64px)*2.12);position:relative;background:var(--paper)}
 .intro-sticky{position:sticky;top:0;height:calc(100dvh - 64px);overflow:hidden;isolation:isolate}
 .story-art{position:absolute;left:0;top:0;width:100%;height:100%;z-index:0;border:0 solid #20221f;overflow:hidden;box-shadow:0 24px 70px #173c3226;will-change:width,height,left,top}
@@ -251,4 +251,32 @@ html{scroll-padding-top:76px}
 @media(max-width:760px){
   .app-page #work .tab-section{padding-top:22px}
   .app-page #ai .practice,.app-page #influence .practice{padding-top:24px}
+}
+
+/* Let page content pass behind the glass header while keeping its opening below the controls. */
+.nav{background:rgba(20,28,25,.44);box-shadow:0 10px 30px rgba(12,25,20,.14),inset 0 1px rgba(255,255,255,.13);backdrop-filter:blur(30px) saturate(160%);-webkit-backdrop-filter:blur(30px) saturate(160%)}
+.app-page .tab-track{top:0;height:100dvh}
+.app-page .tab-panel{padding-top:64px}
+.story-art .story-portrait{position:absolute;right:2.5%;bottom:0;width:52%;max-width:600px;height:82%;max-height:none;object-position:bottom right;pointer-events:none;z-index:1}
+.story-art .art-message{z-index:2;top:4%}
+@media(max-width:760px){
+  .nav{height:98px;background:rgba(20,28,25,.42)}
+  .nav-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:37px 38px;align-content:center;gap:4px 8px;padding-inline:16px}
+  .nav-inner .brand{grid-column:1;grid-row:1;justify-self:start;align-self:center}
+  .nav-inner .lang-toggle{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin:0}
+  .nav-inner .nav-links{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;width:100%;align-items:stretch}
+  .nav-links>a,.work-nav{min-width:0;justify-content:center;text-align:center}
+  .app-page .nav .nav-links>a,.case-page .nav .nav-links>a,.nav .work-nav>a{display:flex;height:38px;min-width:0;align-items:center;justify-content:center;text-align:center;font-size:clamp(9px,2.5vw,11px);line-height:1.15;white-space:normal}
+  .work-nav>a{width:100%;gap:2px}
+  .app-page .nav-chevron,.case-page .nav-chevron{font-size:10px}
+  .app-page .tab-panel{padding-top:98px}
+  .intro-story{height:calc((100dvh - 98px)*1.52)}
+  .story-art .story-portrait{right:-7%;bottom:0;width:74%;height:68%;max-width:none}
+  .story-art .art-message{top:34%}
+  .app-page:lang(en) .story-art .art-message{top:39%}
+  .story-outcome{padding-top:20px}
+  .outcome-capabilities{top:min(65%,440px)}
+  .home-exit{padding-top:32px;padding-bottom:45px}
+  .home-exit h2{margin:18px 0 24px}
+  .app-page #about footer{padding-top:20px}
 }

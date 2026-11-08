@@ -10,10 +10,11 @@ let storyFrame=0;
 function renderStory(){
   storyFrame=0;
   const vw=aboutPanel.clientWidth,vh=aboutPanel.clientHeight,mobile=vw<760;
+  const artHeight=vh-(mobile?98:64);
   const english=document.documentElement.lang==='en';
   const range=Math.max(1,story.offsetHeight-vh);
   const raw=clamp((aboutPanel.scrollTop-story.offsetTop)/range);
-  const progress=reduceMotion.matches?(raw>.48?1:0):clamp(raw/.72);
+  const progress=reduceMotion.matches?(raw>.48?1:0):clamp(raw/(mobile?.92:.72));
   const eased=progress*progress*(3-2*progress);
   const contentWidth=vw>=1600?1400:vw>=1100?990:Math.min(vw-40,1080);
   const left=(vw-contentWidth)/2;
@@ -22,12 +23,13 @@ function renderStory(){
   const targetX=mobile?vw-phoneWidth-18:left+contentWidth-phoneWidth-26;
   const targetY=mobile?18:(vh-phoneHeight)/2;
   artStage.style.width=mix(vw,phoneWidth,eased)+'px';
-  artStage.style.height=mix(vh,phoneHeight,eased)+'px';
+  artStage.style.height=mix(artHeight,phoneHeight,eased)+'px';
   artStage.style.left=mix(0,targetX,eased)+'px';
   artStage.style.top=mix(0,targetY,eased)+'px';
   artStage.style.borderRadius=mix(0,mobile?24:38,eased)+'px';
   artStage.style.borderWidth=mix(0,mobile?5:8,eased)+'px';
-  artStage.style.setProperty('--message-size',mix(mobile?(english?30:42):(english?64:88),mobile?(english?15:20):(english?26:36),eased)+'px');
+  artStage.style.setProperty('--message-size',mix(mobile?(english?28:38):(english?48:60),mobile?(english?15:20):(english?26:36),eased)+'px');
+  artStage.querySelector('.story-portrait').style.opacity=String(1-clamp((progress-.12)/.58));
   cover.style.opacity=String(1-clamp(progress/.42));
   cover.style.pointerEvents=progress>.48?'none':'auto';
   outcome.style.opacity=String(clamp((progress-.42)/.4));
