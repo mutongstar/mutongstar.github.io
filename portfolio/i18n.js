@@ -22,8 +22,11 @@ const phrases={
 '[data-resume]':['查看简历 ↗','View résumé ↗'],
 '#work .section-head h2':['设计，落在真实之中。','Design, made real.'],
 '#work .section-head>span':['精选案例 / 2020—2026','Selected work / 2020—2026'],
-'#ai .tab-editorial-copy p:nth-of-type(1)':['2025 年起将 AI 用于研究、总结、写作与方案讨论；2026 年进一步深入 Agent、本地模型与可运行原型。','Since 2025, I have used AI for research, synthesis, writing and design discussion. In 2026, I went deeper into agents, local models and runnable prototypes.'],
-'#ai .tab-editorial-copy p:nth-of-type(2)':['结构化业务知识，对齐 Figma UI 库生成设计稿并人工微调；另一条路径接入研发 Android Compose 控件库搭建高保真 Demo。个人语音日记与记忆产品已部署阿里云，按需叙事与洞察仍在探索。','I structure product knowledge for Figma-assisted design, then review and refine the output. Separately, I use developer-provided Android Compose components to build high-fidelity demos. My personal voice diary and memory product is deployed on Alibaba Cloud; narrative and insight capabilities remain exploratory.'],
+'#ai .ai-notes-title':['让记忆，<br>回应当下。','Let memory<br>respond.'],
+'#ai .ai-notes-lede':['个人构建并部署的语音日记与记忆产品；以本地语音模型记录、分层整理个人内容，探索按需叙事与洞察。','A personal voice diary and memory product I built and deployed. It uses local speech models and layered personal records while I explore on-demand narratives and insights.'],
+'#ai .ai-notes-steps p:nth-child(1)':['语音记录：让想法自然进入个人记忆。','Voice capture: let ideas enter personal memory naturally.'],
+'#ai .ai-notes-steps p:nth-child(2)':['分层组织：将记录整理为可回访的脉络。','Layered organization: make notes easier to revisit.'],
+'#ai .ai-notes-steps p:nth-child(3)':['按需探索：从已有内容中寻找线索和新的视角。','On-demand exploration: find patterns and fresh perspectives in past notes.'],
 '#influence .section-head h2':['好的设计，彼此成就。','Good design grows with people.'],
 '#influence .influence-grid article:nth-child(1) h3':['教学分享','Teaching & sharing'],
 '#influence .influence-grid article:nth-child(1) p':['担任 OPPO 内部讲师，开展《体验设计与创新系列课程》；曾任腾讯学院高级讲师、设计通道委员。','I teach experience design and innovation at OPPO and previously served as a senior lecturer at Tencent Academy and a design career committee member.'],
@@ -34,22 +37,21 @@ const phrases={
 '.closing h2':['设计之外，<br>还有更大的连接。','Beyond design,<br>more connections.'],
 '.closing .pill':['专业影响力与行业分享','Industry contribution'],
 'footer h2':['一起，创造下一种可能。','Let’s make what comes next.'],
-'footer .footer-bottom a':['回到顶部 ↑','Back to top ↑'],
-'.ai .prototype-note':['三屏交互结构示意 · 用于本轮封面形式验证，非已上线产品界面','Three-screen interaction concept for this cover only; not a shipped product UI.'],
-'.ai .phone:nth-child(1) h4':['留住<br>此刻的想法。','Capture<br>the moment.'],
-'.ai .phone:nth-child(2) h4':['想法有了<br>自己的脉络。','Ideas find<br>their structure.'],
-'.ai .phone:nth-child(3) h4':['让记忆，<br>回应当下。','Let memory<br>respond.']
-,'#projects .phone:nth-child(1) .ui-block':['语音记录<br>━━━━ ━━ ━━━━━<br>正在聆听…','Voice note<br>━━━━ ━━ ━━━━━<br>Listening…']
-,'#projects .phone:nth-child(2) .ui-block:nth-of-type(1)':['今天的记录<br>项目 · 灵感 · 生活','Today’s notes<br>Projects · Ideas · Life']
-,'#projects .phone:nth-child(2) .ui-block:nth-of-type(3)':['每一次记录，都有所连接。','Every note finds a connection.']
-,'#projects .phone:nth-child(3) .ui-block':['从记录中寻找线索<br>关联想法，形成新的视角。','Find patterns in your notes.<br>Connect ideas into a new perspective.']
-,'#projects .phone:nth-child(1) .ui-action':['结束记录','Finish recording']
-,'#projects .phone:nth-child(2) .ui-action':['查看记忆','View memories']
-,'#projects .phone:nth-child(3) .ui-action':['开始探索','Explore']
-,'#projects .phone:nth-child(2) small':['我的记忆 / MEMORY','MY MEMORY']
-,'#projects .phone:nth-child(3) small':['探索 / EXPLORE','EXPLORE']
-,'footer .footer-bottom>span:nth-child(2)':['深圳，中国','Shenzhen, China']
+'#ai .prototype-note':['三屏交互结构示意 · 非已上线产品界面','Three-screen interaction concept · not a shipped product UI.'],
+'#ai .phone:nth-child(1) h4':['留住<br>此刻的想法。','Capture<br>the moment.'],
+'#ai .phone:nth-child(2) h4':['想法有了<br>自己的脉络。','Ideas find<br>their structure.'],
+'#ai .phone:nth-child(3) h4':['让记忆，<br>回应当下。','Let memory<br>respond.'],
+'#ai .phone:nth-child(1) .ui-block':['语音记录<br>━━━━ ━━ ━━━━━<br>正在聆听…','Voice note<br>━━━━ ━━ ━━━━━<br>Listening…'],
+'#ai .phone:nth-child(2) .ui-block:nth-of-type(1)':['今天的记录<br>项目 · 灵感 · 生活','Today’s notes<br>Projects · Ideas · Life'],
+'#ai .phone:nth-child(2) .ui-block:nth-of-type(3)':['每一次记录，都有所连接。','Every note finds a connection.'],
+'#ai .phone:nth-child(3) .ui-block':['从记录中寻找线索<br>关联想法，形成新的视角。','Find patterns in your notes.<br>Connect ideas into a new perspective.'],
+'#ai .phone:nth-child(1) .ui-action':['结束记录','Finish recording'],
+'#ai .phone:nth-child(2) .ui-action':['查看记忆','View memories'],
+'#ai .phone:nth-child(3) .ui-action':['开始探索','Explore'],
+'#ai .phone:nth-child(2) small':['我的记忆 / MEMORY','MY MEMORY'],
+'#ai .phone:nth-child(3) small':['探索 / EXPLORE','EXPLORE'],
+'footer .footer-bottom>span:nth-child(2)':['深圳，中国','Shenzhen, China']
 };
-const api={lang:localStorage.getItem('portfolio-language')==='en'?'en':'zh',apply(){document.documentElement.lang=this.lang==='zh'?'zh-CN':'en';for(const [selector,values] of Object.entries(phrases)){const elements=document.querySelectorAll(selector.startsWith('nav')?'[data-i18n="'+selector+'"]':selector);elements.forEach(el=>el.innerHTML=values[this.lang==='zh'?0:1])}const b=document.querySelector('#langToggle');if(b){b.textContent=this.lang==='zh'?'EN':'中文';b.setAttribute('aria-label',this.lang==='zh'?'Switch to English':'切换为中文')}const browse=document.querySelector('.circle');if(browse)browse.setAttribute('aria-label',this.lang==='zh'?'浏览作品':'Explore work')}};
+const api={lang:localStorage.getItem('portfolio-language')==='en'?'en':'zh',apply(){document.documentElement.lang=this.lang==='zh'?'zh-CN':'en';for(const [selector,values] of Object.entries(phrases)){const elements=document.querySelectorAll(selector.startsWith('nav')?'[data-i18n="'+selector+'"]':selector);elements.forEach(el=>el.innerHTML=values[this.lang==='zh'?0:1])}const b=document.querySelector('#langToggle');if(b){b.textContent=this.lang==='zh'?'EN':'中文';b.setAttribute('aria-label',this.lang==='zh'?'Switch to English':'切换为中文')}const brand=document.querySelector('.brand');if(brand)brand.setAttribute('aria-label',this.lang==='zh'?'牟伟成首页':'Michael home');const browse=document.querySelector('.circle');if(browse)browse.setAttribute('aria-label',this.lang==='zh'?'浏览作品':'Explore work')}};
 window.PortfolioI18N=api;document.querySelector('#langToggle')?.addEventListener('click',()=>{api.lang=api.lang==='zh'?'en':'zh';localStorage.setItem('portfolio-language',api.lang);dispatchEvent(new Event('portfolio-language'));api.apply()});api.apply();
 })();

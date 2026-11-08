@@ -116,26 +116,24 @@ window.PORTFOLIO_CASES = [
   {
     "zh": {
       "title": "AI 工作流与可运行原型",
-      "role": "个人实践与设计工作流探索",
+      "role": "AI 设计工作流探索",
       "overview": "2025 年起将 AI 用于研究、总结、写作与方案讨论；2026 年进一步深入 Agent、本地模型及可运行原型，用实际运行效果重新审视设计判断。",
       "process": [
         "结构化产品定义、模块、Token、场景组件与交互逻辑，对齐 Figma UI 库，生成设计稿后人工判断与微调。",
-        "另一条路径接入研发提供的 Android Compose 控件库，结合业务知识搭建高保真 Demo；不等同于 Figma 自动转代码。",
-        "个人构建语音日记与记忆产品并部署至阿里云，采用本地语音模型记录、分层组织个人数据库，探索按需生成叙事与洞察。"
+        "另一条路径接入研发提供的 Android Compose 控件库，结合业务知识搭建高保真 Demo；不等同于 Figma 自动转代码。"
       ],
-      "result": "已形成设计稿与运行原型两条实践路径。个人产品与工作流属于实践探索，未作为商业上线成果；算法能力由研发提供，体验整合与原型验证由本人推进。",
+      "result": "已形成设计稿与运行原型两条实践路径，属于探索性实践，未作为商业上线成果；算法能力由研发提供，体验整合与原型验证由本人推进。",
       "imageCaption": "AI 工作流 · 方法示意"
     },
     "en": {
       "title": "AI workflows & runnable prototypes",
-      "role": "Hands-on practice & design workflow exploration",
+      "role": "AI design workflow exploration",
       "overview": "Started using AI for research, synthesis, writing and design discussion in 2025, then deepened hands-on work with agents, local models and runnable prototypes in 2026.",
       "process": [
         "Structure product knowledge, tokens, components and interaction logic; align with a Figma library and refine generated designs through human judgment.",
-        "In a separate path, use developer-provided Android Compose components to build runnable demos; this is not automatic Figma-to-code conversion.",
-        "Built and deployed a personal voice diary and memory product on Alibaba Cloud, using local speech models and layered personal records while exploring narrative and insight generation."
+        "In a separate path, use developer-provided Android Compose components to build runnable demos; this is not automatic Figma-to-code conversion."
       ],
-      "result": "Established separate design and runnable-prototype paths. Personal products and workflows are exploratory practice rather than commercial launches; engineering supplies algorithm capabilities, while I work on experience integration and prototype validation.",
+      "result": "Established separate design and runnable-prototype paths as exploratory practice, not commercial launches. Engineering supplies algorithm capabilities; I work on experience integration and prototype validation.",
       "imageCaption": "AI workflow · process diagram"
     },
     "date": "2025—2026",
@@ -148,10 +146,6 @@ window.PORTFOLIO_CASES = [
       {
         "src": "./assets/images/cases/ai-workflow/slide-01.png",
         "caption": "新版 03 AI工作流"
-      },
-      {
-        "src": "./assets/images/cases/ai-workflow/slide-02.png",
-        "caption": "新版 04 AI个人产品"
       },
       {
         "src": "./assets/images/cases/ai-workflow/slide-03.png",

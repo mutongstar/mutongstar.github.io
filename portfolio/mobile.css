@@ -43,3 +43,18 @@
 .case-analysis li{padding:11px 0}
 .detail-navigation{grid-template-columns:1fr;gap:26px;padding-top:28px;padding-bottom:32px}
 .detail-navigation .detail-all{min-height:38px}
+
+.ai-notes-case{padding:30px 0 40px}
+.ai-case-header{grid-template-columns:1fr;gap:18px;padding-bottom:22px}
+.ai-case-header h2{font-size:34px}
+.ai-case-header>p{font-size:15px}
+.ai-notes-case .phones{padding:20px 4% 42px;gap:9px}
+.ai-notes-case .phone:nth-child(2) .ui-block:nth-of-type(3){display:none}
+.ai-notes-bottom{grid-template-columns:1fr;gap:20px}
+.ai-notes-steps{grid-template-columns:1fr;gap:0}
+.ai-notes-steps p{margin:0;padding:12px 0;border-bottom:1px solid var(--line)}
+.ai-workflow-case{padding:42px 0 50px}
+.ai-workflow-body{grid-template-columns:1fr;gap:28px}
+.detail-navigation{display:flex;gap:12px}
+.detail-navigation .detail-all{min-height:0;white-space:nowrap}
+.detail-navigation .detail-next{max-width:68%;flex-wrap:wrap;gap:0 4px}

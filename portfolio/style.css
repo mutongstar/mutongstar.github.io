@@ -311,4 +311,36 @@ html{scroll-padding-top:76px}
 
 .nav .brand{display:inline-flex;align-items:center;gap:10px}
 .brand-symbol{position:relative;display:inline-block;width:28px;height:42px;flex:none;overflow:hidden}
-.brand-symbol img{position:absolute;left:-31px;top:-12px;width:70px;max-width:none;height:70px}
+.brand-symbol img{position:absolute;left:-7.5px;top:-10.8px;width:60px;max-width:none;height:60px}
+.brand-symbol{width:44px;height:40px}
+.app-page .tab-panel{scrollbar-gutter:stable}
+
+/* AI practice: two distinct stories, both readable in the tab itself. */
+.ai-notes-case{background:#e9e6e0;padding:54px 0 60px}
+.ai-case-header{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:end;padding-bottom:34px}
+.ai-case-header h2{font-size:clamp(37px,4vw,56px);line-height:1.18;font-weight:500;letter-spacing:-.045em;margin:17px 0 0}
+.ai-case-header>p{font-size:clamp(16px,1.5vw,20px);line-height:1.7;margin:0;max-width:550px}
+.ai-notes-case .phones{max-width:990px;margin:0 auto;padding:26px 0 62px}
+.ai-notes-bottom{display:grid;grid-template-columns:1fr 2fr;gap:6%;align-items:start}
+.ai-notes-bottom .prototype-note{text-align:left;margin:0;line-height:1.6;max-width:230px!important}
+.ai-notes-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid var(--ink)}
+.ai-notes-steps p{font-size:13px;line-height:1.7;margin:16px 0 0}
+.ai-workflow-case{padding:68px 0 76px;background:var(--paper)}
+.ai-workflow-body{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:5%;align-items:start}
+.ai-workflow-body figure{margin:0;background:#e5e7e1;padding:22px}
+.ai-workflow-body figure img{width:100%;height:auto}
+.ai-workflow-body figcaption{font-size:11px;color:var(--muted);margin-top:12px}
+.ai-workflow-detail ol{list-style:none;padding:0;margin:18px 0;border-top:1px solid var(--ink)}
+.ai-workflow-detail li{display:grid;grid-template-columns:30px 1fr;gap:9px;padding:14px 0;border-bottom:1px solid var(--line)}
+.ai-workflow-detail li span{font-size:11px;color:var(--accent)}
+.ai-workflow-detail li p,.ai-workflow-result{font-size:14px;line-height:1.7;margin:0}
+.ai-workflow-result{color:var(--muted);margin-top:18px}
+.ai-workflow-detail .text-link{margin-top:20px}
+
+/* Case navigation uses the same text scale on both sides. */
+.detail-navigation{display:flex;justify-content:space-between;align-items:baseline;gap:30px;border-top:1px solid var(--ink)}
+.detail-navigation .detail-all,.detail-navigation .detail-next{padding:0;border:0;background:transparent;font-size:15px;line-height:1.55}
+.detail-navigation .detail-all{display:block;flex:none}
+.detail-navigation .detail-next{display:flex;justify-content:flex-end;align-items:baseline;gap:5px;text-align:right;max-width:72%}
+.detail-navigation .detail-next .eyebrow{font-size:inherit;font-weight:400;letter-spacing:0;white-space:nowrap}
+.detail-navigation .detail-next strong{display:inline;font-size:inherit;font-weight:400;margin:0}
