@@ -17,8 +17,8 @@ function renderAiSummary(){
   if(!host)return;
   const c=cases[2],t=copy(2),en=lang()==='en';
   host.innerHTML=`<article class="ai-workflow-case">
-    <div class="ai-case-header wrap"><div><span class="eyebrow">AI / DESIGN WORKFLOW</span><h2>${esc(t.title)}</h2></div><p>${esc(t.overview)}</p></div>
-    <div class="ai-workflow-body wrap"><figure><img src="${path(c.image)}" alt="${esc(t.imageCaption)}" loading="lazy"><figcaption>${esc(t.imageCaption)}</figcaption></figure><div class="ai-workflow-detail"><span class="eyebrow">${en?'APPROACH':'关键判断与做法'}</span><ol>${t.process.map((step,n)=>`<li><span>0${n+1}</span><p>${esc(step)}</p></li>`).join('')}</ol><p class="ai-workflow-result">${esc(t.result)}</p><a class="text-link" href="case.html?id=3">${en?'View full case ↗':'查看完整案例 ↗'}</a></div></div>
+    <div class="ai-case-header wrap reveal"><div><span class="eyebrow">AI / DESIGN WORKFLOW</span><h2>${esc(t.title)}</h2></div><p>${esc(t.overview)}</p></div>
+    <div class="ai-workflow-body wrap"><figure><img src="${path(c.image)}" alt="${esc(t.imageCaption)}" loading="lazy"><figcaption>${esc(t.imageCaption)}</figcaption></figure><div class="ai-workflow-detail reveal"><span class="eyebrow">${en?'APPROACH':'关键判断与做法'}</span><ol>${t.process.map((step,n)=>`<li><span>0${n+1}</span><p>${esc(step)}</p></li>`).join('')}</ol><p class="ai-workflow-result">${esc(t.result)}</p><a class="text-link" href="case.html?id=3">${en?'View full case ↗':'查看完整案例 ↗'}</a></div></div>
   </article>`;
 }
 window.addEventListener('portfolio-language',()=>{renderWork();renderAiSummary()});renderWork();renderAiSummary();window.PortfolioI18N.apply();
