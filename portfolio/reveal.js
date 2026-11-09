@@ -1,8 +1,7 @@
-// landing-page-design B7 + B11: scroll reveals and tagline word reveals.
-// Reveal once when an element enters the viewport (IntersectionObserver).
-// Taglines split into words (English) or characters (Chinese) and activate
-// one at a time from a muted tone to full color. Re-splits after a language
-// change; new elements rendered by work.js are picked up by MutationObserver.
+// landing-page-design B7 + B11 and design-to-motion (website context):
+// scroll reveals, tagline word reveals, hero appear, card intros and the
+// phone loading intro. All play once, via IntersectionObserver. Stories
+// after loading are deliberately NOT added: the skill asks the user first.
 (function(){
   var seen=new WeakSet();
   var io=new IntersectionObserver(function(entries){
@@ -10,6 +9,11 @@
       if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
     });
   },{threshold:0.2});
+  var ioCard=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');ioCard.unobserve(e.target);}
+    });
+  },{threshold:0.3});
   function splitTagline(el){
     if(!el||el.dataset.split==='1')return;
     var lines=el.innerHTML.split(/<br\s*\/?>/i);
@@ -31,6 +35,11 @@
       if(el.classList.contains('tagline'))splitTagline(el);
       io.observe(el);
     });
+    document.querySelectorAll('.card-intro,.phones').forEach(function(el){
+      if(seen.has(el))return;
+      seen.add(el);
+      ioCard.observe(el);
+    });
   }
   watch();
   var track=document.getElementById('tabTrack');
@@ -43,6 +52,16 @@
         splitTagline(el);
       });
       watch();
+    });
+  });
+  // Hero appear (design-to-motion): the page opens plain; header, badge,
+  // headline, buttons and proof rise 6px and resolve from 2px blur,
+  // staggered, once. Double rAF so the initial state paints first.
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){
+      document.querySelectorAll('.hero-appear').forEach(function(el){
+        el.classList.add('in');
+      });
     });
   });
 })();
