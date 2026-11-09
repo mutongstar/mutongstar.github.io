@@ -117,8 +117,8 @@ html{scroll-padding-top:76px}
 .app-page .nav-links [aria-current="page"]::after{content:"";position:absolute;bottom:0;height:2px;background:var(--accent);left:0;right:0}
 .app-page .nav-links>a{position:relative}
 .app-page .work-nav>a{position:relative;gap:5px}
-.app-page .nav-chevron{font-size:13px;line-height:1;color:inherit}
-.case-page .nav-chevron{font-size:13px;line-height:1;color:inherit}
+.app-page .nav-chevron{font-size:13px;line-height:1;color:inherit;transform:translateY(-.18em)}
+.case-page .nav-chevron{font-size:13px;line-height:1;color:inherit;transform:translateY(-.18em)}
 .app-page .work-menu a{height:auto;display:grid;font-weight:400;white-space:normal}
 .app-page #work .tab-section{padding-top:68px}
 .app-page #work .section-head{border-top:0}

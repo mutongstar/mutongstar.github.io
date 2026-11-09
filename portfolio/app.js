@@ -1,4 +1,4 @@
-const tabNames=['about','work','ai','influence'];
+const tabNames=['about','ai','work','influence'];
 const tabTrack=document.querySelector('#tabTrack');
 const panels=tabNames.map(name=>document.querySelector('[data-panel="'+name+'"]'));
 let activeTab='about';
