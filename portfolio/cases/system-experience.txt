@@ -1,12 +1,12 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[5861,["972","static/chunks/972-90ede7f15a0fc2c5.js","185","static/chunks/app/layout-8e196e3cc0806ccf.js"],"default"]
+6:I[5861,["972","static/chunks/972-90ede7f15a0fc2c5.js","185","static/chunks/app/layout-72ebc2dd0c43126a.js"],"default"]
 4:["id","system-experience","d"]
-0:["hczdZJIhiq5QviF5fQc3T",[[["",{"children":["cases",{"children":[["id","system-experience","d"],{"children":["__PAGE__?{\"id\":\"system-experience\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","system-experience","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/57ed40c0e6048311.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/18eee4a9feaa3e60.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
-7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"版本设计规划与体验升级 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
+0:["Q4IfaIRPrLkWmvgI2vR6b",[[["",{"children":["cases",{"children":[["id","system-experience","d"],{"children":["__PAGE__?{\"id\":\"system-experience\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","system-experience","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/f9f13e569e6587b2.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/18eee4a9feaa3e60.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"版本设计规划 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
 9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-fc79675ef68e8033.js"],"default"]
-8:T3d01,<!-- Generated from docs/cases/02.md by preview-cases.cjs -->
+8:T1fac,<!-- Generated from docs/cases/02.md by preview-cases.cjs -->
 <article id="case-article" class="case-editorial case-version-planning">
 <section id="intro" class="case-section">
   <div class="case-hero-field" aria-hidden="true">
@@ -48,84 +48,46 @@
   </div>
   <h1>版本设计规划</h1>
   <dl class="case-meta"><div><dt>时间</dt><dd>2023–2026 年</dd></div><div><dt>产品</dt><dd>OPPO ColorOS · 系统大版本设计</dd></div><div><dt>我的角色</dt><dd>ColorOS 14 / 15 / 16 版本 UX 设计代表</dd></div></dl>
-  <p>担任连续三代版本 UX 设计代表，借鉴业务战略规划方法，独立完成 OS14 设计规划。响应公司高端转型，我深入参与用户研究，并从调研中提炼出确定感、舒适感、品质感三项设计主张，推动系统控件、色彩与排版规则迁移。OS15 带领各业务开展规划，OS16 进一步推广并沉淀为部门工作方法。</p>
+  <p>独立完成 ColorOS 14 设计规划，从用户研究中提炼确定感、舒适感与品质感，推动系统风格升级。ColorOS 15 带领各业务开展规划，ColorOS 16 将方法推广到部门。</p>
 </section>
 <section id="background" class="case-section">
   <h2>项目背景</h2>
   
-  <p>公司向高端市场转型，系统设计需要兼顾更广泛人群的审美与使用期待。原有偏风格化、年轻化的表达，需要进一步回应清晰、舒适与细节品质的要求。</p>
-<p>过去的规划前期多从设计师头脑风暴和概念设计启动。单点概念较多，对产品自身演进、竞争变化、用户反馈和技术趋势缺少系统审视。</p>
-<p>版本 UX 需要建立方向判断的依据，并把设计主张落实到跨业务、跨版本的改造计划。</p>
+  <p>公司向高端市场转型，系统设计需要兼顾更广泛人群的审美与使用期待。</p>
+<p>过去的版本规划多从头脑风暴和单点概念启动，对产品<strong>自身演进</strong>、竞争变化、用户反馈和技术趋势缺少系统审视。</p>
 </section>
 <section id="goal" class="case-section">
   <h2>设计目标</h2>
   
-  <p>围绕高端转型，分四步推进设计规划。</p>
-<ul class="case-cards"><li><strong>建立规划依据</strong> 结合产品复盘、用户反馈与竞争分析，识别值得持续投入的体验方向。</li><li><strong>明确审美主张</strong> 提炼面向更广泛人群的共同需求，为系统风格迁移提供判断标准。</li><li><strong>拆解设计规则</strong> 把设计主张拆解为色、形、字、构、质五个维度的规则，以及公共控件的设计要求。</li><li><strong>协调落地计划</strong> 围绕重点场景，协调各团队的分工与版本安排。</li></ul>
-</section>
-<section id="method" class="case-section">
-  <h2>规划方法</h2>
-  
-  <p>在腾讯及对接 OPPO 互联网业务期间，多次参与业务 SP 战略规划。</p>
-<p>借鉴其中的“五看三定”（公开框架中的“五看”包括行业与趋势、市场与客户、竞争、自身、机会，“三定”包括控制点、目标、策略），从 OS14 开始独立开展系统设计规划。</p>
-<blockquote class="case-quote">演进而非创造</blockquote>
-<p>从产品已有的积累与问题出发，结合用户和竞争变化，判断下一阶段应延续什么、改善什么。</p>
-<p>以“<strong>忒修斯之船</strong>”解释在既有基础上持续更新，以孙悟空从石头中诞生比喻缺少积累依据的单点概念。规划中的新方向，需要说明依据与来路。</p>
-<ul class="case-compare" role="list"><li><strong>看自己 · 复盘产品积累</strong><span>汇总用户反馈，复盘过去 12 个月的设计工作，从自身产品的积累与问题出发开展规划。</span><small>用户反馈 · 过去 12 个月设计复盘</small></li><li><strong>看竞争 · 归纳竞争格局</strong><span>系统梳理所在领域各竞争对手的特性，归纳行业共性、友商优势与差异化打法。</span><small>行业共性 · 友商优势 · 差异化打法</small></li></ul>
-<p>规划模板明确这两项洞察要求，作为业务设计单元开展规划的共同输入。</p>
-<figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 演进而非创造：规划从哪里出发</strong><br>用船体逐步替换部件的三幅小图表达持续演进，旁边列出用户反馈、过去 12 个月设计复盘与竞争分析。注明“依据口述重绘的方法示意”，不使用业务路线图或真实项目排期。</figcaption></figure>
+  <p>ColorOS 14 要在「无边界与无负担」的设计积累上，让信息更易读、操作更明确、细节更有品质，并把这些要求落实到各团队的版本计划中。</p>
+<p>我借鉴腾讯及 OPPO 互联网业务 SP 战略规划中的「五看三定」，以「演进而非创造」为原则，从两类证据入手。</p>
+<ul class="case-compare" role="list"><li><strong>看自己 · 复盘产品积累</strong><span>汇总用户反馈，回看过去 12 个月的设计工作，识别需要延续的优势和待解决的问题。</span></li><li><strong>看竞争 · 归纳竞争格局</strong><span>梳理主要竞品的特点、行业共性、友商优势和差异化打法。</span></li></ul>
 </section>
 <section id="diagnosis" class="case-section">
-  <h2>高端洞察</h2>
+  <h2>用户洞察</h2>
   
-  <p>高端转型为这套规划方法提供了具体课题：明确目标用户的共同期待，判断系统风格应如何演进。深入参与前期用户研究，结合现有系统设计分析，识别三类体验问题。</p>
-<ul class="case-cards"><li><strong>信息不够明确</strong> 字体偏小、标题与推荐选项不突出，图标及控件边界不清，影响信息识别与操作判断。</li><li><strong>结构缺少秩序</strong> 图形形态、内容排版与留白缺乏规律，查找信息需要反复横向、纵向扫视。</li><li><strong>细节品质不足</strong> 光影与材质层次薄弱，图形表达不够自然，难以感知细节经过充分推敲。</li></ul>
-<p>研究将这些诉求识别为可服务于更广泛人群的共性需求。由此，高端设计的重点落在清晰、舒适与品质等普适体验上。</p>
-<figure><img src="./coloros-experience.png" alt="原有系统色彩分析与色彩定义升级" loading="lazy"><figcaption>设计分析原稿：识别色彩偏年轻化、缺乏系列性的问题，提出增强确定感与色域均衡性。</figcaption></figure>
+  <p>我深入参与前期用户研究，并结合 ColorOS 13 界面走查，发现高端用户在意的三类问题同样关系到日常使用。字体偏小、选项与控件边界不清，影响识别与操作判断。排版和留白缺少规律，增加查找负担。光影、材质与图形层次薄弱，影响对细节品质的感知。</p>
+<p>控制中心和联系人是两个具体例子。前者需要让开启状态容易辨认，后者可以用柔和、有区分度的头像色帮助查找。颜色可以集中用在这些需要辨认的信息上。</p>
 </section>
 <section id="proposition" class="case-section">
   <h2>审美主张</h2>
   
-  <p>深入参与用户研究后，我结合系统设计分析提炼了三项审美主张，以“理解高端，回归常识”概括方向。</p>
-<ul class="case-cards"><li><strong>清晰直觉的确定感</strong> 调整字体大小、内容对比和按钮选中态，让信息清楚、边界明确、重点突出。</li><li><strong>大气有序的舒适感</strong> 建立均衡的结构、清晰的布局和有节奏的留白，以柔和色彩形成自然舒展的阅读体验。</li><li><strong>自然细腻的品质感</strong> 推敲光影、材质与图形隐喻，使细节有层次、过渡自然，形成连贯的整体品质。</li></ul>
-<p>三项主张进一步进入“形、色、字、构、质”五个设计维度，连接用户期待与具体方案。</p>
-</section>
-<section id="planning" class="case-section">
-  <h2>规划拆解</h2>
-  
-  <p>围绕三项主张，明确改造内容、落地场景、负责团队和版本安排。</p>
-<ul class="case-cards"><li><strong>确定感 · 前置基础改造</strong> 调整主蓝色、加强对比度、增大控件尺寸。由设计标准团队推进公共控件、场景组件与弹窗。</li><li><strong>舒适感 · 梳理内容秩序</strong> 调整系统与应用的排版、图标关系。由设计系统团队推进目录、卡片和控制中心等场景。</li><li><strong>品质感 · 分期打磨细节</strong> 围绕主题色彩、系统图标与动效继续打磨，由应用设计团队推进天气、邮件、联系人等场景。</li></ul>
-<p>原稿将三条工作线分配到 14.0、14.1 和 15.0：基础识别改造前置，结构与品质改造分期展开。设计方向由此转为各团队可以承接的任务与版本计划。</p>
+  <p>把清楚、舒适、有品质的共性期待，转成三项设计主张和对应的改造任务。</p>
+<ul class="case-cards"><li><strong>清晰直觉的确定感</strong> 强化文字对比、列表分隔和控件边界。由设计标准团队先推进系统字体、基础控件和权限弹窗。</li><li><strong>大气有序的舒适感</strong> 用柔和的主题色、稳定的间距和清晰的信息分组改善阅读。由设计系统团队推进目录、卡片和控制中心等场景。</li><li><strong>自然细腻的品质感</strong> 打磨材质层次、图标与高频场景的动效。由应用设计团队推进天气、邮件、联系人等应用场景。</li></ul>
+<p>按当时的分期计划，14.0 优先推进基础识别改造，布局与细节打磨在 14.1 和 15.0 继续推进。</p>
 </section>
 <section id="design" class="case-section">
-  <h2>风格迁移</h2>
+  <h2>方案落地</h2>
   
-  <p>以系统控件、色彩与排版规则为切入点，推动审美主张进入不同界面。</p>
-<ul class="case-cards"><li><strong>调整色彩规则</strong> 修改主蓝色，增强重点信息与选中态的辨识度，改善整体色域的均衡。</li><li><strong>重建文字层级</strong> 加强字号与对比，突出标题和内容主次，让页面结构更容易识别。</li><li><strong>统一控件与布局</strong> 调整公共控件尺寸，梳理列表、卡片与系统内容排版，使不同场景呈现更稳定的秩序。</li></ul>
-<figure class="case-slot case-slot--phone-pair"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">左图</div><div class="case-slot-frame" aria-hidden="true">右图</div></div><figcaption class="case-slot-note"><strong>待配图 · 从审美主张到实际界面</strong><br>选同一应用、同一任务的前后实机画面，标出字号层级、选中态或控件尺寸的一项变化，并对应到确定感、舒适感或品质感。注明系统版本与机型，用实际交付补足原稿方案对照。</figcaption></figure>
-</section>
-<section id="iteration" class="case-section">
-  <h2>版本复盘</h2>
-  
-  <p>发布后的反馈继续进入下一版规划。OS14 的用户声音集中在细节实现与基础一致性，也引发了对美学方向的质疑。主持版本复盘，结合线下风格复测，分别判断方向与实现的问题。</p>
-<ul class="case-cards"><li><strong>复测设计方向</strong> 线下风格复测为延续主要美学主张提供依据，同时继续关注不同人群的接受差异。</li><li><strong>集中打磨核心场景</strong> OS15 将桌面动效与十大系统场景作为重点，改善应用启动退出、负一屏和全局搜索等衔接与跟手表现。</li><li><strong>前置验证高影响变更</strong> 与研发、测试识别重点系统入口，在设计稿阶段比较新方案、上一代和同类产品，及时发现操作习惯变化带来的风险。</li></ul>
-<p>以复盘决定延续与调整，让“演进”成为版本之间持续开展的设计工作。</p>
-<figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一项版本决策如何经过复盘调整</strong><br>按“OS14 方案—用户反馈—复测判断—OS15 调整”组织同一场景的证据。明确保留了什么、改变了什么，风格偏好与任务操作结果分开标注；只使用可公开的已发布画面和本人确认的事实。</figcaption></figure>
-</section>
-<section id="result" class="case-section">
-  <h2>项目成果</h2>
-  
-  <ul class="case-cards"><li><strong>形成完整设计规划</strong> 串联用户需求、审美主张、设计策略、重点场景、团队分工与版本安排。</li><li><strong>落地系统风格迁移</strong> 通过控件、色彩和排版规则改造，将确定感、舒适感、品质感落实到系统体验。</li><li><strong>延续跨版本改进</strong> 结合 OS14 反馈与风格复测，保留有依据的方向，在 OS15 集中打磨核心场景。</li></ul>
-<p>ColorOS 15 发布后，整体口碑较上一代改善。版本反馈用于观察整体体验变化，具体设计贡献由实际改造与交付记录说明。</p>
-<figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 高端设计的实际交付</strong><br>选择已发布版本中可公开的系统界面，按确定感、舒适感、品质感分别标注一项可见变化。优先展示跨场景采用，标明版本与范围；不使用内部路线图，也不将整体口碑归因为某一项设计。</figcaption></figure>
+  <p>以「舒适感」为例，ColorOS 13 的日历卡片、设置列表和控件区采用的间距不够统一。改造方案先把有关联的信息归到一起，再用字号、对比和间距拉开主次。</p>
+<ul class="case-cards"><li><strong>锁屏与桌面</strong> 以时间为视觉焦点，把日期、天气放在附近。</li><li><strong>通话界面</strong> 把联系人信息集中在顶部，单独突出通话时长，底部统一组织操作按钮。</li></ul>
+<p>ColorOS 14 同步推进了控件、色彩和排版规则迁移。控制中心的选中态、设置列表的分隔和笔记标题的字阶，展示了这些规则如何用于不同场景。</p>
 </section>
 <section id="organization" class="case-section">
-  <h2>团队赋能</h2>
+  <h2>版本复盘</h2>
   
-  <p>在版本实践基础上，将规划方法沉淀为模板，并面向所有业务 UX 代表开展培训。</p>
-<div class="case-timeline-frame"><ol class="case-timeline" role="list"><li><small class="case-stage-version">OS14</small><strong>独立完成规划</strong><span>引入业务战略规划经验，独立开展系统设计规划，组织方向判断与任务拆解。</span><small>建立版本实践</small></li><li><small class="case-stage-version">OS15</small><strong>带领各业务开展规划</strong><span>提供设计规划模板，为各业务 UX 代表开展方法培训，带领各业务结合自身场景开展规划。</span><small>模板 · 培训</small></li><li><small class="case-stage-version">OS16</small><strong>沉淀部门工作方法</strong><span>将设计规划推广到部门范围，沉淀为各业务设计单元共同使用的工作方法。</span><small>部门推广 · 方法沉淀</small></li></ol></div>
-<p>模板明确洞察要求，培训讲解“演进而非创造”的判断原则，各业务结合自身场景形成规划。个人的版本规划实践，由此扩展为部门共同开展的设计工作。</p>
-<figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 将规划方法交给团队</strong><br>左侧放可公开的空白模板或方法重绘，标出“看自己”“看竞争”的要求；右侧放培训提纲与原则讲解。注明覆盖所有业务 UX 代表，口述重绘标为示意；不展示业务路线图，不虚构培训后的绩效或收益。</figcaption></figure>
+  <p>OS14 发布后，用户反馈集中在细节实现与基础一致性，也出现了对美学方向的质疑。我主持版本复盘，用线下风格复测判断哪些主张可以延续。OS15 集中打磨桌面动效和十大系统场景，并与研发、测试在设计稿阶段前置比较重点入口的新旧方案。ColorOS 15 发布后，整体口碑较上一代改善。</p>
+<div class="case-timeline-frame"><ol class="case-timeline" role="list"><li><small class="case-stage-version">OS14</small><strong>独立完成规划</strong><span>建立方向判断依据，明确改造重点并拆解团队任务。</span><small>版本实践</small></li><li><small class="case-stage-version">OS15</small><strong>带领各业务开展规划</strong><span>提供模板，面向所有业务 UX 代表开展培训，并带领各业务结合自身场景做规划。</span><small>模板与培训</small></li><li><small class="case-stage-version">OS16</small><strong>沉淀部门工作方法</strong><span>将设计规划推广到部门范围，纳入各业务设计单元的工作。</span><small>部门推广</small></li></ol></div>
 </section>
 </article>
 2:["$","div",null,{"className":"min-h-dvh overflow-x-clip bg-paper text-ink","children":[["$","main",null,{"className":"case-article case-preview mx-auto w-full pb-24 pt-[64px] max-[760px]:pt-[98px]","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","$L9",null,{}],"$undefined"]}],["$","div",null,{"className":"pf blue-chapters","children":["$","footer",null,{"className":"wrap","children":["$","div",null,{"className":"footer-bottom","children":[["$","span",null,{"children":"© 2026 MICHAEL MU"}],["$","span",null,{"children":"深圳，中国"}]]}]}]}]]}]
