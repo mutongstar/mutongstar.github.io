@@ -1,40 +1,82 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[5861,["648","static/chunks/648-e0960516c324e1fd.js","185","static/chunks/app/layout-02a390dd636e7e72.js"],"default"]
+6:I[5861,["648","static/chunks/648-e0960516c324e1fd.js","185","static/chunks/app/layout-7afff825b459083f.js"],"default"]
 4:["id","ai-openclaw","d"]
-0:["sCoCP83UB3WglVVCKZvYq",[[["",{"children":["cases",{"children":[["id","ai-openclaw","d"],{"children":["__PAGE__?{\"id\":\"ai-openclaw\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","ai-openclaw","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/af6ed41f413c1615.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+0:["_TggdMCK-HNENpR1owLYO",[[["",{"children":["cases",{"children":[["id","ai-openclaw","d"],{"children":["__PAGE__?{\"id\":\"ai-openclaw\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","ai-openclaw","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/add2bd3e20560db7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/18eee4a9feaa3e60.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"AI 实践：OpenClaw 本地模型 Agent 助手 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
-9:I[3419,["502","static/chunks/app/cases/%5Bid%5D/page-e68aac32f7616de5.js"],"default"]
-8:T1010,<!-- Generated from docs/cases/ai-01.md by preview-cases.cjs -->
+9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-fc79675ef68e8033.js"],"default"]
+a:I[3419,["502","static/chunks/app/cases/%5Bid%5D/page-fc79675ef68e8033.js"],"default"]
+8:T1b0f,<!-- Generated from docs/cases/ai-01.md by preview-cases.cjs -->
 <article id="case-article">
 <section id="intro" class="case-section">
+  <div class="case-hero-field" aria-hidden="true">
+    <span class="case-hero-glow case-hero-glow--left"></span>
+    <span class="case-hero-glow case-hero-glow--right"></span>
+    <span class="case-hero-glow case-hero-glow--bottom"></span>
+    <svg class="case-hero-waves" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wave-stroke" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="var(--hero-accent-light)" stop-opacity="0"/>
+      <stop offset="28%" stop-color="var(--hero-accent-light)" stop-opacity=".55"/>
+      <stop offset="55%" stop-color="var(--hero-accent-mid)" stop-opacity=".87"/>
+      <stop offset="78%" stop-color="var(--hero-accent-light)" stop-opacity=".4"/>
+      <stop offset="100%" stop-color="var(--hero-accent-light)" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave-fill" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="var(--hero-accent-mid)" stop-opacity="0"/>
+      <stop offset="45%" stop-color="var(--hero-accent-mid)" stop-opacity=".26"/>
+      <stop offset="100%" stop-color="var(--hero-accent-pale)" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="wave-blur" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="wave-soft" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="3.5"/>
+    </filter>
+  </defs>
+  <path d="M-100 380C200 280 420 250 620 320C820 390 980 360 1300 240L1300 800L-100 800Z" fill="url(#wave-fill)" filter="url(#wave-blur)" opacity=".9"/>
+  <g transform="translate(48 0)" fill="none" stroke="url(#wave-stroke)" stroke-linecap="round">
+    <path d="M-80 520C120 420 280 380 420 410C580 448 720 520 860 490C980 466 1080 400 1280 340" stroke-width="1.6" opacity=".35" filter="url(#wave-soft)"/>
+    <path d="M-80 545C140 450 300 405 440 432C590 464 730 538 870 510C990 488 1090 422 1280 365" stroke-width="1.1" opacity=".45" filter="url(#wave-soft)"/>
+    <path d="M-80 570C160 478 320 430 460 455C600 482 740 555 880 530C1000 508 1100 445 1280 390" stroke-width="1.1" opacity=".55" filter="url(#wave-soft)"/>
+    <path d="M-80 495C100 400 260 355 400 385C560 422 700 495 840 465C960 442 1060 380 1280 315" stroke-width="1.6" opacity=".65"/>
+    <path d="M-80 595C180 505 340 455 480 478C620 502 750 572 890 550C1010 530 1110 468 1280 415" stroke-width="1.1" opacity=".35"/>
+    <path d="M-40 470C160 380 320 340 460 365C610 395 750 460 890 435C1010 415 1115 360 1280 300" stroke-width="1.1" opacity=".45"/>
+    <path d="M-40 620C200 530 360 480 500 500C640 522 760 590 900 570C1020 552 1120 492 1280 440" stroke-width="1.6" opacity=".55"/>
+  </g>
+</svg>
+  </div>
   <h1>AI 工作流与可运行原型</h1>
   <dl class="case-meta"><div><dt>时间</dt><dd>2025 年起，2026 年推进 Agent 与运行原型</dd></div><div><dt>产品</dt><dd>OpenClaw 工作流、Figma 方案与 Android Compose 原型</dd></div><div><dt>我的角色</dt><dd>工作流搭建、体验设计与原型验证</dd></div></dl>
   <p>把产品目标、设计系统和交互约束整理成 AI 可用的上下文，再按要验证的问题选择产物：用 Figma 可编辑稿审阅方案结构，用 Android 可运行原型检验交互和边界状态。</p>
 </section>
 <section id="framing" class="case-section">
-  <h2>定义任务 · 先写清设计约束与验收条件</h2>
+  <h2>定义任务</h2>
   
-  <ul class="case-topology" role="list"><li><strong>设计任务</strong><span>明确用户要完成什么、业务限制是什么。</span></li><li><strong>共享设计约束</strong><span>提供业务知识、设计规范、组件和交互状态，并定义需要人工验收的内容。</span></li><li><strong>Figma 可编辑稿</strong><span>检查页面结构、组件一致性和视觉表达。</span></li><li><strong>Android 可运行原型</strong><span>用系统控件检查任务流程、状态切换和失败恢复。</span></li></ul>
+  <p>进入生成流程前，先写清设计约束与验收条件。</p>
+<ul class="case-topology" role="list"><li><strong>设计任务</strong><span>明确用户要完成什么、业务限制是什么。</span></li><li><strong>共享设计约束</strong><span>提供业务知识、设计规范、组件和交互状态，并定义需要人工验收的内容。</span></li><li><strong>Figma 可编辑稿</strong><span>检查页面结构、组件一致性和视觉表达。</span></li><li><strong>Android 可运行原型</strong><span>用系统控件检查任务流程、状态切换和失败恢复。</span></li></ul>
 </section>
 <section id="decision" class="case-section">
-  <h2>选择产物 · 用设计稿审结构，用原型试交互</h2>
+  <h2>选择产物</h2>
   
-  <ul class="case-compare" role="list"><li><strong>Figma 路径</strong><span>用目标、模块和交互约束生成可编辑稿。人工审阅页面结构和场景适配。</span><small>验证结构与表达</small></li><li><strong>Compose 路径</strong><span>用研发提供的控件和业务知识搭建可交互 Demo，检查操作顺序、状态切换和错误处理。</span><small>验证实际运行</small></li></ul>
+  <p>用设计稿审结构，用可运行原型试交互。</p>
+<ul class="case-compare" role="list"><li><strong>Figma 路径</strong><span>用目标、模块和交互约束生成可编辑稿。人工审阅页面结构和场景适配。</span><small>验证结构与表达</small></li><li><strong>Compose 路径</strong><span>用研发提供的控件和业务知识搭建可交互 Demo，检查操作顺序、状态切换和错误处理。</span><small>验证实际运行</small></li></ul>
 </section>
 <section id="review" class="case-section">
-  <h2>运行验证 · 用 A/B Demo 推动受阻的 UX 方案通过评审</h2>
+  <h2>运行验证</h2>
   
-  <p>产品希望推进一项新功能，研发支持预研。UX 方案卡在两个判断上：这个功能在真实场景里有没有价值，以及当时的技术表现能否支撑预期体验。</p>
+  <p>用 A/B Demo 验证交互体验，推动受阻的 UX 方案通过评审。</p>
+<p>产品希望推进一项新功能，研发支持预研。UX 方案卡在两个判断上：这个功能在真实场景里有没有价值，以及当时的技术表现能否支撑预期体验。</p>
 <dl class="case-metrics"><div><dt>A/B Demo 的制作与调试用时</dt><dd>2 天</dd></div><div><dt>开发调试中的 APK 版本</dt><dd>约 40 个</dd></div></dl>
 <ol class="case-timeline" role="list"><li><strong>制作 A/B Demo</strong><span>研发同步开展技术预研。我把业务知识库和 Figma 设计稿作为输入，接入 Android Compose 系统控件，用 Cursor 生成并迭代可上手的前台交互。</span><small>原型制作</small></li><li><strong>接入测试 SDK</strong><span>取得准确率数据后，我将研发提供的测试 SDK 接入 Demo APK，让参与者结合技术参数，在同一场景下体验两种方案。</span><small>体验验证</small></li><li><strong>通过团队评审</strong><span>小范围试用反馈正面，方案通过团队验证和评审。后续因三方应用场景适配不足、能力仍偏单点，项目暂缓上线。</span><small>评审结果</small></li></ol>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 从 Figma 方案到可体验的 A/B Demo</strong><br>左侧展示脱敏的设计稿和系统控件，右侧并排呈现同一场景的两种运行方案。标注两天内调试约 40 个 APK 版本、测试 SDK 的接入点和评审结论。</figcaption></figure>
 </section>
 <section id="result" class="case-section">
-  <h2>阶段结果 · 把人工审阅带进下一轮设计</h2>
+  <h2>阶段成果</h2>
   
-  <p>已用 OpenClaw 和本地模型搭建多项目工作流，通过 Harness 和 Skill 保留项目约束与验收方式。Figma 稿供设计审阅，Android 原型供运行验证。运行路径使用研发提供的控件与测试能力，设计负责体验整合，并根据审阅和试用结果调整方案。</p>
+  <p>把人工审阅纳入下一轮设计。</p>
+<p>已用 OpenClaw 和本地模型搭建多项目工作流，通过 Harness 和 Skill 保留项目约束与验收方式。Figma 稿供设计审阅，Android 原型供运行验证。运行路径使用研发提供的控件与测试能力，设计负责体验整合，并根据审阅和试用结果调整方案。</p>
 </section>
 </article>
-2:["$","div",null,{"className":"min-h-dvh overflow-x-clip bg-paper text-ink","children":[["$","main",null,{"className":"case-article case-preview mx-auto w-full pb-24 pt-[64px] max-[760px]:pt-[98px]","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"className":"mt-8","children":["$","$L9",null,{"atom":{"base":"GUI 解构：design token · 控件 · 组件","id":"ai-stack","layers":[{"label":"信息采集","note":""},{"label":"意图理解","note":""},{"label":"工具调用","note":""},{"label":"执行反馈","note":"可见 · 可逆"}],"note":"锚点：Norman 七步行动理论（目的 · 意图 · 实施 · 评价）","title":"AI Native 四层","type":"stack"}}]}]]}],["$","div",null,{"className":"pf blue-chapters","children":["$","footer",null,{"className":"wrap","children":["$","div",null,{"className":"footer-bottom","children":[["$","span",null,{"children":"© 2026 MICHAEL MU"}],["$","span",null,{"children":"深圳，中国"}]]}]}]}]]}]
+2:["$","div",null,{"className":"min-h-dvh overflow-x-clip bg-paper text-ink","children":[["$","main",null,{"className":"case-article case-preview mx-auto w-full pb-24 pt-[64px] max-[760px]:pt-[98px]","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","$L9",null,{}],["$","div",null,{"className":"mt-8","children":["$","$La",null,{"atom":{"base":"GUI 解构：design token · 控件 · 组件","id":"ai-stack","layers":[{"label":"信息采集","note":""},{"label":"意图理解","note":""},{"label":"工具调用","note":""},{"label":"执行反馈","note":"可见 · 可逆"}],"note":"锚点：Norman 七步行动理论（目的 · 意图 · 实施 · 评价）","title":"AI Native 四层","type":"stack"}}]}]]}],["$","div",null,{"className":"pf blue-chapters","children":["$","footer",null,{"className":"wrap","children":["$","div",null,{"className":"footer-bottom","children":[["$","span",null,{"children":"© 2026 MICHAEL MU"}],["$","span",null,{"children":"深圳，中国"}]]}]}]}]]}]
