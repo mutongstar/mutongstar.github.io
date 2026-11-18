@@ -1,4 +1,28 @@
 (() => {
+  let imagePreview;
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[data-case-image-preview]');
+    if (!link || typeof HTMLDialogElement === 'undefined') return;
+
+    if (!imagePreview) {
+      imagePreview = document.createElement('dialog');
+      imagePreview.className = 'case-image-preview';
+      imagePreview.setAttribute('aria-label', '原图预览');
+      imagePreview.innerHTML = '<img alt=""><form method="dialog"><button type="submit" autofocus aria-label="关闭原图预览">×</button></form>';
+      imagePreview.addEventListener('click', event => {
+        if (event.target === imagePreview) imagePreview.close();
+      });
+      document.body.append(imagePreview);
+    }
+
+    event.preventDefault();
+    const image = imagePreview.querySelector('img');
+    image.alt = link.querySelector('img').alt;
+    image.src = link.href;
+    imagePreview.showModal();
+  });
+
   function updateComparison(event) {
     const input = event.target;
     if (!(input instanceof HTMLInputElement) || !input.matches('.case-before-after input[type="range"]')) return;
