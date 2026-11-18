@@ -2,12 +2,12 @@
 5:I[6423,[],""]
 6:I[5861,["972","static/chunks/972-c4bfe85dd64f25c9.js","185","static/chunks/app/layout-ba9a9b780dfe7007.js"],"default"]
 4:["id","influence","d"]
-0:["0qTJJJf_iovIa6BRDDUmF",[[["",{"children":["cases",{"children":[["id","influence","d"],{"children":["__PAGE__?{\"id\":\"influence\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","influence","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/d0f2229a407ad556.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/e267d5e1f1dc7077.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+0:["sNj4w4leolvdq2ShFyere",[[["",{"children":["cases",{"children":[["id","influence","d"],{"children":["__PAGE__?{\"id\":\"influence\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","influence","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/b2245726dbe7082d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/0c7114690a24a455.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"专业影响力与行业分享 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
 9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
-8:T24cd,<!-- Generated from docs/cases/influence.md by preview-cases.cjs -->
+8:T26bc,<!-- Generated from docs/cases/influence.md by preview-cases.cjs -->
 <article id="case-article">
 <section id="intro" class="case-section">
   <div class="case-hero-field" aria-hidden="true">
@@ -52,13 +52,13 @@ a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
   <p>曾在腾讯和 OPPO 负责多业务设计团队，统筹目标与资源，建立体验度量和复盘方法，培养能独立承担业务的设计骨干。</p>
 </section>
 <section id="scope" class="case-section">
-  <h2>管理范围</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Scope</span>管理范围</h2>
   
   <p>管理工作横跨多条产品线，涵盖团队分工与人才培养。</p>
 <ul class="case-cards"><li><strong>三四十人</strong> 腾讯时期的设计团队峰值规模，覆盖全民 K 歌及重点产品的设计组织。</li><li><strong>40+ 正式设计师</strong> OPPO 互联网服务任期内的管理范围，负责软件商店、浏览器、游戏服务等多产品体验。</li><li><strong>3 位部门主管</strong> 在 OPPO 互联网服务和平台任职期间，先后培养 3 位设计师成长为部门主管并晋升。</li></ul>
 </section>
 <section id="transition" class="case-section">
-  <h2>空降接手</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Transition</span>空降接手</h2>
   
   <p>先识别影响交付的约束，再决定改什么。</p>
 <p>接手现有团队时，可以按业务预期、实际卡点、首项调整来梳理。</p>
@@ -66,7 +66,7 @@ a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 接手团队后的第一轮判断</strong><br>选一次可公开的接手经历，放业务预期、实际卡点和最先推动的一项调整。注明时间、范围和本人决定。</figcaption></figure>
 </section>
 <section id="management" class="case-section">
-  <h2>经营绩效</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Performance</span>经营绩效</h2>
   
   <p>同时看业务贡献、体验质量和交付效率。</p>
 <p>互联网业务的绩效管理围绕增长、体验和效率展开。为设计任务明确可影响的业务环节和复盘依据。</p>
@@ -74,7 +74,7 @@ a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一次增长、体验和效率的目标对齐</strong><br>放一项脱敏的业务目标，标出设计可影响的环节、体验约束和回看依据。未确认的效果数值先留空。</figcaption></figure>
 </section>
 <section id="execution" class="case-section">
-  <h2>任务拆解</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Execution</span>任务拆解</h2>
   
   <p>用 PDCA 把目标落到交付和复盘。</p>
 <p>将业务目标拆成体验问题、设计任务和验收点。每项任务明确负责人、协作依赖和需要决策的节点。高风险问题先用原型或小范围比较拿到反馈，再决定是否投入完整交付。</p>
@@ -82,14 +82,14 @@ a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 从一个目标拆到一项可验收任务</strong><br>用一例真实项目标出目标、子任务、负责人、评审节点和下一轮调整。适度脱敏，保留决策关系。</figcaption></figure>
 </section>
 <section id="mentoring" class="case-section">
-  <h2>人才培养</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Mentoring</span>人才培养</h2>
   
   <p>分阶段扩大骨干的职责：先独立负责项目判断与交付，再协调跨团队决策，最后带队交付。复盘时看三件事：能否说明取舍、及时暴露风险、帮助团队建立判断标准。</p>
 <p>在 OPPO 互联网服务与平台任职期间，先后培养 3 位设计师成长为部门主管并完成晋升。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一位骨干如何逐步扩大责任范围</strong><br>选一段可公开的培养经历，标出从项目交付到跨团队协作、再到带人的变化。隐去姓名与绩效信息。</figcaption></figure>
 </section>
 <section id="sharing" class="case-section">
-  <h2>专业建设</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Professional Contribution</span>专业建设</h2>
   
   <p>通过课程、能力模型和公开交付分享设计经验。</p>
 <p>在腾讯担任设计通道委员，参与交互岗位能力模型梳理，也曾任腾讯学院高级讲师。在 OPPO 开展《体验设计与创新系列课程》。对外有两代 ColorOS UI Kit 的公开交付，以及 MSUP 和 DIA 2023 活动目录收录的分享。</p>

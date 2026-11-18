@@ -1,4 +1,23 @@
 (() => {
+  function updateComparison(event) {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement) || !input.matches('.case-before-after input[type="range"]')) return;
+    input.closest('.case-before-after-panel')?.querySelector('.case-before-after-view')
+      ?.style.setProperty('--comparison-split', `${input.value}%`);
+  }
+
+  document.addEventListener('input', updateComparison);
+  document.addEventListener('change', updateComparison);
+  document.addEventListener('change', event => {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement) || !input.matches('.case-before-after-scenes input:checked')) return;
+    const activePanel = input.getAttribute('aria-controls');
+    input.closest('.case-before-after').querySelectorAll('.case-before-after-panel').forEach(panel => {
+      panel.hidden = panel.id !== activePanel;
+    });
+    input.nextElementSibling?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  });
+
   function mount(gallery) {
     const track = gallery.querySelector('.case-gallery-track');
     const caption = gallery.querySelector('.case-gallery-caption');

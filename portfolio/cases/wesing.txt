@@ -2,12 +2,12 @@
 5:I[6423,[],""]
 6:I[5861,["972","static/chunks/972-c4bfe85dd64f25c9.js","185","static/chunks/app/layout-ba9a9b780dfe7007.js"],"default"]
 4:["id","wesing","d"]
-0:["0qTJJJf_iovIa6BRDDUmF",[[["",{"children":["cases",{"children":[["id","wesing","d"],{"children":["__PAGE__?{\"id\":\"wesing\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","wesing","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/d0f2229a407ad556.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/e267d5e1f1dc7077.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+0:["sNj4w4leolvdq2ShFyere",[[["",{"children":["cases",{"children":[["id","wesing","d"],{"children":["__PAGE__?{\"id\":\"wesing\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","wesing","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/b2245726dbe7082d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/0c7114690a24a455.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"全民 K 歌：现象级的音乐创作与社交应用 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
 9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
-8:T18b0,<!-- Generated from docs/cases/06.md by preview-cases.cjs -->
+8:T1a52,<!-- Generated from docs/cases/06.md by preview-cases.cjs -->
 <article id="case-article" class="case-editorial" data-case-theme="wesing">
 <section id="intro" class="case-section">
   <div class="case-hero-field" aria-hidden="true">
@@ -52,32 +52,32 @@ a:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
   <p>从 0 到 1 参与全民 K 歌，主导音视频创作、关系链社交和直播互动体验，随后带队支持国际版、电视端和创新产品。</p>
 </section>
 <section id="framing" class="case-section">
-  <h2>设计目标</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Design Goals</span>设计目标</h2>
   
   <p>让用户唱完一首歌后，还能围绕作品与他人互动。</p>
 <ul class="case-cards"><li><strong>让创作容易开始</strong> 以唱歌为起点，围绕合唱与短视频组织不同的内容表达方式。</li><li><strong>让作品有下一步</strong> 把作品、关系链和实时互动连起来，让用户能围绕内容继续参与。</li><li><strong>让交付能跨平台延续</strong> 用共用能力支持国际版、电视端和创新产品，按各自场景决定交互。</li></ul>
 </section>
 <section id="creation" class="case-section">
-  <h2>创作体验</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Creation</span>创作体验</h2>
   
   <p>参与全民 K 歌从 0 到 1，主导音视频创作体验。合唱和短视频是核心创作场景，让用户可以用不同形式完成和表达作品。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一次创作怎样从开始走到成品</strong><br>选合唱或短视频其一，放真实版本的入口、编辑和完成状态。标明版本和你主导的决定。</figcaption></figure>
 </section>
 <section id="social" class="case-section">
-  <h2>社交互动</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Social Interaction</span>社交互动</h2>
   
   <p>让作品和演唱进入用户的关系链。</p>
 <p>主导关系链社交、歌房和直播互动等体验，使产品从创作延伸到内容与社交。围绕粉丝与音乐内容的互动，参与搭建 QQ 音乐与全民 K 歌的数字专辑产品设计框架。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 从作品到互动的关键画面</strong><br>选同一时期的真实版本，展示作品入口和对应的互动界面。标明版本和本人负责的部分，素材齐全后再补关键方案取舍。</figcaption></figure>
 </section>
 <section id="delivery" class="case-section">
-  <h2>平台交付</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Platform Delivery</span>平台交付</h2>
   
   <p>带队打造音兔视频、WeSing 国际版与全民 K 歌 TV 版。团队建设设计中台和组件化能力，支持核心产品之外的多业务、多平台交付。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 哪些能力跨产品复用</strong><br>优先找一项可公开的组件或视频效果，展示它在两个产品或平台中的应用，标出共用定义和场景差异。</figcaption></figure>
 </section>
 <section id="result" class="case-section">
-  <h2>项目成果</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Outcomes</span>项目成果</h2>
   
   <p>全民 K 歌形成创作、内容与社交体验，团队也交付了 WeSing 国际版、全民 K 歌 TV 版及音兔视频。</p>
 </section>

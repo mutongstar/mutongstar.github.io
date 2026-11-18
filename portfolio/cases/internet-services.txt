@@ -2,13 +2,13 @@
 5:I[6423,[],""]
 6:I[5861,["972","static/chunks/972-c4bfe85dd64f25c9.js","185","static/chunks/app/layout-ba9a9b780dfe7007.js"],"default"]
 4:["id","internet-services","d"]
-0:["0qTJJJf_iovIa6BRDDUmF",[[["",{"children":["cases",{"children":[["id","internet-services","d"],{"children":["__PAGE__?{\"id\":\"internet-services\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","internet-services","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/d0f2229a407ad556.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/e267d5e1f1dc7077.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+0:["sNj4w4leolvdq2ShFyere",[[["",{"children":["cases",{"children":[["id","internet-services","d"],{"children":["__PAGE__?{\"id\":\"internet-services\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","internet-services","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/b2245726dbe7082d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/0c7114690a24a455.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"OPPO 互联网 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
 9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 a:I[3419,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
-8:T1fcf,<!-- Generated from docs/cases/05.md by preview-cases.cjs -->
+8:T2171,<!-- Generated from docs/cases/05.md by preview-cases.cjs -->
 <article id="case-article" class="case-editorial" data-case-theme="oppo">
 <section id="intro" class="case-section">
   <div class="case-hero-field" aria-hidden="true">
@@ -54,7 +54,7 @@ b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <p>我用约三个月梳理设计团队与各业务线的协作方式，明确设计优先级、负责人和迭代流程，并推动建立跨产品体验度量机制。</p>
 </section>
 <section id="problem" class="case-section">
-  <h2>接手诊断</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Diagnosis</span>接手诊断</h2>
   
   <p>接手时的主要问题是设计责任和排期难以对齐。</p>
 <p>接手时，设计团队已有几个小组，但不同小组对接的业务线有交叉，人员也经常跨组支援，确认谁来做、何时能做需要额外协调。团队习惯了 OS 约 3–6 个月的迭代周期，难以跟上互联网业务更快的协作节奏。</p>
@@ -62,7 +62,7 @@ b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <p>我把调整重点放在业务目标如何进入设计排期、每条业务线由谁负责，以及设计如何跟进产品迭代。</p>
 </section>
 <section id="team" class="case-section">
-  <h2>团队调整</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Team Structure</span>团队调整</h2>
   
   <p>团队调整先明确设计优先级和负责人，再梳理协作与迭代流程。</p>
 <p>我用约三个月重新梳理业务架构，把设计分工与协作流程写入《互联网体验设计白皮书》。</p>
@@ -71,7 +71,7 @@ b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 《互联网体验设计白皮书》节选</strong><br>预留可公开的业务分工、主设计师职责或迭代流程截图。优先选择能说明由谁对接、何时对齐资源与排期的内容，并注明版本或时间。</figcaption></figure>
 </section>
 <section id="metrics" class="case-section">
-  <h2>体验度量</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Experience Metrics</span>体验度量</h2>
   
   <p>年度调研看竞品差距，月度度量跟踪用户触点。</p>
 <p>对齐业务目标和迭代方式之后，团队还需要依据用户反馈判断优先改什么。公司已将净推荐值（NPS）纳入年度考核，业务团队需要进一步了解影响评价的具体场景和原因。为此，我重组软件用户研究团队，并与质量运营部建立度量标准，分层覆盖重点互联网产品。</p>
@@ -79,13 +79,13 @@ b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 年度竞品对照与本品月度跟踪</strong><br>左侧呈现年度竞品评价的用途，右侧呈现本品从整体评价到场景、触点及反馈原因的路径。没有可公开样本时标为度量示意。</figcaption></figure>
 </section>
 <section id="adcase" class="case-section">
-  <h2>业务落地</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Implementation</span>业务落地</h2>
   
   <p>拆解浏览器的 NPS 反馈后，团队发现广告质量是影响浏览体验评价的重要因素。我将这项反馈带入业务讨论。浏览器设计团队从 2021 年起梳理腾讯、字节等广告系统的接入样式，并建立共用规格。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 浏览器广告反馈与规格交付</strong><br>左侧放可公开的反馈主题，右侧展示同一广告位置的真实规格或界面对照。注明版本、素材来源和交付范围。</figcaption></figure>
 </section>
 <section id="result" class="case-section">
-  <h2>项目成果</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Outcomes</span>项目成果</h2>
   
   <p>团队以业务目标安排设计优先级，明确各业务的设计责任和迭代方式，较快完成与业务的对齐，获得系统 VP 和多位业务 GM 的肯定。跨产品体验度量为后续改进提供了持续的用户反馈，浏览器广告共用规格是其中一项具体交付。</p>
 </section>

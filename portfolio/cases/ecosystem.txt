@@ -2,13 +2,13 @@
 5:I[6423,[],""]
 6:I[5861,["972","static/chunks/972-c4bfe85dd64f25c9.js","185","static/chunks/app/layout-ba9a9b780dfe7007.js"],"default"]
 4:["id","ecosystem","d"]
-0:["0qTJJJf_iovIa6BRDDUmF",[[["",{"children":["cases",{"children":[["id","ecosystem","d"],{"children":["__PAGE__?{\"id\":\"ecosystem\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","ecosystem","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/d0f2229a407ad556.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/e267d5e1f1dc7077.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
+0:["sNj4w4leolvdq2ShFyere",[[["",{"children":["cases",{"children":[["id","ecosystem","d"],{"children":["__PAGE__?{\"id\":\"ecosystem\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["cases",{"children":[["id","ecosystem","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","cases","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/b2245726dbe7082d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio/_next/static/css/0c7114690a24a455.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"pf","children":["$","div",null,{"className":"app-page","children":[["$","a",null,{"className":"skip-link","href":"#main","children":"跳到内容"}],["$","$L6",null,{}]]}]}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}]]}]],null],null],["$L7",null]]]]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"生态互联：围绕任务延续体验 · 牧童"}],["$","meta","3",{"name":"description","content":"牟伟成的设计作品集：系统体验、设计体系、产品创新与 AI 实践。"}],["$","link","4",{"rel":"icon","href":"/portfolio/icon.png?e75a529ddaef669a","type":"image/png","sizes":"64x64"}]]
 1:null
 9:I[9687,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 a:I[3419,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],"default"]
 b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
-8:T18d1,<!-- Generated from docs/cases/04.md by preview-cases.cjs -->
+8:T1a66,<!-- Generated from docs/cases/04.md by preview-cases.cjs -->
 <article id="case-article" class="case-editorial" data-case-theme="oppo">
 <section id="intro" class="case-section">
   <div class="case-hero-field" aria-hidden="true">
@@ -53,34 +53,34 @@ b:I[8003,["502","static/chunks/app/cases/%5Bid%5D/page-9ee77b5098832860.js"],""]
   <p>负责 OPPO 生态互联体验及下一年度规划中的相关设计工作，覆盖近场连接、跨平台任务接续和外部设备接入。</p>
 </section>
 <section id="framing" class="case-section">
-  <h2>设计目标</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Design Goals</span>设计目标</h2>
   
   <p>让用户离开原设备后还能继续手上的任务。</p>
 <p>规划时检查三件事：用户能否找到并连上目标设备，切过去后还需要做多少重复操作，以及控制权是否仍清楚。以把手机上的文档交到电脑为例，设计评估从「发现设备」开始，直到用户在电脑上能继续使用文件。</p>
 <ul class="case-cards"><li><strong>连接</strong> 用户可以辨认目标设备，并知道连接成功或失败。</li><li><strong>接续</strong> 用户能在另一台设备上继续处理内容，清楚文件去了哪里。</li><li><strong>控制</strong> 涉及外部设备或 AI 时，用户知道由谁执行、如何确认或退出。</li></ul>
 </section>
 <section id="connectivity" class="case-section">
-  <h2>近场连接</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Proximity</span>近场连接</h2>
   
   <p>让身边的设备能发现彼此，并交换内容。</p>
 <p>负责电话、短信及蓝牙、Wi-Fi 等系统连接体验。互传和文件分享建立在这些能力上，用户可以在身边的设备之间发送和接收内容。</p>
 </section>
 <section id="continuity" class="case-section">
-  <h2>跨端协同</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Continuity</span>跨端协同</h2>
   
   <p>让办公和学习任务能在另一台设备上继续。</p>
 <p>负责 Windows、Mac 和 iOS 端的 OPPO 互联体验，围绕文件传输、共享和设备连接组织跨端路径。规划阶段也在探索手机、耳机与 AI 如何分担输入、问答和信息接续，通过交互原型讨论分工。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一个任务如何跨设备继续</strong><br>选一个已做过原型的任务，按顺序放入口、设备切换与继续操作。标清每一步由哪个设备承担，并注明原型完成范围。</figcaption></figure>
 </section>
 <section id="integration" class="case-section">
-  <h2>生态接入</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Integration</span>生态接入</h2>
   
   <p>把手机上的操作延伸到车机和家居设备。</p>
 <p>车机、家居和配件各有自己的能力。系统优先解决跨设备或跨生态的连接与协同，例如用手机与车联动，或在手机上控制家居设备。OPPO 开发者大会的试用场景提供了具体展示。</p>
 <figure class="case-slot case-slot--wide"><div class="case-slot-frames"><div class="case-slot-frame" aria-hidden="true">16:9</div></div><figcaption class="case-slot-note"><strong>待配图 · 一项控制任务跨过两个系统</strong><br>选可公开的车机或家居演示，左侧放手机入口，右侧放外部设备的反馈。标注哪一端发起、哪一端执行。</figcaption></figure>
 </section>
 <section id="result" class="case-section">
-  <h2>阶段成果</h2>
+  <h2><span class="case-chapter-eyebrow" lang="en" aria-hidden="true">Outcomes</span>阶段成果</h2>
   
   <p>近场连接、跨端协同和生态接入构成当前职责范围。手机、耳机与 AI 协同仍处于早期探索，阶段产出是可供团队讨论的方向与原型。</p>
 </section>
